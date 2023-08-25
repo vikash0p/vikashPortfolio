@@ -20,8 +20,8 @@ const HomeRight = () => {
         alt='avatar'
         width={300}
         height={300}
-        sizes='400px'
-        className='w-80 h-[448.3px] mb-14 mt-3 m-auto '
+        sizes="(min-width: 380px) 320px, calc(60vw + 104px)"
+        className='w-80 h-[448.3px] mb-14 mt-3 m-auto bg-transparent'
         priority={true}
       />
     </motion.div>
