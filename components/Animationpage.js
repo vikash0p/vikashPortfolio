@@ -3,7 +3,7 @@ import { AnimatePresence, motion } from 'framer-motion'
 import React from 'react'
 import Transiton from './Transiton'
 
-import { usePathname } from 'next/navigation';
+
 import { useRouter } from 'next/router';
 
 const Animationpage = ({ children }) => {
