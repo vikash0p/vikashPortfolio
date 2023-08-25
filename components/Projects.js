@@ -18,7 +18,7 @@ const Projects = () => {
                   once: false,
                   amount: 0.6
               }}
-               class="after:content-['*'] after:ml-0.5 after:text-red-500 block text-5xl pb-5 lg:pb-0 lg:px-24 text-white ">
+               className="after:content-['*'] after:ml-0.5 after:text-red-500 block text-5xl pb-5 lg:pb-0 lg:px-24 text-white ">
                   project
               </motion.h1>
               <div className='grid w-full min-h-screen grid-cols-1 gap-5 lg:px-24 lg:py-14 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4'>
