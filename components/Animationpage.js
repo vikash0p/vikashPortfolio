@@ -4,13 +4,14 @@ import React from 'react'
 import Transiton from './Transiton'
 
 import { usePathname } from 'next/navigation';
+import { useRouter } from 'next/router';
 
 const Animationpage = ({ children }) => {
-    const router=usePathname();
+    const router=useRouter();
     // console.log(router)
     return (
         <AnimatePresence mode='wait'>
-            <motion.div key={router} className='h-full' >
+            <motion.div key={router.route} className='h-full' >
                 <Transiton />
                 {children}
             </motion.div>
