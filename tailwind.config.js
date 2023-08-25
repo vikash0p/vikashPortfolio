@@ -6,13 +6,27 @@ module.exports = {
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    container:{
+      padding:{
+        DEFAULT:'15px',
+      }
+    },
     extend: {
+      colors: {
+        primary: '#131424',
+        secondary: '#393A47',
+        accent: '#F13024',
+      },
       backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        explosion: 'url("/images/bg-explosion.png")',
+        circles: 'url("/images/bg-circles.png")',
+        circleStar: 'url("/images/circle-star.svg")',
+        site: 'url("/images/site-bg.svg")',
+      },
+      animation: {
+        'spin-slow': 'spin 6s linear infinite',
       },
     },
   },
-  plugins: [],
+  plugins: ['tailwind-scrollbar'],
 }
