@@ -136,7 +136,7 @@ export const project = [
     id: 4,
     image: '/netflix.jpg',
     link: 'https://netflixapp-rho.vercel.app/',
-    title: 'Unlimited entertainment: movies, series, documentaries - streaming joy htmlFor every moment.',
+    title: 'Unlimited entertainment: movies, series, documentaries - streaming joy html every moment.',
   },
   {
     id: 5,

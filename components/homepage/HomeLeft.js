@@ -22,7 +22,7 @@ const HomeLeft = () => {
             >
                 <h5 className='md:text-lg xl:text-xl mb-2 lg:mb-3'>Hi, my name is </h5>
                 <h1 className='text-red-600 text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-semibold'>Vikash pandat.</h1>
-                <h3 className='text-red-600 text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-semibold'>I build thing htmlFor the web.</h3>
+                <h3 className='text-red-600 text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-semibold'>I build thing html the web.</h3>
             </motion.div>
             <motion.div
                 variants={fadeIn("up", 0.4)}

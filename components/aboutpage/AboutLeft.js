@@ -25,7 +25,7 @@ const AboutLeft = () => {
                     amount: 0.6
                 }}
             >
-                I am <span className='font-semibold text-red-600'>Vikash</span> , a passionate front-end developer with a flair htmlFor crafting captivating digital experiences. With a strong foundation in HTML, CSS, and JavaScript, I breathe life into designs and turn visions into interactive realities.
+                I am <span className='font-semibold text-red-600'>Vikash</span> , a passionate front-end developer with a flair html crafting captivating digital experiences. With a strong foundation in HTML, CSS, and JavaScript, I breathe life into designs and turn visions into interactive realities.
             </motion.h1>
             <motion.h1
                 variants={fadeIn("up", 0.6)}
@@ -36,7 +36,7 @@ const AboutLeft = () => {
                     amount: 0.6
                 }}
                 className=''>
-                My journey in the world of coding began with an insatiable curiosity htmlFor how pixels and lines of code come together to shape the online world we inhabit. Over the years, I &rsquo; honed my skills to not only meet the demands of modern web development but to exceed them.
+                My journey in the world of coding began with an insatiable curiosity html how pixels and lines of code come together to shape the online world we inhabit. Over the years, I &rsquo; honed my skills to not only meet the demands of modern web development but to exceed them.
             </motion.h1>
             <motion.div
                 variants={fadeIn("up", 0.8)}
