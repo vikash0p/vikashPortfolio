@@ -13,7 +13,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body suppressHydrationWarning={true} className={`${inter.className} bg-primary/60 `}>
+      <body  className={`${inter.className} bg-primary/60 `}>
         <Layout>
           <Animationpage>
             <main className='px-2 mb-32 md:px-3 lg:px-4 xl:px-5 lg:mb-0'>
