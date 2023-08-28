@@ -1,27 +1,27 @@
 import {
-    HiHome,
-    HiUser,
-    HiViewColumns,
-    HiRectangleGroup,
-    HiChatBubbleBottomCenterText,
-    HiEnvelope,
+  HiHome,
+  HiUser,
+  HiViewColumns,
+  HiRectangleGroup,
+  HiChatBubbleBottomCenterText,
+  HiEnvelope,
 } from 'react-icons/hi2';
 
 // icons
 import {
-    FaHtml5,
-    FaCss3,
-    FaJs,
-    FaReact,
-    FaWordpress,
-    FaFigma,
+  FaHtml5,
+  FaCss3,
+  FaJs,
+  FaReact,
+  FaWordpress,
+  FaFigma,
 } from "react-icons/fa";
 
 import {
-    SiNextdotjs,
-    SiFramer,
-    SiAdobexd,
-    SiAdobephotoshop,
+  SiNextdotjs,
+  SiFramer,
+  SiAdobexd,
+  SiAdobephotoshop,
 } from "react-icons/si";
 
 import { DiGithubBadge } from 'react-icons/di';
@@ -31,19 +31,19 @@ import { AiFillInstagram } from 'react-icons/ai';
 
 // nav data
 export const navData = [
-    { name: 'home', path: '/', icon: <HiHome /> },
-    { name: 'about', path: '/about', icon: <HiUser /> },
-    { name: 'work', path: '/work', icon: <HiViewColumns /> },
-    {
-        name: 'testimonials',
-        path: '/testimonials',
-        icon: <HiChatBubbleBottomCenterText />,
-    },
-    {
-        name: 'contact',
-        path: '/contact',
-        icon: <HiEnvelope />,
-    },
+  { name: 'home', path: '/', icon: <HiHome /> },
+  { name: 'about', path: '/about', icon: <HiUser /> },
+  { name: 'work', path: '/work', icon: <HiViewColumns /> },
+  {
+    name: 'testimonials',
+    path: '/testimonials',
+    icon: <HiChatBubbleBottomCenterText />,
+  },
+  {
+    name: 'contact',
+    path: '/contact',
+    icon: <HiEnvelope />,
+  },
 ];
 
 
@@ -53,12 +53,12 @@ export const aboutData = [
     info: [
       {
         title: 'Web Development',
-       
+
       },
-     
+
     ],
   },
-  
+
   {
     title: 'experience',
     info: [
@@ -77,12 +77,12 @@ export const aboutData = [
     title: 'credentials',
     info: [
       {
-            title: ' **Bachelor of Computer Applications (BCA)**',
+        title: ' **Bachelor of Computer Applications (BCA)**',
       },
       {
-          title: '**High School (12th Grade)**',
+        title: '**High School (12th Grade)**',
       },
-      
+
     ],
   },
 ]
@@ -113,12 +113,12 @@ export const social = [
 
 ]
 
-export const project=[
+export const project = [
   {
-    id:1,
-    image :'/avtar.jpg',
-    link:'https://portfoliopro-snowy.vercel.app/',
-    title:'Creating, innovating, problem-solving  designing a brighter future, one idea at a time.',
+    id: 1,
+    image: '/avtar.jpg',
+    link: 'https://portfoliopro-snowy.vercel.app/',
+    title: 'Creating, innovating, problem-solving  designing a brighter future, one idea at a time.',
   },
   {
     id: 2,
@@ -136,19 +136,19 @@ export const project=[
     id: 4,
     image: '/netflix.jpg',
     link: 'https://netflixapp-rho.vercel.app/',
-    title:'Unlimited entertainment: movies, series, documentaries - streaming joy for every moment.',
+    title: 'Unlimited entertainment: movies, series, documentaries - streaming joy html every moment.',
   },
   {
     id: 5,
     image: '/resturnat.jpg',
     link: 'https://vercel.com/vikash0p/resturant',
-    title:'Savor exquisite flavors, impeccable service, and warm ambiance at our culinary haven.',
+    title: 'Savor exquisite flavors, impeccable service, and warm ambiance at our culinary haven.',
   },
   {
     id: 6,
     image: '/shop.jpg',
     link: 'https://showfit.netlify.app/',
-    title:'Discover trends, find deals, and shop your favorites - retail therapy awaits.',
+    title: 'Discover trends, find deals, and shop your favorites - retail therapy awaits.',
   },
   {
     id: 7,

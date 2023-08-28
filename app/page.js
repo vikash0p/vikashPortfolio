@@ -5,7 +5,7 @@ import { HomeLeft, HomeRight } from "@/components"
 
 const Home = () => {
   return (
-    <div className='w-full min-h-screen lg:flex place-items-center '>
+    <div className='w-full min-h-screen lg:flex place-items-center'>
       <div className='flex-1'>
         <HomeLeft />
       </div>
