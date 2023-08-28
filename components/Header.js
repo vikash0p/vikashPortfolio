@@ -10,7 +10,7 @@ const Header = () => {
     const pathname = usePathname()
 
     return (
-        <divi className=' rounded-full  z-50 fixed lg:top-[25%] lg:w-16   lg:left-[94%] lg:bottom-[25%] bottom-2 left-2 right-2 flex flex-row lg:flex-col bg-violet-800  md:bg-white/10'>
+        <divi className=' rounded-full  z-30 fixed lg:top-[25%] lg:w-16   lg:left-[94%] lg:bottom-[25%] bottom-2 left-2 right-2 flex flex-row lg:flex-col bg-violet-800  md:bg-white/10'>
             {
                 navData.map((value, index) => {
                     return (
