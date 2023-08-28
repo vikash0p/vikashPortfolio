@@ -14,7 +14,11 @@ const Header = () => {
             {
                 navData.map((value, index) => {
                     return (
-                        <Link key={index} href={value.path} className={`text-xl py-3 px-3 m-auto  xl:text-2xl cursor-pointer hover:text-violet-500 
+                        <Link key={index}
+                            href={value.path}
+                            rel="preload"
+                            crossorigin="anonymous"
+                            className={`text-xl py-3 px-3 m-auto  xl:text-2xl cursor-pointer hover:text-violet-500 
                         transition-colors duration-300 ${pathname === value.path ? "text-red-500" : " text-white"}`} >
                             <h1>{value.icon} </h1>
                         </Link>
