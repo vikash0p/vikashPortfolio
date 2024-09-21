@@ -1,4 +1,3 @@
-import Animationpage from "./Animationpage";
 import Footer from "./Footer";
 import Header from "./Header";
 import Layout from "./Layout";
@@ -12,7 +11,7 @@ import HomeLeft from "./homepage/HomeLeft";
 import HomeRight from "./homepage/HomeRight";
 
 export {
-    Header, TopLeftImage, Footer, Transiton, Layout, Animationpage, Navbar,
+    Header, TopLeftImage, Footer, Transiton, Layout,  Navbar,
     AboutRight, AboutLeft, HomeLeft, HomeRight, TestimonialsSlides
 
 }
