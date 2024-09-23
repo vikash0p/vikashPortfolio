@@ -4,8 +4,8 @@ import SocialMedia from './ReusableComponent/SocialMedia'
 
 const Navbar = () => {
   return (
-    <div className='flex justify-between items-center text-2xl lg:text-3xl gap-2 pt-5 text-red-600 px-2 lg:px-5'>
-      <div className='relative overflow-hidden md:w-40 lg:w-64 h-16'>
+    <div className='flex justify-between items-center text-2xl lg:text-3xl gap-2 pt-2 md:pt-5 text-red-600 px-2 lg:px-5  '>
+      <div className='relative overflow-hidden w-32 md:w-40 lg:w-64 h-16'>
         <Image
           src="/logo.png"
           alt="Elegant Jewelry logo"
