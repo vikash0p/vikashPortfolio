@@ -16,7 +16,7 @@ const HomeRight = () => {
       className="  w-fit m-auto"
     >
       {/* Inner wrapper for the image */}
-      <div className="back1 rounded-2xl">
+      <div className=" rounded-2xl">
         <Image
           src="/images/illustration.png"
           alt="avatar"
