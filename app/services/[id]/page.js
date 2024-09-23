@@ -1,4 +1,5 @@
 import TopTitle from '@/components/ReusableComponent/TopTitle';
+import ServiceSinglePage from '@/components/serviceComponent/ServiceSinglePage';
 import React from 'react'
 
 const ServiceId = ({params}) => {
@@ -6,7 +7,7 @@ const ServiceId = ({params}) => {
   return (
     <div>
         <TopTitle title={`Services / ${id}`} />
-            {/* <h1>{id} </h1> */}
+        <ServiceSinglePage id={id} />
     </div>
   )
 }

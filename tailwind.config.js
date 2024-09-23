@@ -12,6 +12,11 @@ module.exports = {
       }
     },
     extend: {
+      listStyleImage: {
+        checkmark: 'url("/8665019_check_mark_icon.png") ',
+
+
+      },
       colors: {
         primary: '#131424',
         secondary: '#393A47',

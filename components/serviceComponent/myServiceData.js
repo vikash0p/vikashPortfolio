@@ -21,9 +21,21 @@ export const mysServiceData = [
             'Accessibility compliance for all users.',
         ],
         icons: [
-            <FaCode  key='webId1' size={30} className="text-blue-500" />, // Coding
-            <FaPalette key='webId2' size={30} className="text-pink-500" />, // Design
-            <FaDesktop key='webId3' size={30} className="text-green-500" />, // Responsive Design
+            {
+                icon: <FaCode key='webId1' size={80} className="text-blue-500" />,
+                title: 'Coding',
+                description: 'Writing clean, efficient, and maintainable code for web development.',
+            },
+            {
+                icon: <FaPalette key='webId2' size={80} className="text-pink-500" />,
+                title: 'Design',
+                description: 'Creating visually appealing and user-friendly interfaces.',
+            },
+            {
+                icon: <FaDesktop key='webId3' size={80} className="text-green-500" />,
+                title: 'Responsive Design',
+                description: 'Ensuring websites work seamlessly across all devices.',
+            },
         ],
     },
     {
@@ -45,9 +57,21 @@ export const mysServiceData = [
             'Highly modular for development and testing.',
         ],
         icons: [
-            <FaReact  key='reactId1' size={30} className="text-sky-500" />, // React Icon
-            <FaUser key='reactId2' size={30} className="text-purple-500" />, // User Experience
-            <FaPalette key='reactId3' size={30} className="text-pink-500" />, // UI/UX Design
+            {
+                icon: <FaReact key='reactId1' size={80} className="text-sky-500" />,
+                title: 'React Framework',
+                description: 'Building modern web applications using the React library.',
+            },
+            {
+                icon: <FaUser key='reactId2' size={80} className="text-purple-500" />,
+                title: 'User Experience',
+                description: 'Enhancing the overall user experience with efficient UI/UX design.',
+            },
+            {
+                icon: <FaPalette key='reactId3' size={80} className="text-pink-500" />,
+                title: 'UI/UX Design',
+                description: 'Focusing on intuitive and accessible user interface design.',
+            },
         ],
     },
     {
@@ -69,9 +93,21 @@ export const mysServiceData = [
             'Easy deployment with platforms like Vercel.',
         ],
         icons: [
-            <SiNextdotjs  key='nextId1' size={30} className="text-black" />, // Next.js Icon
-            <FaDesktop key='nextId2' size={30} className="text-green-500" />, // Responsive Design
-            <FaUser  key='nextId3' size={30} className="text-purple-500" />, // User Experience
+            {
+                icon: <SiNextdotjs key='nextId1' size={80} className="text-black" />,
+                title: 'Next.js Framework',
+                description: 'Building powerful, fast, and scalable applications with Next.js.',
+            },
+            {
+                icon: <FaDesktop key='nextId2' size={80} className="text-green-500" />,
+                title: 'Responsive Design',
+                description: 'Ensuring the application is accessible and performs well on all devices.',
+            },
+            {
+                icon: <FaUser key='nextId3' size={80} className="text-purple-500" />,
+                title: 'User Experience',
+                description: 'Improving user experience through server-side rendering and performance optimizations.',
+            },
         ],
     },
     {
@@ -93,10 +129,21 @@ export const mysServiceData = [
             'Follows best practices for web development.',
         ],
         icons: [
-            <FaHtml5  key='htmId1' size={30} className="text-orange-500" />, // HTML Icon
-            <FaCode key='htmId2' size={30} className="text-blue-500" />, // Coding
-            <FaUser  key='htmlId3' size={30} className="text-purple-500" />, // User Experience
+            {
+                icon: <FaHtml5 key='htmId1' size={80} className="text-orange-500" />,
+                title: 'HTML Icon',
+                description: 'Creating the structure and layout of web pages using HTML.',
+            },
+            {
+                icon: <FaCode key='htmId2' size={80} className="text-blue-500" />,
+                title: 'Coding',
+                description: 'Writing semantic, maintainable HTML code for web development.',
+            },
+            {
+                icon: <FaUser key='htmlId3' size={80} className="text-purple-500" />,
+                title: 'User Experience',
+                description: 'Ensuring content is accessible and user-friendly.',
+            },
         ],
     },
 ]
-
