@@ -48,7 +48,7 @@ const TechStackDisplay = () => {
         <div>
             <p className="text-xl text-center">Best skill on</p>
             <motion.div
-                className="flex flex-wrap gap-6 justify-center mt-5"
+                className="flex flex-wrap gap-2 md:gap-6 justify-center my-10 lg:mt-5"
                 variants={containerVariants}
                 initial="hidden"
                 animate="show"
@@ -57,13 +57,13 @@ const TechStackDisplay = () => {
                     <motion.div
                         key={index}
                         variants={itemVariants}
-                        whileHover={{ scale: 1.1 }} // Scale effect on hover
+                        whileHover={{ scale: 1.1 }}
                         className="flex flex-col items-center"
                     >
                         <div className="mb-2 back1 p-3 rounded-lg shadow-md shadow-violet-600 hover:shadow-xl hover:bg-white/20 transition-shadow duration-300 ease-in-out">
                             {tech.icon}
                         </div>
-                        <p className="text-sm mt-1">{tech.name}</p> {/* Optional: Display name */}
+                        <p className="text-sm mt-1">{tech.name}</p>
                     </motion.div>
                 ))}
             </motion.div>
