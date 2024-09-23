@@ -7,7 +7,7 @@ import { motion } from 'framer-motion';
 const TopTitle = ({title}) => {
     return (
         <motion.section
-            className='w-full h-20 flex flex-col md:flex-row justify-between px-5 md:px-10 mt-10 items-center back1 rounded-md'
+            className='w-full h-20 flex flex-row justify-between px-5 md:px-10 mt-10 items-center back1 rounded-md'
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
