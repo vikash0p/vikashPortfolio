@@ -7,24 +7,25 @@ import SocialMedia from './ReusableComponent/SocialMedia';
 const Footer = () => {
   return (
     <motion.footer
-      className=" mt-20 py-10 px-5 md:px-10 shadow-lg"
+      className="my-20 lg:mt-20 py-10 px-5 md:px-10 shadow-lg"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
     >
       {/* Footer container */}
       <div className="max-w-screen-xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-        <div className='w-full flex flex-col items-center g'>
-          <Image
-            src={'/images/1726934328026-removebg-preview.png'}
-            alt='avatar'
-            width={300}
-            height={300}
-            sizes="(min-width: 380px) 320px, calc(60vw + 104px)"
-            className='w-24 h-20 mb-14 mt-3 m-auto bg-transparent object-cover object-center rounded-full '
-            priority={true}
-            quality={100}
-          />
+        <div className='w-full flex flex-col items-center gap-10 md:gap-10 lg:5'>
+          <div className='relative w-24 h-24 rounded-full back1 '>
+            <Image
+              src={'/images/illustration.png'}
+              alt='avatar'
+              fill
+              sizes="(min-width: 380px) 320px, calc(60vw + 104px)"
+              className='w-full h-full mb-14 mt-3 m-auto bg-transparent object-cover object-center rounded-full '
+              priority={true}
+              quality={100}
+            />
+          </div>
           <SocialMedia />
         </div>
         {/* Quick Links */}
