@@ -1,49 +1,20 @@
-import {
-  HiHome,
-  HiUser,
-  HiViewColumns,
-  HiRectangleGroup,
-  HiChatBubbleBottomCenterText,
-  HiEnvelope,
-} from 'react-icons/hi2';
-
-// icons
-import {
-  FaHtml5,
-  FaCss3,
-  FaJs,
-  FaReact,
-  FaWordpress,
-  FaFigma,
-} from "react-icons/fa";
-
-import {
-  SiNextdotjs,
-  SiFramer,
-  SiAdobexd,
-  SiAdobephotoshop,
-} from "react-icons/si";
-
+import {HiHome,HiUser,HiViewColumns,HiRectangleGroup,HiChatBubbleBottomCenterText,HiEnvelope,} from 'react-icons/hi2';
+import { FaHtml5, FaCss3, FaJs, FaReact, FaWordpress, FaFigma, FaProjectDiagram, FaServicestack, FaBlog } from "react-icons/fa";
+import { SiNextdotjs, SiFramer, SiAdobexd, SiAdobephotoshop, SiNetlify, SiVercel } from "react-icons/si";
 import { DiGithubBadge } from 'react-icons/di';
-import { SiNetlify, SiVercel } from 'react-icons/si';
 import { AiFillInstagram } from 'react-icons/ai';
+import { IoIosContact } from "react-icons/io";
 
 
 // nav data
 export const navData = [
-  { name: 'home', path: '/', icon: <HiHome /> },
-  { name: 'about', path: '/about', icon: <HiUser /> },
-  { name: 'work', path: '/work', icon: <HiViewColumns /> },
-  {
-    name: 'testimonials',
-    path: '/testimonials',
-    icon: <HiChatBubbleBottomCenterText />,
-  },
-  {
-    name: 'contact',
-    path: '/contact',
-    icon: <HiEnvelope />,
-  },
+  { name: 'Home', path: '/', icon: <HiHome /> },
+  { name: 'About', path: '/about', icon: <HiUser /> },
+  { name: 'Services', path: '/services', icon: <FaServicestack /> },
+  { name: 'work', path: '/work', icon: <FaProjectDiagram /> },
+  { name: 'Blog', path: '/blog', icon: <FaBlog /> },
+
+  { name: 'contact', path: '/contact', icon: <IoIosContact />,},
 ];
 
 
