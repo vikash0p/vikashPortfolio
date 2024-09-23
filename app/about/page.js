@@ -12,14 +12,14 @@ const About = () => {
     <section>
       <TopTitle title="About Me" />
       <div className='w-full mt-14 flex flex-col lg:flex-row gap-5'>
-        <div className="w-1/4">
+        <div className=" lg:w-1/4 ">
           <ProfileCardComponent />
 
         </div>
-        <div className="w-3/4">
-    <Introdction />
-    <EducationComponent />
-    <MyExpertiseSkills />
+        <div className="lg:w-3/4">
+          <Introdction />
+          <EducationComponent />
+          <MyExpertiseSkills />
         </div>
       </div>
     </section>
