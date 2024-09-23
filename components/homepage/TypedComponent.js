@@ -8,10 +8,10 @@ const TypedComponent = () => {
     return (
         <div className="  ">
 
-            <h1 className="text-4xl md:text-5xl font-bold mb-4">
+            <h1 className="text-2xl md:text-5xl font-bold mb-2 md:mb-3 lg:mb-4">
                 <span>I am a </span>
                 <ReactTyped
-                className="back"
+                    className="back"
                     strings={[
                         " front-end developer",
                         " React.js developer",
