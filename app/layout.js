@@ -1,18 +1,19 @@
 import { Layout } from '@/components'
 import './globals.css'
-import { Inter } from 'next/font/google'
+import { Chakra_Petch, Inter, PT_Serif } from 'next/font/google'
 
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Chakra_Petch({ subsets: ['latin'],weight:['400','500','600'] })
+
 
 
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en" >
-      <body className={`${inter.className} bg-primary/60 `} >
+      <body className={`${inter.className}  bg-site bg-cover bg-center bg-no-repeat  text-white`} >
         <Layout>
-            <main className='px-2 mb-32 md:px-3 lg:px-4 xl:px-5 lg:mb-0'>
+            <main className=''>
               {children}
             </main>
         </Layout>

@@ -6,7 +6,7 @@ import { Footer, Header, Navbar, TopLeftImage } from '@/components'
 
 const Layout = ({ children }) => {
     return (
-        <div className='w-full min-h-screen  bg-site bg-cover bg-center bg-no-repeat  text-white '>
+        <div className='max-w-7xl m-auto '>
             <Navbar />
             <Header />
             {children}
