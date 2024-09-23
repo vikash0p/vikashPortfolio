@@ -17,7 +17,7 @@ const ServiceData = () => {
         {
             id: 2,
             value: 'react',
-            title: 'React Development',
+            title: 'React.js Development',
             description: 'Creating scalable front-end applications using React.',
             icon: <FaReact size={50} className="text-sky-400" />,
         },
