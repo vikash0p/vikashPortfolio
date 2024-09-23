@@ -8,22 +8,22 @@ export const socialLinks = [
     {
         href: 'https://github.com',
         ariaLabel: 'GitHub',
-        icon: <FaGithub className="text-red-600" />,
+        icon: <FaGithub className="text-white" />,
     },
     {
         href: 'https://vercel.com',
         ariaLabel: 'Vercel',
-        icon: <IoLogoVercel className="text-red-600" />,
+        icon: <IoLogoVercel className="text-white" />,
     },
     {
         href: 'https://linkedin.com',
         ariaLabel: 'LinkedIn',
-        icon: <FaLinkedinIn className="text-red-600" />,
+        icon: <FaLinkedinIn className="text-white" />,
     },
     {
         href: 'https://instagram.com',
         ariaLabel: 'Instagram',
-        icon: <FaInstagram className="text-red-600" />,
+        icon: <FaInstagram className="text-white" />,
     },
 ];
 
@@ -32,7 +32,7 @@ export const socialLinks = [
 const SocialMedia = () => {
   return (
       <motion.div
-          className="flex space-x-2 md:space-x-6  md:mb-0 "
+          className="flex space-x-3 md:space-x-6  md:mb-0 "
           initial={{ y: 20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ type: 'spring', stiffness: 120, damping: 12, delay: 0.2 }}
@@ -42,7 +42,7 @@ const SocialMedia = () => {
                   key={index}
                   href={link.href}
                   aria-label={link.ariaLabel}
-                  className="back1 text-sm md:text-xl p-2 md:p-3 rounded-lg shadow-md shadow-violet-600 hover:shadow-xl hover:bg-white/20 transition-shadow duration-300 ease-in-out"
+                  className="back1  md:text-xl p-2 md:p-3 rounded-lg shadow-md shadow-violet-600 hover:shadow-xl hover:bg-white/20 transition-shadow duration-300 ease-in-out"
                   whileHover={{
                       scale: 1.2,
                       rotate: 10,
