@@ -10,7 +10,7 @@ import { FaReact } from "react-icons/fa";
 import { SiNextdotjs, SiNextui } from "react-icons/si";
 import TypedComponent from './TypedComponent'
 import TechStackDisplay from '../ReusableComponent/TechStackDisplay'
-import { heading,text } from '../FontContainer'
+import { heading, text } from '../FontContainer'
 
 
 const HomeLeft = () => {
@@ -26,7 +26,7 @@ const HomeLeft = () => {
                 }}
             >
                 <p className='md:text-lg xl:text-xl'>Welcome to my world </p>
-                <h1 className={`text-red-600 text-3xl md:text-4xl lg:text-5xl  font-semibold `}> <span className='text-white'> {`Hi, I'm`}</span> Vikash Pandat</h1>
+                <h1 className={`text-red-600 text-2xl md:text-4xl lg:text-5xl  font-semibold `}> <span className='text-white'> {`Hi, I'm`}</span> Vikash Pandat</h1>
                 <TypedComponent />
             </motion.div>
             <motion.div
@@ -38,12 +38,9 @@ const HomeLeft = () => {
                     amount: 0.6
                 }}
             >
-                <p className="md:text-xl">
-                    I am a website developer with 2 plus years of experience in React.js & Next.js. I have a strong foundation in front-end development and am skilled in creating user-friendly & responsive web applications using{" "}
-                    <span className="flex flex-row gap-2 items-center">
-                        <span className="text-2xl text-cyan-600"><FaReact /></span> &{" "}
-                        <span className="text-2xl flex flex-row gap-2 items-center "><SiNextdotjs /> ecosystem</span>
-                    </span>
+                <p className="md:text-xl ">
+                    I am a website developer with 2 plus years of experience in <span className='back'>React.js</span> & <span className='back'>Next.js</span>. I have a strong foundation in front-end development and am skilled in creating user-friendly & responsive web applications using <span className='back'>React.js</span> & <span className='back'>Next.js</span>
+
                 </p>
 
 
@@ -60,7 +57,7 @@ const HomeLeft = () => {
 
             >
             </motion.div>
-<div className='flex flex-row gap-10 items-center'>
+            <div className='flex flex-col  md:flex-row gap-10 items-center'>
                 <Link href={"/work"} className='group relative w-[151px] h-[151px] flex justify-center items-center bg-circleStar bg-cover bg-center bg-no-repeat mt-7 back1 rounded-full '>
                     <Image
                         src={"/images/rounded-text.png"}
@@ -80,7 +77,7 @@ const HomeLeft = () => {
                     </motion.div>
                 </Link>
                 <TechStackDisplay />
-</div>
+            </div>
         </>
     )
 }
