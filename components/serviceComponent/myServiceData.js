@@ -5,7 +5,7 @@ export const mysServiceData = [
     {
         value: 'web',
         title: 'Web Development',
-        image: '/images/web-development.jpg', // replace with an actual image path
+        image: '/simple.webp', // replace with an actual image path
         description:
             'Web development is the process of creating websites or web applications. It involves both frontend and backend development, focusing on building responsive, interactive, and optimized websites for various platforms. Web developers use a variety of languages like HTML, CSS, JavaScript, and more to create sites that are user-friendly, accessible, and performant.',
         bulletPoints: [
@@ -29,7 +29,7 @@ export const mysServiceData = [
     {
         value: 'react',
         title: 'React Development',
-        image: '/images/react-development.jpg',
+        image: '/react.webp',
         description:
             'React development involves building dynamic, scalable front-end applications using the React JavaScript library. It enables developers to create reusable components, manage state efficiently, and improve the overall performance of web applications. React is widely used for building single-page applications (SPAs) that provide seamless user experiences.',
         bulletPoints: [
@@ -53,7 +53,7 @@ export const mysServiceData = [
     {
         value: 'next',
         title: 'Next.js Development',
-        image: '/images/nextjs-development.jpg',
+        image: '/next.webp',
         description:
             'Next.js is a powerful React framework that enables server-side rendering and static site generation. It provides developers with the tools to create highly performant, SEO-optimized, and scalable web applications. With built-in routing, API support, and easy deployment solutions, Next.js is an excellent choice for modern web development.',
         bulletPoints: [
@@ -77,7 +77,7 @@ export const mysServiceData = [
     {
         value: 'html',
         title: 'HTML Development',
-        image: '/images/html-development.jpg',
+        image: '/html.webp',
         description:
             'HTML development involves creating the basic structure and content of web pages. It is the foundation of every website and is crucial for SEO, accessibility, and overall user experience. HTML developers focus on writing clean, semantic markup that is easy to maintain and integrate with CSS and JavaScript for enhanced functionality.',
         bulletPoints: [
