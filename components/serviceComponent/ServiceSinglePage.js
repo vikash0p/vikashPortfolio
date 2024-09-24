@@ -4,6 +4,7 @@ import { mysServiceData } from './myServiceData'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 import Link from 'next/link'
+import { FaCheck } from 'react-icons/fa';
 
 const ServiceSinglePage = ({ id }) => {
     const service = mysServiceData.find((item) => item.value === id);
@@ -34,7 +35,7 @@ const ServiceSinglePage = ({ id }) => {
                         variants={cardVariants}
                     >
                         <Link href={`/services/${service.value}`}>
-                            <div className="relative h-[500px] w-full">
+                            <div className="relative h-80 md:h-[500px] w-full">
                                 <Image
                                     src={service.image}
                                     alt={service.title}
@@ -42,7 +43,7 @@ const ServiceSinglePage = ({ id }) => {
                                     objectFit="cover"
                                     priority={true}
                                     className="rounded-t-lg w-full h-full object-cover"
-                                    sizes="(min-width: 960px) 848px, calc(94.38vw - 39px)"                                />
+                                    sizes="(min-width: 960px) 848px, calc(94.38vw - 39px)" />
                             </div>
                             <div className="p-6">
                                 <h3 className="text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold back mb-4">
@@ -51,7 +52,8 @@ const ServiceSinglePage = ({ id }) => {
                                 <p className="mb-4 lg:text-lg">{service.description}</p>
                                 <ul className="mb-6 space-y-3 ">
                                     {service.bulletPoints.map((point, index) => (
-                                        <li key={index} className="list-disc list-inside">
+                                        <li key={index} className="flex flex-row gap-2 items-center">
+                                            <FaCheck />
                                             {point}
                                         </li>
                                     ))}

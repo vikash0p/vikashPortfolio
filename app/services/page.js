@@ -1,5 +1,6 @@
 import ProfileCardComponent from '@/components/ReusableComponent/ProfileCardComponent'
 import TopTitle from '@/components/ReusableComponent/TopTitle'
+import Pricing from '@/components/serviceComponent/Pricing'
 import ServiceData from '@/components/serviceComponent/ServiceData'
 import React from 'react'
 
@@ -14,6 +15,7 @@ const Services = () => {
               </div>
               <div className="lg:w-3/4">
                     <ServiceData />
+                    <Pricing />
               </div>
           </div>
       </section>
