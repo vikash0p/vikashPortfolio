@@ -20,7 +20,7 @@ const ContactAddress = () => {
                 transition={{ duration: 0.5 }}
             >
                 <h2 className="text-2xl font-bold mb-2">Get in Touch</h2>
-                <p className=" mb-4">{`Have a big idea or brand to develop? We'd love to hear about your project!`} </p>
+                <p className=" mb-4">{`I am available for full-time work. Connect with me via and call in to my account.`} </p>
 
                 <div className="flex items-center mb-3">
                     <FaEnvelope className="" />

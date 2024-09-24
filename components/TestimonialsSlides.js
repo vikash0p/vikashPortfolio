@@ -9,6 +9,7 @@ import { testimonialData } from "@/data";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { fadeIn } from "@/variants";
+import { FaQuoteLeft,FaQuoteRight } from "react-icons/fa";
 
 const TestimonialsSlides = () => {
     return (
@@ -20,38 +21,54 @@ const TestimonialsSlides = () => {
                 once: false,
                 amount: 0.6,
             }}
-            className="max-w-7xl mx-auto lg:w-[65%] h-[90vh] flex items-center"
+            className=" w-full max-w-6xl m-auto mt-10"
         >
+            <h6 className="text-3xl font-semibold">Testimonial</h6>
             <Swiper
                 cssMode={true}
                 navigation={true}
-                pagination={{ clickable: true }} // Enable pagination dots
+                pagination={{ clickable: true, dynamicBullets: true }}
                 mousewheel={true}
                 keyboard={true}
                 modules={[Navigation, Pagination, Mousewheel, Keyboard]}
                 className="w-full"
+                slidesPerView={1}
+                breakpoints={{
+                    640: { slidesPerView: 1, spaceBetween: 20 },
+                    768: { slidesPerView: 1.5, spaceBetween: 20 },
+                    1024: { slidesPerView: 2, spaceBetween: 50 }, 
+                }}
+                loop={true}
             >
                 {testimonialData.map((value, index) => (
                     <SwiperSlide
                         key={index}
-                        className="p-8 sm:p-10 md:p-16 lg:p-20 flex justify-between items-center"
+                        className="back2 py-10 px-8 mt-5 "
                     >
-                        <div className="flex flex-col justify-center items-center transition-all duration-500">
-                            <Image
-                                src={value.image}
-                                alt={value.name}
-                                width={150}
-                                height={150}
-                                className="rounded-full object-cover mb-4"
-                            />
-                            <h1 className="text-lg font-semibold text-center">{value.name}</h1>
-                            <h2 className="text-sm text-gray-500 mb-2">{value.position}</h2>
-                            <p className="text-center text-sm sm:text-base md:text-lg max-w-lg leading-relaxed">
+                        <div className="flex flex-col justify-center items-center text-center space-y-4">
+                            <div className="relative mb-4">
+                                <Image
+                                    src={value.image}
+                                    alt={value.name}
+                                    width={100}
+                                    height={100}
+                                    className="rounded-full object-cover border-4 border-white shadow-lg"
+                                />
+                            </div>
+                            <div>
+                                <p className="text-lg font-bold ">{value.name}</p>
+                                <p className="text-sm  font-medium">{value.position}</p>
+                            </div>
+                            <p className="text-sm sm:text-base max-w-lg leading-relaxed italic  relative">
+                                <FaQuoteLeft className="text-2xl absolute -left-6 " />
                                 {value.message}
+                                <FaQuoteRight className="text-2xl absolute -right-1 " />
                             </p>
                         </div>
                     </SwiperSlide>
                 ))}
+
+
             </Swiper>
         </motion.div>
     );

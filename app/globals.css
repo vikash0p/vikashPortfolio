@@ -3,7 +3,11 @@
 @tailwind utilities;
 
 :root{
-    --swiper-theme-color :red !important
+    --swiper-theme-color :white !important
+}
+.swiper-pagination-bullet-active-prev,.swiper-pagination-bullet-active-prev:hover,.swiper-pagination-bullet-active-next,.swiper-pagination-bullet-active-next:hover{
+    color: white !important;
+    background-color: white !important;
 }
 .back{
     background: #FF0000;

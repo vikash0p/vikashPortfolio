@@ -1,4 +1,4 @@
-import { HomeLeft, HomeRight } from "@/components"
+import { HomeLeft, HomeRight, TestimonialsSlides } from "@/components"
 import ExperienceCard from "@/components/homepage/ExperienceCard"
 
 
@@ -20,6 +20,9 @@ const Home = () => {
       </div>
       <div className="mt-20">
         <ExperienceCard />
+      </div>
+      <div>
+        <TestimonialsSlides />
       </div>
    </section>
   )
