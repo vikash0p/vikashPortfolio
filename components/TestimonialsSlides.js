@@ -23,7 +23,7 @@ const TestimonialsSlides = () => {
             }}
             className=" w-full max-w-6xl m-auto mt-10"
         >
-            <h6 className="text-3xl font-semibold">Testimonial</h6>
+            <h6 className="text-3xl font-semibold text-center">Testimonial</h6>
             <Swiper
                 cssMode={true}
                 navigation={true}
@@ -36,7 +36,7 @@ const TestimonialsSlides = () => {
                 breakpoints={{
                     640: { slidesPerView: 1, spaceBetween: 20 },
                     768: { slidesPerView: 1.5, spaceBetween: 20 },
-                    1024: { slidesPerView: 2, spaceBetween: 50 }, 
+                    1024: { slidesPerView: 2, spaceBetween: 50 },
                 }}
                 loop={true}
             >

@@ -16,13 +16,13 @@ const HomeRight = () => {
       className="  w-fit m-auto"
     >
       {/* Inner wrapper for the image */}
-      <div className=" rounded-2xl">
+      <div className='relative w-80 h-80 rounded-full back1 '>
         <Image
-          src="/images/illustration.png"
-          alt="avatar"
-          width={300}
-          height={448}
-          className="object-cover object-center rounded-2xl h-[448px] "
+          src={'/images/illustration.png'}
+          alt='avatar'
+          fill
+          sizes="(min-width: 380px) 320px, calc(60vw + 104px)"
+          className='w-full h-full mb-14 mt-10 m-auto bg-transparent object-cover object-center rounded-full '
           priority={true}
           quality={100}
         />

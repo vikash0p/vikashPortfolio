@@ -8,29 +8,19 @@ import React from 'react'
 
 const Projects = () => {
   return (
-    
+
           <>
-              <motion.h1
-              variants={fadeIn("up", 0.4)}
-              initial="hidden"
-              whileInView="show"
-              viewport={{
-                  once: false,
-                  amount: 0.6
-              }}
-               className="after:content-['*'] after:ml-0.5 after:text-red-500 block text-5xl pb-5 lg:pb-0 lg:px-24 text-white ">
-                  project
-              </motion.h1>
-              <div className='grid w-full min-h-screen grid-cols-1 gap-5 lg:px-24 lg:py-14 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4'>
+
+              <div className='grid w-full  mt-20 grid-cols-1 gap-y-10 gap-x-5   md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4'>
                   {
                       project.map((value, index) => {
                           return (
-                              <motion.div 
+                              <motion.div
                                   variants={fadeIn("up", 0.7)}
                                   initial="hidden"
                                   whileInView="show"
                                   viewport={{
-                                      once: false,
+                                      once: true,
                                       amount: 0.6
                                   }}
                               key={index} className='relative overflow-hidden cursor-pointer rounded-xl group'>
@@ -47,7 +37,7 @@ const Projects = () => {
 
 
 
-                                  <div className='absolute inset-0 bg-gradient-to-l from-transparent  via-[#e838cc] to-[#4a22bd] opacity-0 group-hover:opacity-80 transition-all duration-700  '>
+                                  <div className='absolute inset-0 back1 opacity-0 group-hover:opacity-90 transition-all duration-700  '>
                                       <a href={value.link} target='_blank' className='m-4 text-lg' >Go to Project</a>
 
 
