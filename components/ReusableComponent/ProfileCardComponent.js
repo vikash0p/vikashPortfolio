@@ -7,7 +7,7 @@ import SocialMedia from './SocialMedia';
 const ProfileCardComponent = () => {
     return (
         <motion.div
-            className="w-full max-w-sm mx-auto bg-white shadow-md rounded-lg overflow-hidden lg:sticky top-10 "
+            className="w-full max-w-sm mx-auto bg-white shadow-md rounded-lg overflow-hidden lg:sticky top-2 "
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
@@ -68,6 +68,16 @@ const ProfileCardComponent = () => {
 
                     <p><strong>Nationality:</strong> India</p>
                     <SocialMedia />
+                    <div className="pt-4">
+                        <a
+                            href="/VIKASH1.pdf"
+                            target='_blank'
+                            download="Vikash_Pandat_Resume.pdf"
+                            className="px-6 py-2 back2 rounded-sm"
+                        >
+                            Download Resume
+                        </a>
+                    </div>
                 </div>
             </motion.div>
 

@@ -1,5 +1,6 @@
 import EducationComponent from '@/components/aboutpage/EducationComponent'
 import Introdction from '@/components/aboutpage/Introduction'
+import JobComponent from '@/components/aboutpage/JobComponent'
 import MyExpertiseSkills from '@/components/aboutpage/MyExpertiseSkills'
 import ProfileCardComponent from '@/components/ReusableComponent/ProfileCardComponent'
 import TopTitle from '@/components/ReusableComponent/TopTitle'
@@ -17,6 +18,7 @@ const About = () => {
         </div>
         <div className="lg:w-3/4" >
           <Introdction />
+          <JobComponent />
           <EducationComponent />
           <MyExpertiseSkills />
         </div>
