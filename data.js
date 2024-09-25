@@ -142,7 +142,7 @@ export const project = [
     id: 2,
     image: '/project/tattoo.png',
     link: 'https://karmatattoo.vercel.app',
-    title: 'Fresh produce',
+    title: 'karma tattoo',
   },
   {
     id: 3,
