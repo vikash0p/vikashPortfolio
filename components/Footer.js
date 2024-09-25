@@ -3,7 +3,6 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 import SocialMedia from './ReusableComponent/SocialMedia';
 
-
 const Footer = () => {
   return (
     <motion.footer
@@ -28,9 +27,10 @@ const Footer = () => {
           </div>
           <SocialMedia />
         </div>
+
         {/* Quick Links */}
         <div>
-          <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
+          <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
           <ul className="space-y-2">
             {['About', 'Portfolio', 'Services', 'Blog', 'Contact'].map((link) => (
               <li key={link}>
@@ -42,7 +42,7 @@ const Footer = () => {
 
         {/* Resources */}
         <div>
-          <h3 className="text-lg font-semibold mb-4">Resources</h3>
+          <h4 className="text-lg font-semibold mb-4">Resources</h4>
           <ul className="space-y-2">
             {['Authentication', 'System Status', 'Terms of Service', 'Pricing', 'Developers'].map((link) => (
               <li key={link}>
@@ -54,7 +54,7 @@ const Footer = () => {
 
         {/* Developers & Support */}
         <div>
-          <h3 className="text-lg font-semibold mb-4">Developers & Support</h3>
+          <h4 className="text-lg font-semibold mb-4">Developers & Support</h4>
           <ul className="space-y-2">
             {['Documentation', 'Authentication', 'API Reference', 'Support', 'Open Source'].map((link) => (
               <li key={link}>
@@ -67,9 +67,6 @@ const Footer = () => {
 
       {/* Footer Bottom */}
       <div className="max-w-screen-xl mx-auto mt-10 border-t border-gray-700 pt-5 flex flex-col md:flex-row items-center justify-between">
-
-        {/* Social Icons */}
-
 
         {/* Footer Text */}
         <motion.p
