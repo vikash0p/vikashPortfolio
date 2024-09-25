@@ -5,7 +5,7 @@ import React from 'react'
 
 const TopLeftImage = () => {
   return (
-    <div className='absolute top-0 left-0 mix-blend-color-dodge z-10 w-48 xl:w-96 opacity-50'>
+    <div className='absolute top-0 left-0 mix-blend-color-dodge z-10 w-48 xl:w-96 opacity-50 hidden lg:block'>
       <Image
         src={"/images/top-left-img.png"}
         alt='TopLeftImage'

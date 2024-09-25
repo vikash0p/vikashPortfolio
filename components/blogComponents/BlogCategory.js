@@ -10,7 +10,7 @@ const BlogCategory = ({category}) => {
 
   return (
     <div>
-        <TopTitle title={`Blog /category/ ${category}`} />
+        <TopTitle title={`Blog / ${category}`} />
         <div className='mt-12 lg:max-w-4xl m-auto'>
               <FilterBlogData filteredBlogsData={BlogCategoryData} />
 

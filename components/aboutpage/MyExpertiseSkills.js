@@ -18,21 +18,20 @@ const skillsData = [
     { name: 'React.js', icon: <FaReact className="text-cyan-500" />, proficiency: 85 },
     { name: 'Next.js', icon: <SiNextdotjs className="text-black" />, proficiency: 80 },
     { name: 'Framer Motion', icon: <SiFramer className="text-pink-500" />, proficiency: 75 },
-    { name: 'Redux Toolkit', icon: <SiRedux className="text-purple-600" />, proficiency: 70 }, // Only one Redux Toolkit entry
-    { name: 'Node.js', icon: <FaNodeJs className="text-green-500" />, proficiency: 50 }, // Only one Redux Toolkit entry
+    { name: 'Redux Toolkit', icon: <SiRedux className="text-purple-600" />, proficiency: 70 },
+    { name: 'Node.js', icon: <FaNodeJs className="text-green-500" />, proficiency: 50 },
 ];
 
 
 const MyExpertiseSkills = () => {
     return (
-        <motion.section className="w-full py-10   " variants={fadeIn("up", 0.6)}
-            initial="hidden"
-            whileInView="show"
-            viewport={{
-                once: true,
-                amount: 0.6
-            }}>
-            <h2 className="text-3xl font-bold  mb-8">My Expertise Skills</h2>
+        <section className="w-full py-10   "
+>
+            <motion.h2
+                initial={{ opacity: 0, y: 50 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.5 }}
+             className="text-xl text-center md:text-3xl font-bold  mb-8">My Expertise Skills</motion.h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                 {skillsData.map((skill, index) => (
                     <motion.div
@@ -55,7 +54,7 @@ const MyExpertiseSkills = () => {
                     </motion.div>
                 ))}
             </div>
-        </motion.section>
+        </section>
     );
 };
 

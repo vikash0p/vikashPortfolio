@@ -38,14 +38,13 @@ const educationData = [
 
 const EducationComponent = () => {
     return (
-        <motion.section className="w-full  mt-10 py-5" variants={fadeIn("up", 0.6)}
-            initial="hidden"
-            whileInView="show"
-            viewport={{
-                once: true,
-                amount: 0.6
-            }}>
-            <h2 className="text-3xl font-bold  mb-4">My Education Qualification</h2>
+        <section className="w-full  mt-10 py-5" variants={fadeIn("up", 0.6)}
+            >
+            <motion.h2
+                initial={{ opacity: 0, y: 50 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.5 }}
+             className="text-xl text-center md:text-3xl font-bold  mb-4">My Education Qualification</motion.h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 {educationData.map((education, index) => (
                     <motion.div
@@ -67,7 +66,7 @@ const EducationComponent = () => {
                     </motion.div>
                 ))}
             </div>
-        </motion.section>
+        </section>
     );
 };
 

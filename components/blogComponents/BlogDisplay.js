@@ -25,7 +25,7 @@ export default function BlogDisplay() {
     return (
         <div className="flex w-full flex-col lg:flex-row gap-y-4 md:gap-10 mt-10">
             {/* Blog Display Section */}
-            <div className="w-3/4">
+            <div className="lg:w-3/4">
                 <FilterBlogData filteredBlogsData={filteredBlogsData} />
 
             </div>
@@ -35,7 +35,7 @@ export default function BlogDisplay() {
                 initial={{ opacity: 0, y: 120 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5 }}
-            className="w-1/4">
+            className="lg:w-1/4">
                 <div className="relative">
                     <input
                         type="text"
