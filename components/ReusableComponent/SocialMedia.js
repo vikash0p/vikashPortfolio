@@ -1,27 +1,28 @@
 'use client';
 
 import { motion } from "framer-motion";
+import Link from "next/link";
 import { FaGithub,  FaLinkedinIn, FaInstagram } from 'react-icons/fa';
 import { IoLogoVercel } from "react-icons/io5";
 
 export const socialLinks = [
     {
-        href: 'https://github.com',
+        href: 'https://github.com/vikash0p',
         ariaLabel: 'GitHub',
         icon: <FaGithub className="text-white" />,
     },
     {
-        href: 'https://vercel.com',
+        href: 'https://vercel.com/vikashs-projects-f1acf06b',
         ariaLabel: 'Vercel',
         icon: <IoLogoVercel className="text-white" />,
     },
     {
-        href: 'https://linkedin.com',
+        href: 'https://www.linkedin.com/in/vikash0p/',
         ariaLabel: 'LinkedIn',
         icon: <FaLinkedinIn className="text-white" />,
     },
     {
-        href: 'https://instagram.com',
+        href: 'https://www.instagram.com/v_pandat000/',
         ariaLabel: 'Instagram',
         icon: <FaInstagram className="text-white" />,
     },
@@ -42,6 +43,7 @@ const SocialMedia = () => {
                   key={index}
                   href={link.href}
                   aria-label={link.ariaLabel}
+                  target="_blank"
                   className="back1  md:text-xl p-2 md:p-3 rounded-lg shadow-md shadow-violet-600 hover:shadow-xl hover:bg-white/20 transition-shadow duration-300 ease-in-out"
                   whileHover={{
                       scale: 1.2,
