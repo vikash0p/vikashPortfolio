@@ -34,8 +34,8 @@ const Projects = () => {
                                         fill
                                         className='w-full h-full object-cover object-top '
                                         sizes="(min-width: 1280px) 305px, (min-width: 1040px) calc(23.18vw + 92px), (min-width: 420px) 384px, calc(92vw + 16px)"
-                                        priority={true}
                                         quality={100}
+                                        loading='lazy'
                                     />
 
                                 </div>
