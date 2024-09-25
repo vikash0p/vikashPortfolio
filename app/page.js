@@ -1,7 +1,7 @@
-import { HomeLeft, HomeRight, TestimonialsSlides } from "@/components"
 import ExperienceCard from "@/components/homepage/ExperienceCard"
-
-
+import HomeLeft from "@/components/homepage/HomeLeft"
+import HomeRight from "@/components/homepage/HomeRight"
+import  TestimonialsSlides  from "@/components/TestimonialsSlides"
 const Home = () => {
   return (
    <section>
