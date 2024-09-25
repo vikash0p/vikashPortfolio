@@ -23,7 +23,7 @@ const TestimonialsSlides = () => {
             }}
             className=" w-full max-w-6xl m-auto mt-10"
         >
-            <h6 className="text-3xl font-semibold text-center">Testimonial</h6>
+            <h1 className="text-3xl font-semibold text-center">Testimonial</h1>
             <Swiper
                 cssMode={true}
                 navigation={true}
