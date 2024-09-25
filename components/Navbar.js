@@ -11,8 +11,9 @@ const Navbar = () => {
           alt="Elegant Jewelry logo"
           fill
           className='object-contain object-center w-full h-full'
-          sizes='(min-width: 1024px) 256px, (min-width: 768px) 180px, 150px'
+          sizes="(min-width: 1040px) 256px, (min-width: 780px) 160px, (min-width: 380px) 128px, calc(93.33vw - 208px)"
           priority={true}
+          quality={75}
         />
       </div>
       <SocialMedia />

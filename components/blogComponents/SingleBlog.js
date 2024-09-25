@@ -27,6 +27,9 @@ const SingleBlog = ({ id }) => {
                     src={blog.image}
                     alt={blog.title}
                     fill
+                    quality={75}
+                    loading='lazy'
+                    sizes="(min-width: 1380px) 312px, (min-width: 1040px) calc(17.19vw + 78px), (min-width: 780px) 509px, (min-width: 420px) 381px, 92vw"
                     className="object-cover rounded-md shadow-md"
                 />
             </div>

@@ -12,8 +12,10 @@ const TopLeftImage = () => {
         width={400}
         height={400}
         className='w-full h-full object-cover '
-        sizes="(min-width: 1280px) 257px, 200px"
+        sizes="(min-width: 1280px) 384px, 192px"
         priority={true}
+        quality={75}
+        
       />
     </div>
   )

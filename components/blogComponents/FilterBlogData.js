@@ -27,6 +27,9 @@ const FilterBlogData = ({ filteredBlogsData }) => {
                                       src={blog.image}
                                       alt={blog.title}
                                       fill
+                                      sizes="(min-width: 1380px) 312px, (min-width: 1040px) calc(17.19vw + 78px), (min-width: 780px) 509px, (min-width: 420px) 381px, 92vw"
+                                      loading='lazy'
+                                      quality={75}
                                       className="w-full h-full object-cover rounded-lg" />
                                   <div className="absolute left-4  bottom-4 back2 px-3 py-2 flex gap-2 items-center">
                                       <FaCalendarAlt />  {blog.date}

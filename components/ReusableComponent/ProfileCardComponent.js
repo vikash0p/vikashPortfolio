@@ -25,7 +25,7 @@ const ProfileCardComponent = () => {
                         layout="fill"
                         objectFit="cover"
                         className='w-full h-full object-cover'
-                    />
+                        sizes="(min-width: 1380px) 312px, (min-width: 1040px) calc(17.19vw + 78px), (min-width: 780px) 509px, (min-width: 420px) 381px, 92vw"                    />
                 </motion.div>
 
             </motion.div>

@@ -58,6 +58,9 @@ export default function BlogDisplay() {
                                                 src={blog.image}
                                                 alt={blog.title}
                                                 fill
+                                                sizes="(min-width: 1340px) 335px, (min-width: 1040px) calc(37.86vw - 165px), (min-width: 780px) calc(60.42vw - 239px), (min-width: 480px) 384px, calc(89.38vw - 27px)"
+                                                loading="lazy"
+                                                quality={75}
                                                 className="w-full h-full object-cover rounded-lg" />
                                         </div>
                                     ) : (
@@ -69,6 +72,9 @@ export default function BlogDisplay() {
                                                         src={blog.image}
                                                         alt={blog.title}
                                                         fill
+                                                        sizes="(min-width: 1360px) 76px, 5.67vw"
+                                                        loading="lazy"
+                                                        quality={75}
                                                         className="w-full h-full object-cover rounded-lg" />
                                                 </div>
                                                 <div className="md:ml-6 mt-4 md:mt-0">

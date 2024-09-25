@@ -2,10 +2,6 @@ import { HomeLeft, HomeRight, TestimonialsSlides } from "@/components"
 import ExperienceCard from "@/components/homepage/ExperienceCard"
 
 
-// https://rainbowit.net/themes/inbio/
-// https://preview.themeforest.net/item/rizal-personal-portfolio-html5-template/full_screen_preview/54364755
-// https://gerold.themejunction.net/home-03/
-
 const Home = () => {
   return (
    <section>

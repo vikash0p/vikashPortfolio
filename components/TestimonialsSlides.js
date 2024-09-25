@@ -52,6 +52,8 @@ const TestimonialsSlides = () => {
                                     alt={value.name}
                                     width={100}
                                     height={100}
+                                    sizes="100px"
+                                    loading="lazy"
                                     className="rounded-full object-cover border-4 border-white shadow-lg"
                                 />
                             </div>

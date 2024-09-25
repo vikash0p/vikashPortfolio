@@ -20,10 +20,10 @@ const Footer = () => {
               src={'/images/illustration.png'}
               alt='avatar'
               fill
-              sizes="(min-width: 380px) 320px, calc(60vw + 104px)"
+              sizes="96px"
               className='w-full h-full mb-14 mt-3 m-auto bg-transparent object-cover object-center rounded-full '
               priority={true}
-              quality={100}
+              quality={75}
             />
           </div>
           <SocialMedia />
