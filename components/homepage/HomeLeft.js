@@ -65,17 +65,19 @@ const HomeLeft = () => {
                     once: false,
                     amount: 0.6
                 }}
-            className='flex flex-col  md:flex-row gap-10 items-center'>
+                className='flex flex-col  md:flex-row gap-10 items-center'>
                 <Link href={"/work"} className='group relative w-[151px] h-[151px] flex justify-center items-center bg-circleStar bg-cover bg-center bg-no-repeat mt-7 back1 rounded-full '>
-                    <Image
-                        src={"/images/rounded-text.png"}
-                        alt='Projectimage'
-                        width={140}
-                        height={140}
-                        className='   max-w-[121px] max-h-[121px]  animate-spin-slow transition-transform'
-                        sizes='141px'
-                        priority={true}
-                    />
+                    <div className='relative w-28 h-28 aspect-w-1 aspect-h-1'>
+                        <Image
+                            src={"/images/rounded-text.png"}
+                            alt='Project image'
+                            fill
+                            className='object-cover w-full h-full animate-spin-slow transition-transform'
+                            sizes='112px'
+                            priority={true}
+                        />
+                    </div>
+
                     <motion.div className='absolute'
                         variants={fadeIn("up", 0.4)}
                         initial="hidden"
