@@ -16,6 +16,11 @@ export default function BlogDisplay() {
         setFilteredBlogsData(filteredBlogs);
     }, [searchQuery]);
 
+
+    const categoryData= BlogData.map((blog)=>blog.category);
+    const uniqueCategories = [...new Set(categoryData)];
+    console.log("🚀 ~ file: BlogDisplay.js:22 ~ uniqueCategories:", uniqueCategories);
+
     return (
         <div className="flex w-full flex-col lg:flex-row gap-y-4 md:gap-10 mt-10">
             {/* Blog Display Section */}
@@ -112,6 +117,17 @@ export default function BlogDisplay() {
                         ))
                     }
                 </div>
+<div className="mt-4">
+    <h2 className="text-2xl font-semibold">Tags</h2>
+                    <div className="mt-2  space-y-3 ">
+                        {
+                            uniqueCategories.map((category) => (
+                                <div key={category} className="back2 inline-block px-5 py-2 ">
+                                    <Link href={`/blog/category/${category}`} className="flex  flex-row "> {category}  </Link>
+                                </div>))
+                        }
+                    </div>
+</div>
             </motion.div>
         </div>
     );
