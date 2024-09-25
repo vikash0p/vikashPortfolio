@@ -3,6 +3,7 @@ import React from 'react';
 import { BlogData } from './BlogData';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
+import Link from 'next/link';
 
 const SingleBlog = ({ id }) => {
     const blog = BlogData.find((blog) => blog.blogId === id);
@@ -38,9 +39,10 @@ const SingleBlog = ({ id }) => {
                 <p className="text-base sm:text-lg  leading-relaxed">
                     {blog.description2}
                 </p>
-                <p className="text-base sm:text-lg  leading-relaxed">
-                    {blog.description2}
-                </p>
+
+<div>
+    <Link href={`/blog`} className="back2 px-8 py-2 rounded-lg ">Back to Blog</Link>
+</div>
             </div>
         </div>
     );

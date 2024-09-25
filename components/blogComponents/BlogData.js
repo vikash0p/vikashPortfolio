@@ -7,7 +7,9 @@ export const BlogData = [
         description2: "We will cover topics such as semantic elements, block vs inline elements, and the role of metadata. Whether you're just starting out or looking to brush up on your HTML skills, this guide will help you understand the basics.",
         image: "/blog/blog01.jpg",
         category: "HTML Development",
-        date: "2024-09-01"
+        date: "2024-09-01",
+        tags:'html',
+
     },
     {
         blogId: "2",
@@ -16,7 +18,10 @@ export const BlogData = [
         description2: "We will walk through key concepts such as JSX, props, state, and lifecycle methods. By the end of this article, you will have a strong foundation to start building React applications.",
         image: "/blog/blog02.jpg",
         category: "React Development",
-        date: "2024-09-02"
+        date: "2024-09-02",
+        tags: 'react',
+
+
     },
     {
         blogId: "3",
@@ -25,7 +30,9 @@ export const BlogData = [
         description2: "In this post, we dive deep into how Redux works with React, the principles behind the Redux pattern, and best practices for handling asynchronous actions with Redux Thunk.",
         image: "/blog/blog03.jpg",
         category: "React Development",
-        date: "2024-09-03"
+        date: "2024-09-03",
+        tags: 'react',
+
     },
     {
         blogId: "4",
@@ -34,7 +41,9 @@ export const BlogData = [
         description2: "We’ll walk through how to set up SSR in a Next.js project, fetch data server-side, and explore the differences between static generation and SSR.",
         image: "/blog/blog04.jpg",
         category: "Next.js Development",
-        date: "2024-09-04"
+        date: "2024-09-04",
+        tags: 'next',
+
     },
     {
         blogId: "5",
@@ -43,7 +52,10 @@ export const BlogData = [
         description2: "We will focus on `useState`, `useEffect`, and custom hooks to build dynamic, responsive web applications with clean, maintainable code.",
         image: "/blog/blog05.jpg",
         category: "React Development",
-        date: "2024-09-05"
+        date: "2024-09-05",
+        tags: 'react',
+
+
     },
     {
         blogId: "6",
@@ -52,7 +64,8 @@ export const BlogData = [
         description2: "We will dive into the differences between Flexbox and Grid, when to use each, and how to combine them for more complex layouts.",
         image: "/blog/blog06.jpg",
         category: "Web Development",
-        date: "2024-09-06"
+        date: "2024-09-06",
+        tags: 'web',
     },
     {
         blogId: "7",
@@ -61,7 +74,8 @@ export const BlogData = [
         description2: "In this blog, we discuss how to implement SSG in a Next.js project, the benefits of static generation, and how to combine it with dynamic routing.",
         image: "/blog/blog07.jpg",
         category: "Next.js Development",
-        date: "2024-09-07"
+        date: "2024-09-07",
+        tags: 'next',
     },
     {
         blogId: "8",
@@ -70,7 +84,8 @@ export const BlogData = [
         description2: "We’ll explore how to defer loading of non-essential resources and split your codebase into smaller bundles to reduce load times, making your apps more performant.",
         image: "/blog/blog08.jpg",
         category: "React Development",
-        date: "2024-09-08"
+        date: "2024-09-08",
+        tags: 'react',
     },
     {
         blogId: "9",
@@ -79,7 +94,8 @@ export const BlogData = [
         description2: "We will cover best practices for structuring HTML content, including headings, landmarks, and ARIA roles, to improve accessibility and SEO.",
         image: "/blog/blog09.jpg",
         category: "HTML Development",
-        date: "2024-09-09"
+        date: "2024-09-09",
+        tags: 'html',
     },
     {
         blogId: "10",
@@ -88,6 +104,7 @@ export const BlogData = [
         description2: "We’ll go over setting up TypeScript in a Next.js project, defining types, and how TypeScript can improve both your code and developer experience.",
         image: "/blog/blog10.jpg",
         category: "Next.js Development",
-        date: "2024-09-10"
+        date: "2024-09-10",
+        tags: 'next',
     }
 ];
