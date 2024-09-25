@@ -75,7 +75,7 @@ const Footer = () => {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5 }}
         >
-          © 2024. All rights reserved by <span className='text-red-600'>Vikash Pandat</span>
+          © 2024. All rights reserved by <span className='text-red-700'>Vikash Pandat</span>
         </motion.p>
       </div>
     </motion.footer>
