@@ -27,7 +27,7 @@ const Projects = () => {
                                 }}
                                 key={index} className='relative overflow-hidden cursor-pointer  group'>
 
-                                <div className='relative w-full max-w-sm h-96'>
+                                <div className='relative w-full max-w-sm h-[500px] lg:h-96'>
                                     <Image
                                         src={value.image}
                                         alt={value.link}

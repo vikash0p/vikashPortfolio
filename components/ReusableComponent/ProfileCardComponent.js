@@ -7,7 +7,7 @@ import SocialMedia from './SocialMedia';
 const ProfileCardComponent = () => {
     return (
         <motion.div
-            className="w-full max-w-sm mx-auto bg-white shadow-md rounded-lg overflow-hidden lg:sticky top-2 "
+            className="w-full max-w-sm md:max-w-lg lg:max-w-sm mx-auto bg-white shadow-md rounded-lg overflow-hidden lg:sticky top-2 "
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
