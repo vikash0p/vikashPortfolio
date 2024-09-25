@@ -6,7 +6,6 @@ import TopTitle from '@/components/ReusableComponent/TopTitle'
 import React from 'react'
 
 
-
 const About = () => {
   return (
     <section>
@@ -16,7 +15,7 @@ const About = () => {
           <ProfileCardComponent />
 
         </div>
-        <div className="lg:w-3/4">
+        <div className="lg:w-3/4" >
           <Introdction />
           <EducationComponent />
           <MyExpertiseSkills />

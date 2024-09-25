@@ -5,6 +5,7 @@ import CountUp from 'react-countup';
 import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaBootstrap } from 'react-icons/fa';
 import { SiTailwindcss, SiTypescript, SiNextdotjs, SiFramer, SiRedux } from 'react-icons/si';
 import { FaNodeJs } from "react-icons/fa6";
+import { fadeIn } from '@/variants';
 
 
 const skillsData = [
@@ -24,7 +25,13 @@ const skillsData = [
 
 const MyExpertiseSkills = () => {
     return (
-        <section className="w-full py-10   ">
+        <motion.section className="w-full py-10   " variants={fadeIn("up", 0.6)}
+            initial="hidden"
+            whileInView="show"
+            viewport={{
+                once: true,
+                amount: 0.6
+            }}>
             <h2 className="text-3xl font-bold  mb-8">My Expertise Skills</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                 {skillsData.map((skill, index) => (
@@ -48,7 +55,7 @@ const MyExpertiseSkills = () => {
                     </motion.div>
                 ))}
             </div>
-        </section>
+        </motion.section>
     );
 };
 

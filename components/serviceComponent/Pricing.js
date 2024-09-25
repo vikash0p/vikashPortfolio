@@ -1,15 +1,22 @@
 'use client'
-// components/Pricing.js
 import React from 'react';
 import { motion } from 'framer-motion';
 import { FaCheck } from 'react-icons/fa';
 import { plans } from './priceData';
+import { fadeIn } from '@/variants';
 
 
 
 const Pricing = () => {
     return (
-        <div className="py-12 ">
+        <motion.div className="py-12 "
+            variants={fadeIn("up", 0.6)}
+            initial="hidden"
+            whileInView="show"
+            viewport={{
+                once: false,
+                amount: 0.6
+            }}>
             <h2 className="text-center text-3xl font-bold mb-8">Choose Your Plan</h2>
             <div className="max-w-5xl  mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
                 {plans.map((plan) => (
@@ -36,7 +43,7 @@ const Pricing = () => {
                     </motion.div>
                 ))}
             </div>
-        </div>
+        </motion.div>
     );
 };
 

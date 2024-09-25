@@ -2,6 +2,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { FaGraduationCap } from 'react-icons/fa';
+import { fadeIn } from '@/variants';
 
 const educationData = [
     {
@@ -37,7 +38,13 @@ const educationData = [
 
 const EducationComponent = () => {
     return (
-        <section className="w-full  mt-10 py-5">
+        <motion.section className="w-full  mt-10 py-5" variants={fadeIn("up", 0.6)}
+            initial="hidden"
+            whileInView="show"
+            viewport={{
+                once: true,
+                amount: 0.6
+            }}>
             <h2 className="text-3xl font-bold  mb-4">My Education Qualification</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 {educationData.map((education, index) => (
@@ -60,7 +67,7 @@ const EducationComponent = () => {
                     </motion.div>
                 ))}
             </div>
-        </section>
+        </motion.section>
     );
 };
 

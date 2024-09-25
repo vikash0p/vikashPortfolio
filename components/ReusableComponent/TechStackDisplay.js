@@ -1,4 +1,5 @@
 'use client';
+import { fadeIn } from '@/variants';
 import { motion } from 'framer-motion';
 import { FaReact, FaHtml5, FaCss3Alt, FaJs, FaNode } from 'react-icons/fa';
 import { SiNextdotjs } from 'react-icons/si';
@@ -45,7 +46,13 @@ const itemVariants = {
 
 const TechStackDisplay = () => {
     return (
-        <div>
+        <motion.div variants={fadeIn("up", 0.4)}
+            initial="hidden"
+            whileInView="show"
+            viewport={{
+                once: false,
+                amount: 0.6
+            }}>
             <p className="text-xl text-center">Best skill on</p>
             <motion.div
                 className="flex flex-wrap gap-2 md:gap-6 justify-center my-10 lg:mt-5"
@@ -67,7 +74,7 @@ const TechStackDisplay = () => {
                     </motion.div>
                 ))}
             </motion.div>
-        </div>
+        </motion.div>
     );
 };
 

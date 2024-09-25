@@ -57,7 +57,15 @@ const HomeLeft = () => {
 
             >
             </motion.div>
-            <div className='flex flex-col  md:flex-row gap-10 items-center'>
+            <motion.div
+                variants={fadeIn("up", 0.6)}
+                initial="hidden"
+                whileInView="show"
+                viewport={{
+                    once: false,
+                    amount: 0.6
+                }}
+            className='flex flex-col  md:flex-row gap-10 items-center'>
                 <Link href={"/work"} className='group relative w-[151px] h-[151px] flex justify-center items-center bg-circleStar bg-cover bg-center bg-no-repeat mt-7 back1 rounded-full '>
                     <Image
                         src={"/images/rounded-text.png"}
@@ -77,7 +85,7 @@ const HomeLeft = () => {
                     </motion.div>
                 </Link>
                 <TechStackDisplay />
-            </div>
+            </motion.div>
         </>
     )
 }
