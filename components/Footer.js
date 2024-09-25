@@ -30,7 +30,7 @@ const Footer = () => {
 
         {/* Quick Links */}
         <div>
-          <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
+          <h1 className="text-lg font-semibold mb-4">Quick Links</h1>
           <ul className="space-y-2">
             {['About', 'Portfolio', 'Services', 'Blog', 'Contact'].map((link) => (
               <li key={link}>
@@ -42,7 +42,7 @@ const Footer = () => {
 
         {/* Resources */}
         <div>
-          <h4 className="text-lg font-semibold mb-4">Resources</h4>
+          <h1 className="text-lg font-semibold mb-4">Resources</h1>
           <ul className="space-y-2">
             {['Authentication', 'System Status', 'Terms of Service', 'Pricing', 'Developers'].map((link) => (
               <li key={link}>
@@ -54,7 +54,7 @@ const Footer = () => {
 
         {/* Developers & Support */}
         <div>
-          <h4 className="text-lg font-semibold mb-4">Developers & Support</h4>
+          <h1 className="text-lg font-semibold mb-4">Developers & Support</h1>
           <ul className="space-y-2">
             {['Documentation', 'Authentication', 'API Reference', 'Support', 'Open Source'].map((link) => (
               <li key={link}>
@@ -70,12 +70,12 @@ const Footer = () => {
 
         {/* Footer Text */}
         <motion.p
-          className="text-sm text-gray-400"
+          className="text-sm "
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5 }}
         >
-          © 2024. All rights reserved by <span className='text-red-700'>Vikash Pandat</span>
+          © 2024. All rights reserved by <span className='text-red-600 font-semibold'>Vikash Pandat</span>
         </motion.p>
       </div>
     </motion.footer>
