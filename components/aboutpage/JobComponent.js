@@ -61,7 +61,7 @@ const JobComponent = () => {
                         <p className=" mb-4">{job.description}</p>
                         <div className="flex space-x-3">
                             {job.technologies.map((value, index) => (
-                                <span className='text-2xl'>{value.icon} </span>
+                                <span className='text-2xl' key={index} >{value.icon} </span>
                             ))}
                         </div>
                     </motion.div>
