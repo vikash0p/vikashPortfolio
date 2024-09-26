@@ -1,13 +1,21 @@
 import React from 'react'
+import ServiceSinglePage from '@/components/serviceComponent/ServiceSinglePage';
+import { mysServiceData } from '@/components/serviceComponent/myServiceData';
+import ServiceSingleLayout from '@/components/serviceComponent/ServiceSingleLayout';
 
-import dynamic from 'next/dynamic';
+export const revalidate = 60;
+export async function generateStaticParams() {
+  return mysServiceData.map((item) => ({
+    id: item.value,
+  }));
+}
 
-const ServiceSinglePage = dynamic(() => import('@/components/serviceComponent/ServiceSinglePage'));
 const ServiceId = ({params}) => {
     const {id}=params;
   return (
     <>
-      <ServiceSinglePage id={id} />
+      {/* <ServiceSinglePage id={id} /> */}
+      <ServiceSingleLayout id={id} />
 
     </>
   )
