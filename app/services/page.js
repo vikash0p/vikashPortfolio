@@ -1,25 +1,12 @@
-import ProfileCardComponent from '@/components/ReusableComponent/ProfileCardComponent'
-import TopTitle from '@/components/ReusableComponent/TopTitle'
-import Pricing from '@/components/serviceComponent/Pricing'
-import ServiceData from '@/components/serviceComponent/ServiceData'
+
 import React from 'react'
-
+import ServiceLayout from '@/components/serviceComponent/ServiceLayout'
 const Services = () => {
-  return (
-      <section>
-          <TopTitle title="Services" />
-          <div className='w-full mt-14 flex flex-col lg:flex-row gap-5'>
-              <div className=" lg:w-1/4 ">
-                  <ProfileCardComponent />
-
-              </div>
-              <div className="lg:w-3/4">
-                    <ServiceData />
-                    <Pricing />
-              </div>
-          </div>
-      </section>
-  )
+    return (
+        <>
+            <ServiceLayout />
+        </>
+    )
 }
 
 export default Services

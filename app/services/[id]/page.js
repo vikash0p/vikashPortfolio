@@ -1,14 +1,15 @@
-import TopTitle from '@/components/ReusableComponent/TopTitle';
-import ServiceSinglePage from '@/components/serviceComponent/ServiceSinglePage';
 import React from 'react'
 
+import dynamic from 'next/dynamic';
+
+const ServiceSinglePage = dynamic(() => import('@/components/serviceComponent/ServiceSinglePage'));
 const ServiceId = ({params}) => {
     const {id}=params;
   return (
-    <div>
-        <TopTitle title={`Services / ${id}`} />
-        <ServiceSinglePage id={id} />
-    </div>
+    <>
+      <ServiceSinglePage id={id} />
+
+    </>
   )
 }
 
