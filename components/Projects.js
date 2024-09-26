@@ -15,7 +15,7 @@ const Projects = () => {
 
             <div className='grid w-full  mt-20 grid-cols-1 gap-y-10 gap-x-5   md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4'>
                 {
-                    project.slice(0, 4).map((value, index) => {
+                    project.map((value, index) => {
                         return (
                             <motion.div
                                 variants={fadeIn("up", 0.7)}
