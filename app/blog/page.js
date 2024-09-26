@@ -1,12 +1,10 @@
-import BlogDisplay from '@/components/blogComponents/BlogDisplay'
-import TopTitle from '@/components/ReusableComponent/TopTitle'
+import BlogLayout from '@/components/blogComponents/BlogLayout'
 import React from 'react'
 
 const Blog = () => {
   return (
     <div>
-      <TopTitle title={'Blog'} />
-      <BlogDisplay />
+    <BlogLayout />
     </div>
   )
 }
