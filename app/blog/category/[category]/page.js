@@ -1,11 +1,11 @@
-import BlogCategory from '@/components/blogComponents/BlogCategory'
+import BlogCategoryLayout from '@/components/blogComponents/BlogCategoryLayout'
 import React from 'react'
 
 const BlogSingleCategory = ({ params }) => {
     const {category}=params
   return (
     <div>
-        <BlogCategory category={category} />
+      <BlogCategoryLayout category={category} />
     </div>
   )
 }
