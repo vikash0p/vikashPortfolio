@@ -15,7 +15,7 @@ const Projects = () => {
 
             <div className='grid w-full  mt-20 grid-cols-1 gap-y-10 gap-x-5   md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4'>
                 {
-                    project.map((value, index) => {
+                    project.slice(0, 4).map((value, index) => {
                         return (
                             <motion.div
                                 variants={fadeIn("up", 0.7)}
@@ -34,7 +34,7 @@ const Projects = () => {
                                         fill
                                         className='w-full h-full object-cover object-top '
                                         sizes="(min-width: 1280px) 305px, (min-width: 1040px) calc(23.18vw + 92px), (min-width: 420px) 384px, calc(92vw + 16px)"
-                                        quality={100}
+                                        quality={75}
                                         loading='lazy'
                                     />
 
