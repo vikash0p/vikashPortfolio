@@ -21,6 +21,10 @@ const ServiceSinglePage = ({ id }) => {
         visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
     };
 
+const imageLoader = ({ src, width, quality }) => {
+  return `https://example.com/${src}?w=${width}&q=${quality || 75}`
+}
+
     return (
         <div className='w-full flex flex-col lg:flex-row gap-10'>
 
