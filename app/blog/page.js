@@ -1,7 +1,7 @@
 import BlogLayout from '@/components/blogComponents/BlogLayout'
 import React from 'react'
 export const metadata = {
-  title: "Vikash's Blog | Web Development Insights & Tutorials",
+  title: "Vikash Blog's | Web Development Insights & Tutorials",
   description:
     "Dive into Vikash's blog for in-depth articles, tutorials, and insights on web development, React, Node.js, JavaScript, and modern technologies. Stay updated with the latest trends in frontend and backend development.",
   openGraph: {
