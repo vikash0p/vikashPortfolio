@@ -7,6 +7,49 @@ export async  function generateStaticParams() {
         id: item.blogId,
     }));
 }
+export async function generateMetadata({ params }) {
+    const { id } = params;
+
+    // Find the blog post based on id from BlogData
+    const blogPost = BlogData.find(item => item.blogId === id);
+
+    if (blogPost) {
+        return {
+            title: `${blogPost.title} | Blog`,
+            description: `${blogPost.description1}`,
+            openGraph: {
+                title: `${blogPost.title} | Blog`,
+                description: `${blogPost.description1}`,
+                url: `https://myportfolio-navy-three.vercel.app/blog/${id}`,
+                images: [
+                    {
+                        url: `${blogPost.image}`,
+                        width: 1200,
+                        height: 630,
+                        alt: `${blogPost.title} - Blog Post`,
+                    },
+                ],
+                siteName: 'Your Blog Site',
+                type: 'article',
+                article: {
+                    publishedTime: blogPost.date,
+                    tags: [blogPost.tags],
+                },
+            },
+            twitter: {
+                card: 'summary_large_image',
+                title: `${blogPost.title} | Blog`,
+                description: `${blogPost.description1}`,
+                images: `${blogPost.image}`,
+            },
+        };
+    } else {
+        return {
+            title: 'Blog Post Not Found',
+            description: 'This blog post could not be found.',
+        };
+    }
+}
 
 const BlogId = ({ params }) => {
     const { id } = params;

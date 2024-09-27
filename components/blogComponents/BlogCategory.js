@@ -6,7 +6,7 @@ import TopTitle from '../ReusableComponent/TopTitle'
 
 const BlogCategory = ({category}) => {
     const BlogCategoryData=BlogData.filter((blog)=>blog.tags===category)
-    console.log("🚀 ~ file: BlogCategory.js:7 ~ BlogCategoryData:", BlogCategoryData);
+    // console.log("🚀 ~ file: BlogCategory.js:7 ~ BlogCategoryData:", BlogCategoryData);
 
   return (
     <div>
