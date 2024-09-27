@@ -1,6 +1,6 @@
 import { Layout } from '@/components'
 import './globals.css'
-import { Chakra_Petch, Inter, PT_Serif } from 'next/font/google'
+import { Chakra_Petch, } from 'next/font/google'
 
 
 const inter = Chakra_Petch({ subsets: ['latin'],weight:['400','500','600'] })
