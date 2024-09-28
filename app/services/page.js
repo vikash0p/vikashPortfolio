@@ -15,7 +15,7 @@ export const metadata = {
             "Vikash offers a variety of web development and consulting services, including frontend and backend development, full-stack solutions, and technical consultations for React, Node.js, and modern web technologies.",
         images: [
             {
-                url: "https://myportfolio-navy-three.vercel.app/services-opengraph-image.png",
+                url: "https://myportfolio-navy-three.vercel.app/opengraph-image.png",
                 width: 1200,
                 height: 630,
                 alt: "Vikash Services openGraph",

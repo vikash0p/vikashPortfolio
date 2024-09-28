@@ -27,7 +27,7 @@ export async function generateMetadata({ params }) {
         url: `https://myportfolio-navy-three.vercel.app/services/${id}`,
         images: [
           {
-            url: `${service.image}`,
+            url: `https://myportfolio-navy-three.vercel.app/${service.image}`,
             width: 1200,
             height: 630,
             alt: `${service.title} - Service`,
@@ -39,7 +39,7 @@ export async function generateMetadata({ params }) {
         card: 'summary_large_image',
         title: `${service.title} | Vikash Services`,
         description: service.description,
-        images: [`${service.image}`], // Replace with correct URL
+        images: `https://myportfolio-navy-three.vercel.app${service.image}`, // Replace with correct URL
       },
     };
   } else {
