@@ -31,7 +31,7 @@ export const metadata = {
         title: "Vikash Services | Full-Stack Development & Consulting",
         description:
             "Discover Vikash's web development and consulting services. Specializing in full-stack development with React, Node.js, and modern JavaScript frameworks.",
-        images: ["https://myportfolio-navy-three.vercel.app/services-opengraph-image.png"],
+        images: ["https://myportfolio-navy-three.vercel.app/opengraph-image.png"],
         creator: "@VikashPortfolio",
     },
     applicationName: "Vikash Services",

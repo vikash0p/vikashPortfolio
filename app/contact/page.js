@@ -32,7 +32,7 @@ export const metadata = {
     title: "Contact Vikash | Full-Stack Developer & Software Engineer",
     description:
       "Reach out to Vikash for web development services or collaboration opportunities. Specializing in React, Node.js, and modern JavaScript frameworks.",
-    images: ["https://myportfolio-navy-three.vercel.app/contact-opengraph-image.png"],
+    images: ["https://myportfolio-navy-three.vercel.app/opengraph-image.png"],
     creator: "@VikashPortfolio",
   },
   applicationName: "Vikash Contact",

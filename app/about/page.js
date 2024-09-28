@@ -29,7 +29,7 @@ export const metadata = {
     title: "About Vikash | Frontend Developer & Software Engineer",
     description:
       "Learn more about Vikash, a frontend web developer specializing in React and Node.js. Explore the journey, projects, and values that define Vikash's development career.",
-    images: ["https://myportfolio-navy-three.vercel.app/about-opengraph-image.png"],
+    images: ["https://myportfolio-navy-three.vercel.app/about/opengraph-image.png"],
     creator: "@VikashPortfolio",
   },
   applicationName: "Vikash Portfolio",

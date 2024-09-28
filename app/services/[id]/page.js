@@ -40,7 +40,7 @@ export async function generateMetadata({ params }) {
         card: 'summary_large_image',
         title: `${service.title} | Vikash Services`,
         description: service.description,
-        images: `https://myportfolio-navy-three.vercel.app${service.image}`, // Replace with correct URL
+        images: `https://myportfolio-navy-three.vercel.app${service.image}`, 
       },
     };
   } else {

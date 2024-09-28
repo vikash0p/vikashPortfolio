@@ -16,7 +16,7 @@ export async function generateMetadata({ params }) {
 
   // Generate a category-specific title and description
   const categoryBlogs = BlogData.filter(item => item.tags === category);
-  // console.log("🚀 ~ file: page.js:19 ~ categoryBlogs:", categoryBlogs);
+  console.log("🚀 ~ file: page.js:19 ~ categoryBlogs:", categoryBlogs[0].image );
   const categoryTitle = `${categoryBlogs[0].category} Articles | Blog`;
   const categoryDescription = `Explore articles related to ${category}, covering topics such as ${categoryBlogs.map(blog => blog.title).join(', ')}.`;
 
@@ -29,7 +29,7 @@ export async function generateMetadata({ params }) {
       url: `https://myportfolio-navy-three.vercel.app/blog/category/${category}`,
       images: categoryBlogs.length > 0 ?
         [{
-          url: `${categoryBlogs[0].image}`,  // Use the image of the first blog in the category
+          url: `https://myportfolio-navy-three.vercel.app${categoryBlogs[0].image}`,
           width: 1200,
           height: 630,
           alt: `${categoryTitle} OpenGraph Image`,
@@ -43,7 +43,7 @@ export async function generateMetadata({ params }) {
       title: categoryTitle,
       description: categoryDescription,
       images: categoryBlogs.length > 0 ?
-        [`${categoryBlogs[0].image}`]
+        [`https://myportfolio-navy-three.vercel.app${categoryBlogs[0].image}`]
         : [],
     },
   };

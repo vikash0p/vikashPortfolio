@@ -13,7 +13,7 @@ export const metadata = {
       "Explore a variety of web development articles, coding tutorials, and technical insights shared by Vikash. From React to Node.js and everything in between, Vikash covers the latest trends and best practices in software development.",
     images: [
       {
-        url: "https://myportfolio-navy-three.vercel.app/blog-opengraph-image.png",
+        url: "https://myportfolio-navy-three.vercel.app/opengraph-image.png",
         width: 1200,
         height: 630,
         alt: "Vikash Blog Page openGraph",
@@ -29,7 +29,7 @@ export const metadata = {
     title: "Vikash's Blog | Web Development Insights & Tutorials",
     description:
       "Read the latest articles and tutorials by Vikash, a full-stack developer. Gain insights into modern web development techniques, tools, and frameworks.",
-    images: ["https://myportfolio-navy-three.vercel.app/blog-opengraph-image.png"],
+    images: ["https://myportfolio-navy-three.vercel.app/opengraph-image.png"],
     creator: "@VikashPortfolio",
   },
   applicationName: "Vikash Blog",

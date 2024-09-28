@@ -23,7 +23,7 @@ export async function generateMetadata({ params }) {
                 url: `https://myportfolio-navy-three.vercel.app/blog/${id}`,
                 images: [
                     {
-                        url: `${blogPost.image}`,
+                        url: `https://myportfolio-navy-three.vercel.app${blogPost.image}`,
                         width: 1200,
                         height: 630,
                         alt: `${blogPost.title} - Blog Post`,
@@ -40,7 +40,7 @@ export async function generateMetadata({ params }) {
                 card: 'summary_large_image',
                 title: `${blogPost.title} | Blog`,
                 description: `${blogPost.description1}`,
-                images: `${blogPost.image}`,
+                images: `https://myportfolio-navy-three.vercel.app${blogPost.image}`,
             },
         };
     } else {

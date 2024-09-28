@@ -30,7 +30,7 @@ export const metadata = {
     title: "Vikash Projects | Full-Stack Web Development Portfolio",
     description:
       "View Vikash's portfolio of web development projects, built using React, Node.js, and modern web technologies. Explore scalable solutions, creative designs, and complex applications.",
-    images: ["https://myportfolio-navy-three.vercel.app/projects-opengraph-image.png"],
+    images: ["https://myportfolio-navy-three.vercel.app/opengraph-image.png"],
     creator: "@VikashPortfolio",
   },
   applicationName: "Vikash Projects",
