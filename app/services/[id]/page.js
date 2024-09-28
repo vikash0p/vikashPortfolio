@@ -15,7 +15,8 @@ export async function generateMetadata({ params }) {
 
   // Find the service item by id from the data
   const service = mysServiceData.find(item => item.value === id);
-  // console.log("🚀 ~ file: page.js:18 ~ service:", service);
+  // console.log("🚀 ~ file: page.js:18 ~ service:", `https://myportfolio-navy-three.vercel.app${service.image}`);
+  // console.log("🚀 ~ file: page.js:18 ~ service:", `${service.image}`);
 
   if (service) {
     return {
@@ -27,7 +28,7 @@ export async function generateMetadata({ params }) {
         url: `https://myportfolio-navy-three.vercel.app/services/${id}`,
         images: [
           {
-            url: `https://myportfolio-navy-three.vercel.app/simple.webp`,
+            url: `https://myportfolio-navy-three.vercel.app${service.image}`,
             width: 1200,
             height: 630,
             alt: `${service.title} - Service`,
