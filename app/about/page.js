@@ -13,7 +13,7 @@ export const metadata = {
       "Discover Vikash's background, skills, and professional experience in frontend web development. Specializing in creating modern web applications with React and Node.js, Vikash brings a passion for solving technical challenges and delivering innovative solutions.",
     images: [
       {
-        url: "https://myportfolio-navy-three.vercel.app/about-opengraph-image.png",
+        url: "https://myportfolio-navy-three.vercel.app/about/opengraph-image.png",
         width: 1200,
         height: 630,
         alt: "Vikash About Page openGraph",
