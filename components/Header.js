@@ -14,8 +14,9 @@ const Header = () => {
                     <Link
                         key={index}
                         href={value.path}
-                        rel="preload"
-                        crossOrigin="anonymous"
+                        passHref
+                        // legacyBehavior
+                        // scroll={false}
                         aria-label={value.name}
                         className={`relative group text-xl py-3 px-3 m-auto xl:text-2xl cursor-pointer hover:text-red-500 transition-colors duration-300 ${pathname === value.path ? "text-red-500" : "text-white"}`}
                     >
