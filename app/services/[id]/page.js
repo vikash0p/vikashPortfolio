@@ -27,7 +27,7 @@ export async function generateMetadata({ params }) {
         url: `https://myportfolio-navy-three.vercel.app/services/${id}`,
         images: [
           {
-            url: `https://myportfolio-navy-three.vercel.app/${service.image}`,
+            url: `https://myportfolio-navy-three.vercel.app/simple.webp`,
             width: 1200,
             height: 630,
             alt: `${service.title} - Service`,
