@@ -20,7 +20,7 @@ const ProfileCardComponent = () => {
                     transition={{ duration: 0.6 }}
                 >
                     <Image
-                        src="/images/illustration_transparent_background.png"
+                        src="/images/vikash.webp"
                         alt="Profile Picture"
                         layout="fill"
                         objectFit="cover"
