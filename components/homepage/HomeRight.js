@@ -13,7 +13,7 @@ const HomeRight = () => {
       viewport={{ once: false, amount: 0.6 }}
       whileHover={{ scale: 1.05 }}
       transition={{ type: "spring", stiffness: 300, damping: 20 }}
-      className="w-full max-w-xs md:max-w-sm  m-auto h-80  md:h-96 rounded-full   relative"
+      className="w-full max-w-xs md:max-w-sm  m-auto h-80  md:h-96    back2  relative"
     >
       <Image
         src={'/images/vikash.webp'}
