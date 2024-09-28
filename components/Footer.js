@@ -14,7 +14,7 @@ const Footer = () => {
       {/* Footer container */}
       <div className="max-w-screen-xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
         <div className='w-full flex flex-col items-center gap-10 md:gap-10 lg:5'>
-          <div className="relative w-18 h-18 back2">
+          <div className="relative w-20 h-20 aspect-square back2">
             <Image
               src="/images/vikash.webp"
               alt="avatar"
