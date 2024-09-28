@@ -16,7 +16,7 @@ export const metadata = {
       "Contact Vikash to discuss web development projects, technical collaborations, or consulting opportunities. Specializing in building scalable web applications with modern technologies.",
     images: [
       {
-        url: "https://myportfolio-navy-three.vercel.app/contact-opengraph-image.png",
+        url: "https://myportfolio-navy-three.vercel.app/opengraph-image.png",
         width: 1200,
         height: 630,
         alt: "Vikash Contact Page openGraph",
