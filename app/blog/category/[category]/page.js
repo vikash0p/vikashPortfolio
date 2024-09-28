@@ -16,7 +16,7 @@ export async function generateMetadata({ params }) {
 
   // Generate a category-specific title and description
   const categoryBlogs = BlogData.filter(item => item.tags === category);
-  console.log("🚀 ~ file: page.js:19 ~ categoryBlogs:", categoryBlogs[0].image );
+  // console.log("🚀 ~ file: page.js:19 ~ categoryBlogs:", categoryBlogs[0].image );
   const categoryTitle = `${categoryBlogs[0].category} Articles | Blog`;
   const categoryDescription = `Explore articles related to ${category}, covering topics such as ${categoryBlogs.map(blog => blog.title).join(', ')}.`;
 

@@ -16,7 +16,7 @@ const HomeLayout = () => {
     return (
         <section>
             {/* The hero section is displayed in a flex box container. It displays the HomeLeft and HomeRight components. */}
-            <div className='w-full h-full lg:flex place-items-center mt-10'>
+            <div className='w-full h-full lg:flex place-items-center py-10'>
                 {/* The HomeLeft component is displayed in a flex box item. */}
                 <div className='flex-1'>
                     <HomeLeft />

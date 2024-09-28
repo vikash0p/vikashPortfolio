@@ -13,20 +13,16 @@ const HomeRight = () => {
       viewport={{ once: false, amount: 0.6 }}
       whileHover={{ scale: 1.05 }}
       transition={{ type: "spring", stiffness: 300, damping: 20 }}
-      className="  w-fit m-auto"
+      className="w-full max-w-xs md:max-w-sm  m-auto h-80  md:h-96 rounded-full  back2 relative"
     >
-      {/* Inner wrapper for the image */}
-      <div className='relative w-80 h-80 rounded-full back1 '>
-        <Image
+ <Image
           src={'/images/illustration.png'}
           alt='avatar'
           fill
           sizes="320px"
-          className='w-full h-full mb-14 mt-10 m-auto bg-transparent object-cover object-center rounded-full '
+          className='object-cover object-center '
           priority={true}
-          quality={75}
         />
-      </div>
     </motion.div>
   );
 };

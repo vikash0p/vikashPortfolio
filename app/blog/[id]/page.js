@@ -12,6 +12,7 @@ export async function generateMetadata({ params }) {
 
     // Find the blog post based on id from BlogData
     const blogPost = BlogData.find(item => item.blogId === id);
+    // console.log("🚀 ~ file: page.js:15 ~ blogPost:", blogPost.image);
 
     if (blogPost) {
         return {

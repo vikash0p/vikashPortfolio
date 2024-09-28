@@ -14,13 +14,12 @@ const Footer = () => {
       {/* Footer container */}
       <div className="max-w-screen-xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
         <div className='w-full flex flex-col items-center gap-10 md:gap-10 lg:5'>
-          <div className='relative w-24 h-24 rounded-full back1 '>
+          <div className="relative w-24 h-24 back2">
             <Image
-              src={'/images/illustration.png'}
-              alt='avatar'
+              src="/images/illustration.png"
+              alt="avatar"
               fill
-              sizes="96px"
-              className='w-full h-full mb-14 mt-3 m-auto bg-transparent object-cover object-center rounded-full '
+              className="object-cover object-center"
               priority={true}
               quality={75}
             />
