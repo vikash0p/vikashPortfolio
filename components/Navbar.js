@@ -12,7 +12,6 @@ const Navbar = () => {
           alt="Elegant Jewelry logo"
           fill
           className="object-cover"
-          sizes="(min-width: 1040px) 256px, (min-width: 780px) 160px, (min-width: 380px) 128px, calc(93.33vw - 208px)"
           priority={true}
         />
       </div>

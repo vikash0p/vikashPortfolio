@@ -16,7 +16,7 @@ const Footer = () => {
         <div className='w-full flex flex-col items-center gap-10 md:gap-10 lg:5'>
           <div className="relative w-24 h-24 back2">
             <Image
-              src="/images/illustration.png"
+              src="/images/vikash.webp"
               alt="avatar"
               fill
               className="object-cover object-center"
