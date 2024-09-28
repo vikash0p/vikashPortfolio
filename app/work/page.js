@@ -14,13 +14,13 @@ export const metadata = {
       "Dive into Vikash's project portfolio featuring cutting-edge web applications, creative solutions, and scalable systems built using React, Node.js, and modern web technologies. Explore case studies and in-depth details of each project.",
     images: [
       {
-        url: "https://myportfolio-navy-three.vercel.app/projects-opengraph-image.png",
+        url: "https://myportfolio-navy-three.vercel.app/opengraph-image.png",
         width: 1200,
         height: 630,
         alt: "Vikash Projects openGraph",
       },
     ],
-    url: "https://myportfolio-navy-three.vercel.app/projects",
+    url: "https://myportfolio-navy-three.vercel.app/work",
     siteName: "Vikash Projects",
     locale: "en_US",
     type: "website",
