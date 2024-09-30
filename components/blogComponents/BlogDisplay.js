@@ -6,7 +6,7 @@ import { BlogData } from "./BlogData";
 import Link from "next/link";
 import Image from "next/image";
 import { FaCalendarAlt } from 'react-icons/fa';
-import FilterBlogData from "./FilterBlogData";
+import FilterBlogData from "./FilterBlogData"; 
 
 export default function BlogDisplay() {
     const [searchQuery, setSearchQuery] = useState("");
@@ -47,6 +47,17 @@ export default function BlogDisplay() {
                     <FiSearch className="absolute right-2 top-3" size={20} />
                 </div>
 
+                <div className="mt-4">
+                    <h2 className="text-2xl font-semibold">Tags</h2>
+                    <div className="mt-2 flex flex-wrap gap-5 ">
+                        {
+                            uniqueCategories.map((category) => (
+                                <div key={category} className="back2 inline-block px-5 py-2 ">
+                                    <Link href={`/blog/category/${category}`} className="uppercase "> {category}  </Link>
+                                </div>))
+                        }
+                    </div>
+                </div>
                 <div className="mt-4 space-y-5 w-full hidden lg:block">
                     {
                         BlogData.map((blog) => (
@@ -59,7 +70,7 @@ export default function BlogDisplay() {
                                                 alt={blog.title}
                                                 fill
                                                 sizes="(min-width: 1340px) 335px, (min-width: 1040px) calc(37.86vw - 165px), (min-width: 780px) calc(60.42vw - 239px), (min-width: 480px) 384px, calc(89.38vw - 27px)"
-                                                loading="lazy"
+                                                loading="eager"
                                                 quality={75}
                                                 className="w-full h-full object-cover rounded-lg" />
                                         </div>
@@ -90,17 +101,7 @@ export default function BlogDisplay() {
                         ))
                     }
                 </div>
-                <div className="mt-4">
-                    <h2 className="text-2xl font-semibold">Tags</h2>
-                    <div className="mt-2 flex flex-wrap gap-5 ">
-                        {
-                            uniqueCategories.map((category) => (
-                                <div key={category} className="back2 inline-block px-5 py-2 ">
-                                    <Link href={`/blog/category/${category}`} className="uppercase "> {category}  </Link>
-                                </div>))
-                        }
-                    </div>
-                </div>
+
             </motion.div>
         </div>
     );
