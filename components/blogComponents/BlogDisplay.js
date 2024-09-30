@@ -6,7 +6,7 @@ import { BlogData } from "./BlogData";
 import Link from "next/link";
 import Image from "next/image";
 import { FaCalendarAlt } from 'react-icons/fa';
-import FilterBlogData from "./FilterBlogData";
+import FilterBlogData from "./FilterBlogData"; 
 
 export default function BlogDisplay() {
     const [searchQuery, setSearchQuery] = useState("");
