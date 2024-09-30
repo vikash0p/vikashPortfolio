@@ -57,4 +57,7 @@ background-clip: text;
   content:"Loading..."
 }
 @keyframes l7 {to{background-position: left}}
+@layer base {
+  :root {
+        --radius :0.5rem}}
 
