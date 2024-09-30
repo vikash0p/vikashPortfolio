@@ -47,6 +47,17 @@ export default function BlogDisplay() {
                     <FiSearch className="absolute right-2 top-3" size={20} />
                 </div>
 
+                <div className="mt-4">
+                    <h2 className="text-2xl font-semibold">Tags</h2>
+                    <div className="mt-2 flex flex-wrap gap-5 ">
+                        {
+                            uniqueCategories.map((category) => (
+                                <div key={category} className="back2 inline-block px-5 py-2 ">
+                                    <Link href={`/blog/category/${category}`} className="uppercase "> {category}  </Link>
+                                </div>))
+                        }
+                    </div>
+                </div>
                 <div className="mt-4 space-y-5 w-full hidden lg:block">
                     {
                         BlogData.map((blog) => (
@@ -90,17 +101,7 @@ export default function BlogDisplay() {
                         ))
                     }
                 </div>
-                <div className="mt-4">
-                    <h2 className="text-2xl font-semibold">Tags</h2>
-                    <div className="mt-2 flex flex-wrap gap-5 ">
-                        {
-                            uniqueCategories.map((category) => (
-                                <div key={category} className="back2 inline-block px-5 py-2 ">
-                                    <Link href={`/blog/category/${category}`} className="uppercase "> {category}  </Link>
-                                </div>))
-                        }
-                    </div>
-                </div>
+
             </motion.div>
         </div>
     );
