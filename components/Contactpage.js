@@ -51,63 +51,63 @@ const ContactPage = () => {
     }; 2
 
     return (
-        <div className="w-full max-w-2xl m-auto min-h-[400px]  rounded-md p-10 back1">
+        <div className="w-full max-w-2xl m-auto min-h-[400px]  rounded-md p-10 back2">
             <motion.div
                 initial="hidden"
                 animate="visible"
                 variants={formVariants}
             >
 
-                <form onSubmit={handleSubmit} className="  ">
-                    <div className='grid grid-cols-1 md:grid-cols-2 gap-8'>
+                <form onSubmit={handleSubmit} className="">
+                    <div className='grid grid-cols-1 gap-8 md:grid-cols-2'>
                         <div className="relative flex items-center">
-                            <FaUser className="absolute left-3 text-white " />
+                            <FaUser className="absolute text-white left-3 " />
                             <input
                                 type="text"
                                 name="name"
                                 value={state.name}
                                 onChange={handleInputChange}
                                 placeholder="Your Name"
-                                className="pl-10 p-3 border border-gray-300 placeholder:text-white  bg-transparent rounded w-full focus:outline-none  "
+                                className="w-full p-3 pl-10 bg-transparent border border-gray-300 rounded placeholder:text-white focus:outline-none "
                                 required
                             />
                         </div>
 
                         {/* Email */}
                         <div className="relative flex items-center">
-                            <FaEnvelope className="absolute left-3 text-white" />
+                            <FaEnvelope className="absolute text-white left-3" />
                             <input
                                 type="email"
                                 name="email"
                                 value={state.email}
                                 onChange={handleInputChange}
                                 placeholder="Your Email"
-                                className="pl-10 p-3 border border-gray-300 placeholder:text-white  bg-transparent rounded w-full focus:outline-none"
+                                className="w-full p-3 pl-10 bg-transparent border border-gray-300 rounded placeholder:text-white focus:outline-none"
                                 required
                             />
                         </div>
 
                         {/* Phone */}
                         <div className="relative flex items-center">
-                            <FaPhone className="absolute left-3 text-white" />
+                            <FaPhone className="absolute text-white left-3" />
                             <input
                                 type="tel"
                                 name="phone"
                                 value={state.phone}
                                 onChange={handleInputChange}
                                 placeholder="Your Phone"
-                                className="pl-10 p-3 border border-gray-300 placeholder:text-white  bg-transparent rounded w-full focus:outline-none"
+                                className="w-full p-3 pl-10 bg-transparent border border-gray-300 rounded placeholder:text-white focus:outline-none"
                             />
                         </div>
 
                         {/* Subject Select */}
                         <div className="relative flex items-center">
-                            <FaRegCommentDots className="absolute left-3 text-white" />
+                            <FaRegCommentDots className="absolute text-white left-3" />
                             <select
                                 name="subject"
                                 value={state.subject}
                                 onChange={handleInputChange}
-                                className="pl-10 p-3 border border-gray-300 placeholder:text-white  bg-transparent rounded w-full focus:outline-none"
+                                className="w-full p-3 pl-10 bg-transparent border border-gray-300 rounded placeholder:text-white focus:outline-none"
                                 required
                             >
                                 <option className='text-black bg-violet-400' value="" disabled>Select Service</option>
@@ -124,14 +124,14 @@ const ContactPage = () => {
                     <div className='w-full mt-5 space-y-3'>
                         {/* Message */}
                         <div className="relative flex items-start">
-                            <FaMessage className="absolute left-3 top-3 text-white" />
+                            <FaMessage className="absolute text-white left-3 top-3" />
                             <textarea
                                 name="message"
                                 value={state.message}
                                 onChange={handleInputChange}
                                 placeholder="Your Message"
                                 rows="3"
-                                className="pl-10 p-3 border border-gray-300 placeholder:text-white  bg-transparent rounded w-full focus:outline-none"
+                                className="w-full p-3 pl-10 bg-transparent border border-gray-300 rounded placeholder:text-white focus:outline-none"
                                 required
                             />
                         </div>
@@ -141,7 +141,7 @@ const ContactPage = () => {
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
                             type="submit"
-                            className=" px-8 py-2  rounded back2 text-white"
+                            className="px-8 py-2 text-white rounded back2"
                         >
                             Send Message
                         </motion.button>

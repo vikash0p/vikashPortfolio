@@ -33,8 +33,8 @@ const TopTitle = ({title}) => {
             >
                 <AiFillHome />
                 <Link href="/" className=''>Home</Link>
-                <span className='text-gray-400'>/</span>
-                <Link href="/about" className='text-red-600 transition-colors hover:text-red-800'>{title}</Link>
+                <span className='text-white'>/</span>
+                <span  className=''>{title}</span>
             </motion.div>
         </motion.section>
     );
