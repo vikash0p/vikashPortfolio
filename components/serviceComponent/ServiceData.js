@@ -51,7 +51,7 @@ const ServiceData = () => {
 
     return (
         <motion.div
-            className="grid grid-cols-1 gap-6 p-4 sm:grid-cols-2"
+            className="grid grid-cols-1 gap-6 md:p-4 sm:grid-cols-2"
             variants={containerVariants}
             initial="hidden"
             animate="visible"
@@ -61,7 +61,7 @@ const ServiceData = () => {
                 <motion.div
                     key={service.id}
                     id={`service-${service.id}`}
-                    className="p-6 transition-shadow duration-300 rounded-lg shadow-lg  back2"
+                    className="p-6 transition-shadow duration-300 rounded-lg shadow-lg back2"
                     whileHover={{ scale: 1.05, boxShadow: '0px 10px 30px rgba(0, 0, 0, 0.2)' }}
                     whileTap={{ scale: 0.95 }}
                     variants={cardVariants}
@@ -70,8 +70,8 @@ const ServiceData = () => {
                         <motion.div className="mb-4" whileHover={{ rotate: 20 }}>
                             {service.icon}
                         </motion.div>
-                        <h3 className="mb-2 text-xl font-semibold">{service.title}</h3>
-                        <p className="text-center">{service.description}</p>
+                        <h3 className="mb-2 font-semibold md:text-xl">{service.title}</h3>
+                        <p className="text-sm text-center ">{service.description}</p>
                     </Link>
                 </motion.div>
             ))}
