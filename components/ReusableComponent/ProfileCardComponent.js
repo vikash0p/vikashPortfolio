@@ -69,8 +69,8 @@ const ProfileCardComponent = () => {
                     </p>
 
                     <p><strong>Nationality:</strong> India</p>
-                    <div className='flex flex-col items-center w-full gap-y-10' >
-                        <div className='text-2xl'>
+                    <div className='flex flex-col items-center w-full py-5 gap-y-10' >
+                        <div className=''>
                             <SocialMedia />
 
                         </div>
