@@ -37,7 +37,7 @@ const ProfileCardComponent = () => {
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.5, duration: 0.6 }}
             >
-                <div className="space-y-1 text-lg">
+                <div className="space-y-1 text-base md:text-lg">
                     <p><strong className=''>Name:</strong> Vikash Pandat</p>
 
                     <p>
