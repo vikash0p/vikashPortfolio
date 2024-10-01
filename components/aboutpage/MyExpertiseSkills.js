@@ -25,32 +25,32 @@ const skillsData = [
 
 const MyExpertiseSkills = () => {
     return (
-        <section className="w-full py-10   "
+        <section className="w-full py-10 "
 >
             <motion.h2
                 initial={{ opacity: 0, y: 50 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.5 }}
-             className="text-xl text-center md:text-3xl font-bold  mb-8">My Expertise Skills</motion.h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+             className="mb-8 text-xl font-bold text-center md:text-3xl">My Expertise Skills</motion.h2>
+            <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
                 {skillsData.map((skill, index) => (
                     <motion.div
                         key={index}
-                        className="back1 p-6 rounded-lg shadow-lg flex flex-col items-center"
+                        className="flex flex-col items-center p-6 rounded-lg shadow-lg back2"
                         initial={{ opacity: 0, y: 50 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.5, delay: index * 0.2 }}
                     >
-                        <div className="text-5xl mb-4">{skill.icon}</div>
-                        <h3 className="text-xl font-semibold mb-2">{skill.name}</h3>
+                        <div className="mb-4 text-5xl">{skill.icon}</div>
+                        <h3 className="mb-2 text-xl font-semibold">{skill.name}</h3>
                         <CountUp
                             start={0}
                             end={skill.proficiency}
                             duration={8}
                             suffix="%"
-                            className="text-3xl font-bold text-red-600"
+                            className="text-3xl font-bold "
                         />
-                        <p className="text-sm mt-2">Proficiency</p>
+                        <p className="mt-2 text-sm">Proficiency</p>
                     </motion.div>
                 ))}
             </div>

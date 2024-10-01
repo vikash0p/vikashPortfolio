@@ -7,7 +7,7 @@ import { motion } from 'framer-motion';
 const TopTitle = ({title}) => {
     return (
         <motion.section
-            className='w-full h-20 flex flex-row justify-between px-5 md:px-10 mt-10 items-center back1 rounded-md'
+            className='flex flex-row items-center justify-between w-full h-20 px-5 mt-10 rounded-md md:px-10 back2'
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
@@ -26,7 +26,7 @@ const TopTitle = ({title}) => {
             </motion.div>
 
             <motion.div
-                className="flex flex-row gap-1 items-center text-sm md:text-base mt-2 md:mt-0"
+                className="flex flex-row items-center gap-1 mt-2 text-sm md:text-base md:mt-0"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.5, duration: 0.6 }}
@@ -34,7 +34,7 @@ const TopTitle = ({title}) => {
                 <AiFillHome />
                 <Link href="/" className=''>Home</Link>
                 <span className='text-gray-400'>/</span>
-                <Link href="/about" className='text-red-600 hover:text-red-800 transition-colors'>{title}</Link>
+                <Link href="/about" className='text-red-600 transition-colors hover:text-red-800'>{title}</Link>
             </motion.div>
         </motion.section>
     );

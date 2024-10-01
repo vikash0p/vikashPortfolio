@@ -3,18 +3,19 @@ import Image from 'next/image';
 import { motion } from 'framer-motion';
 import React from 'react';
 import SocialMedia from './SocialMedia';
+import Link from 'next/link';
 
 const ProfileCardComponent = () => {
     return (
         <motion.div
-            className="w-full max-w-sm md:max-w-lg lg:max-w-sm mx-auto bg-white shadow-md rounded-lg overflow-hidden lg:sticky top-2 "
+            className="w-full max-w-sm mx-auto overflow-hidden bg-white rounded-lg shadow-md md:max-w-lg lg:max-w-sm lg:sticky top-2 "
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
         >
             <motion.div className="flex items-center ">
                 <motion.div
-                    className="w-full h-96 lg:h-72 relative  overflow-hidden border-2 border-gray-300"
+                    className="relative w-full overflow-hidden border-2 border-gray-300 h-96 lg:h-72"
                     initial={{ scale: 0.8 }}
                     animate={{ scale: 1 }}
                     transition={{ duration: 0.6 }}
@@ -24,18 +25,18 @@ const ProfileCardComponent = () => {
                         alt="Profile Picture"
                         layout="fill"
                         objectFit="cover"
-                        className='w-full h-full object-cover'
+                        className='object-cover w-full h-full'
                         sizes="(min-width: 1380px) 312px, (min-width: 1040px) calc(17.19vw + 78px), (min-width: 780px) 509px, (min-width: 420px) 381px, 92vw"                    />
                 </motion.div>
 
             </motion.div>
             <motion.div
-                className="px-5 py-4 text-lg back1"
+                className="px-5 pt-5 pb-10 text-lg back1 "
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.5, duration: 0.6 }}
             >
-                <div className="space-y-3">
+                <div className="space-y-1">
                     <p><strong className=''>Name:</strong> Vikash Pandat</p>
 
                     <p>
@@ -67,16 +68,18 @@ const ProfileCardComponent = () => {
                     </p>
 
                     <p><strong>Nationality:</strong> India</p>
-                    <SocialMedia />
-                    <div className="pt-4">
-                        <a
-                            href="/VIKASH1.pdf"
-                            target='_blank'
-                            download="Vikash_Pandat_Resume.pdf"
-                            className="px-6 py-2 back2 rounded-sm"
-                        >
-                            Download Resume
-                        </a>
+                    <div className='flex flex-col items-center w-full gap-y-6' >
+                        <SocialMedia />
+                        <div className="">
+                            <Link
+                                href="/VIKASH1.pdf"
+                                target='_blank'
+                                download="Vikash_Pandat_Resume.pdf"
+                                className="px-6 py-3 rounded-sm back2"
+                            >
+                                Download Resume
+                            </Link>
+                        </div>
                     </div>
                 </div>
             </motion.div>
