@@ -14,7 +14,7 @@ const ServiceSinglePage = dynamic(() => import('./ServiceSinglePage'), {
 const ServiceSingleLayout = ({ id }) => {
   return (
     <>
-      <TopTitle title={`Services / ${id}`} />
+      <TopTitle title={`${id}`} />
       <ServiceSinglePage id={id} />
     </>
   )
