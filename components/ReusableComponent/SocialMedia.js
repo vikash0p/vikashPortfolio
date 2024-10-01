@@ -44,7 +44,7 @@ const SocialMedia = () => {
                   href={link.href}
                   aria-label={link.ariaLabel}
                   target="_blank"
-                  className="back1  md:text-xl p-2 md:p-3 rounded-lg shadow-md shadow-violet-600 hover:shadow-xl hover:bg-white/20 transition-shadow duration-300 ease-in-out"
+                  className="back3 md:text-xl p-2 md:p-3 rounded-lg shadow-md shadow-violet-600 hover:shadow-xl hover:bg-white/20 transition-shadow duration-300 ease-in-out"
                   whileHover={{
                       scale: 1.2,
                       rotate: 10,

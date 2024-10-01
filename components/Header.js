@@ -8,7 +8,7 @@ const Header = () => {
     const pathname = usePathname()
 
     return (
-        <nav role="navigation" aria-label="Main Navigation" className='rounded-full z-30 fixed lg:top-[25%] lg:w-16 lg:left-[94%] lg:bottom-[25%] bottom-2 left-2 right-2 flex flex-row lg:flex-col back1'>
+        <nav role="navigation" aria-label="Main Navigation" className='rounded-full z-30 fixed lg:top-[25%] lg:w-16 lg:left-[94%] lg:bottom-[25%] bottom-2 left-2 right-2 flex flex-row lg:flex-col back3'>
             {
                 navData.map((value, index) => (
                     <Link
