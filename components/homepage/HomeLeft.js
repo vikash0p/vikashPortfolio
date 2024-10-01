@@ -65,14 +65,14 @@ const HomeLeft = () => {
                     once: false,
                     amount: 0.6
                 }}
-                className='flex flex-col  md:flex-row gap-10 items-center'>
-                <Link href={"/work"} className='group relative w-[151px] h-[151px] flex justify-center items-center bg-circleStar bg-cover bg-center bg-no-repeat mt-7 back1 rounded-full '>
+                className='flex flex-col items-center gap-10 md:flex-row'>
+                <Link href={"/work"} className='group relative w-[151px] h-[151px] flex justify-center items-center bg-circleStar bg-cover bg-center bg-no-repeat mt-7 back3 rounded-full '>
                     <div className='relative w-28 h-28 aspect-w-1 aspect-h-1'>
                         <Image
                             src={"/images/rounded-text.png"}
                             alt='Project image'
                             fill
-                            className='object-cover w-full h-full animate-spin-slow transition-transform'
+                            className='object-cover w-full h-full transition-transform animate-spin-slow '
                             sizes='112px'
                             priority={true}
                         />
@@ -83,7 +83,7 @@ const HomeLeft = () => {
                         initial="hidden"
                         animate="show"
                     >
-                        <HiArrowLongUp size={30} className='group-hover:translate-y-2 transition-transform duration-300 text-red-600 group-hover:text-red-900 ' />
+                        <HiArrowLongUp size={30} className='font-bold text-white transition-transform duration-300 group-hover:translate-y-2 group-hover:scale-110' />
                     </motion.div>
                 </Link>
                 <TechStackDisplay />
