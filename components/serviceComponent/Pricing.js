@@ -12,38 +12,38 @@ const Pricing = () => {
         <motion.div className="py-12 "
           >
             <motion.h2
-                variants={fadeIn("up", 0.6)}
+                variants={fadeIn("up", 0.3)}
                 initial="hidden"
                 whileInView="show"
                 viewport={{
                     once: false,
-                    amount:  0.5
+                    amount:  0.4
                 }}
-             className="text-center text-3xl font-bold mb-8">Choose Your Plan</motion.h2>
-            <div className="max-w-5xl  mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+             className="mb-8 text-3xl font-bold text-center">Choose Your Plan</motion.h2>
+            <div className="grid max-w-5xl grid-cols-1 gap-8 mx-auto md:grid-cols-2 lg:grid-cols-3">
                 {plans.map((plan,index) => (
                     <motion.div
                         key={plan.name}
-                        className="p-6 back1 rounded-lg shadow-lg transition-transform duration-300 hover:scale-105"
-                        variants={fadeIn("up", 0.6)}
+                        className="p-6 transition-transform duration-300 rounded-lg shadow-lg back2 hover:scale-105"
+                        variants={fadeIn("up", 0.4)}
                         initial="hidden"
                         whileInView="show"
                         viewport={{
                             once: false,
-                            amount: index * 0.1
+                            amount: index * 0.05
                         }}
                     >
-                        <h3 className="text-xl font-semibold mb-4">{plan.name}</h3>
-                        <p className="text-2xl font-bold mb-4">{plan.price}</p>
+                        <h3 className="mb-4 text-xl font-semibold">{plan.name}</h3>
+                        <p className="mb-4 text-2xl font-bold">{plan.price}</p>
                         <ul className="mb-6">
                             {plan.features.map((feature) => (
                                 <li key={feature} className="flex items-center mb-2">
-                                    <FaCheck className=" mr-2" />
+                                    <FaCheck className="mr-2 " />
                                     {feature}
                                 </li>
                             ))}
                         </ul>
-                        <button className="w-full p-3 back2 transition duration-300">
+                        <button className="w-full p-3 transition duration-300 back2">
                             Choose Plan
                         </button>
                     </motion.div>
