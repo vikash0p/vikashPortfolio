@@ -13,12 +13,12 @@ const SingleBlog = ({ id }) => {
     }
 
     return (
-        <div className="container mx-auto px-4 py-8">
+        <div className="container px-4 py-8 mx-auto">
             {/* Blog Header Section */}
-            <div className="flex flex-col items-center justify-center text-center mb-10">
-                <h1 className="text-4xl font-bold mb-4">{blog.title}</h1>
+            <div className="flex flex-col justify-center mb-10 md:items-center md:text-center">
+                <h1 className="mb-4 text-xl font-bold md:text-2xl lg:text-4xl ">{blog.title}</h1>
                 <p className="text-sm ">{blog.date}</p>
-                <p className="text-lg text-indigo-200 mt-2 font-medium">{blog.category}</p>
+                <p className="mt-2 text-lg font-medium text-indigo-200">{blog.category}</p>
             </div>
 
             {/* Blog Image */}
@@ -36,15 +36,15 @@ const SingleBlog = ({ id }) => {
 
             {/* Blog Content */}
             <div className="max-w-4xl mx-auto space-y-6">
-                <p className="text-base sm:text-lg  leading-relaxed">
+                <p className="text-base leading-relaxed sm:text-lg">
                     {blog.description1}
                 </p>
-                <p className="text-base sm:text-lg  leading-relaxed">
+                <p className="text-base leading-relaxed sm:text-lg">
                     {blog.description2}
                 </p>
 
 <div>
-    <Link href={`/blog`} className="back2 px-8 py-2 rounded-lg ">Back to Blog</Link>
+    <Link href={`/blog`} className="px-8 py-2 rounded-lg back2 ">Back to Blog</Link>
 </div>
             </div>
         </div>
