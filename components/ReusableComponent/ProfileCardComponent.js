@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import React from 'react';
 import SocialMedia from './SocialMedia';
 import Link from 'next/link';
+import { successToast } from '../Transiton';
 
 const ProfileCardComponent = () => {
     return (
@@ -76,6 +77,9 @@ const ProfileCardComponent = () => {
                                 target='_blank'
                                 download="Vikash_Pandat_Resume.pdf"
                                 className="px-6 py-3 rounded-sm back2"
+                                aria-label="Download Resume"
+                                onClick={() => successToast('Resume downloaded Successfully')}
+
                             >
                                 Download Resume
                             </Link>
