@@ -14,14 +14,14 @@ import { FaQuoteLeft,FaQuoteRight } from "react-icons/fa";
 const TestimonialsSlides = () => {
     return (
         <motion.div
-            variants={fadeIn("up", 0.6)}
+            variants={fadeIn("up", 0.3)}
             initial="hidden"
             whileInView="show"
             viewport={{
                 once: false,
-                amount: 0.6,
+                amount: 0.4,
             }}
-            className=" w-full max-w-6xl m-auto mt-10"
+            className="w-full max-w-6xl m-auto mt-10 "
         >
             <h1 className="text-3xl font-semibold text-center">Testimonial</h1>
             <Swiper
@@ -43,9 +43,9 @@ const TestimonialsSlides = () => {
                 {testimonialData.map((value, index) => (
                     <SwiperSlide
                         key={index}
-                        className="back2 py-10 px-8 mt-5 "
+                        className="px-8 py-10 mt-5 rounded-md back3 "
                     >
-                        <div className="flex flex-col justify-center items-center text-center space-y-4">
+                        <div className="flex flex-col items-center justify-center space-y-4 text-center">
                             <div className="relative mb-4">
                                 <Image
                                     src={value.image}
@@ -54,17 +54,17 @@ const TestimonialsSlides = () => {
                                     height={100}
                                     sizes="100px"
                                     loading="lazy"
-                                    className="rounded-full object-cover border-4 border-white shadow-lg"
+                                    className="object-cover border-4 border-white rounded-full shadow-lg"
                                 />
                             </div>
                             <div>
                                 <p className="text-lg font-bold ">{value.name}</p>
-                                <p className="text-sm  font-medium">{value.position}</p>
+                                <p className="text-sm font-medium">{value.position}</p>
                             </div>
-                            <p className="text-sm sm:text-base max-w-lg leading-relaxed italic  relative">
-                                <FaQuoteLeft className="text-2xl absolute -left-6 " />
+                            <p className="relative max-w-lg text-sm italic leading-relaxed sm:text-base">
+                                <FaQuoteLeft className="absolute text-2xl -left-6 " />
                                 {value.message}
-                                <FaQuoteRight className="text-2xl absolute -right-1 " />
+                                <FaQuoteRight className="absolute text-2xl -right-1 " />
                             </p>
                         </div>
                     </SwiperSlide>

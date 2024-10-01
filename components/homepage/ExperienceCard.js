@@ -7,26 +7,26 @@ import { fadeIn } from "@/variants";
 
 const ExperienceCard = () => {
     return (
-        <motion.div className="max-w-6xl mx-auto p-6" variants={fadeIn("up", 0.6)}
+        <motion.div className="max-w-6xl p-6 mx-auto" variants={fadeIn("up", 0.3)}
             initial="hidden"
             whileInView="show"
             viewport={{
                 once: false,
-                amount: 0.6
+                amount: 0.3
             }}>
-            <h1 className="text-3xl font-bold text-center  mb-8">My Achievements</h1>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <h1 className="mb-8 text-3xl font-bold text-center">My Achievements</h1>
+            <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
 
                 {/* Years of Experience Card */}
                 <motion.div
-                    className="back1 p-6 rounded-xl shadow-lg text-white"
+                    className="p-6 text-white shadow-lg back3 rounded-xl"
                     initial={{ opacity: 0, y: 50 }}
                     animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.8 }}
+                    transition={{ duration: 0.4 }}
                 >
-                    <h2 className="text-2xl font-bold mb-4 text-center">Experience</h2>
+                    <h2 className="mb-4 text-2xl font-bold text-center">Experience</h2>
                     <div className="flex flex-col items-center">
-                        <FaUserTie size={40} className="text-blue-300 mb-2" />
+                        <FaUserTie size={40} className="mb-2 text-blue-300" />
                         <p className="text-4xl font-semibold">
                             <CountUp start={0} end={2} duration={5} suffix="+" />
                         </p>
@@ -36,14 +36,14 @@ const ExperienceCard = () => {
 
                 {/* Projects Completed Card */}
                 <motion.div
-                    className="back1 p-6 rounded-xl shadow-lg text-white"
+                    className="p-6 text-white shadow-lg back3 rounded-xl"
                     initial={{ opacity: 0, y: 50 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1.0 }}
                 >
-                    <h2 className="text-2xl font-bold mb-4 text-center">Projects</h2>
+                    <h2 className="mb-4 text-2xl font-bold text-center">Projects</h2>
                     <div className="flex flex-col items-center">
-                        <FaProjectDiagram size={40} className="text-green-300 mb-2" />
+                        <FaProjectDiagram size={40} className="mb-2 text-green-300" />
                         <p className="text-4xl font-semibold">
                             <CountUp start={0} end={10} duration={5} suffix="+" />
                         </p>
@@ -53,14 +53,14 @@ const ExperienceCard = () => {
 
                 {/* Happy Clients Card */}
                 <motion.div
-                    className="back1 p-6 rounded-xl shadow-lg text-white"
+                    className="p-6 text-white shadow-lg back3 rounded-xl"
                     initial={{ opacity: 0, y: 50 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1.2 }}
                 >
-                    <h2 className="text-2xl font-bold mb-4 text-center">Clients</h2>
+                    <h2 className="mb-4 text-2xl font-bold text-center">Clients</h2>
                     <div className="flex flex-col items-center">
-                        <FaSmile size={40} className="text-yellow-300 mb-2" />
+                        <FaSmile size={40} className="mb-2 text-yellow-300" />
                         <p className="text-4xl font-semibold">
                             <CountUp start={0} end={1500} duration={5} suffix="+" />
                         </p>

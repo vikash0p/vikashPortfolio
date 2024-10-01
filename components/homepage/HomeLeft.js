@@ -22,7 +22,7 @@ const HomeLeft = () => {
                 whileInView="show"
                 viewport={{
                     once: false,
-                    amount: 0.6
+                    amount: 0.3
                 }}
             >
                 <p className='md:text-lg xl:text-xl'>Welcome to my world </p>
@@ -30,12 +30,12 @@ const HomeLeft = () => {
                 <TypedComponent />
             </motion.div>
             <motion.div
-                variants={fadeIn("up", 0.4)}
+                variants={fadeIn("up", 0.3)}
                 initial="hidden"
                 whileInView="show"
                 viewport={{
                     once: false,
-                    amount: 0.6
+                    amount: 0.4
                 }}
             >
                 <p className="md:text-xl ">
@@ -47,23 +47,23 @@ const HomeLeft = () => {
             </motion.div>
             <motion.div
                 className='mt-5 md:mt-6 xl:mt-7'
-                variants={fadeIn("up", 0.6)}
+                variants={fadeIn("up", 0.4)}
                 initial="hidden"
                 whileInView="show"
                 viewport={{
                     once: false,
-                    amount: 0.6
+                    amount: 0.5
                 }}
 
             >
             </motion.div>
             <motion.div
-                variants={fadeIn("up", 0.6)}
+                variants={fadeIn("up", 0.4)}
                 initial="hidden"
                 whileInView="show"
                 viewport={{
                     once: false,
-                    amount: 0.6
+                    amount: 0.4
                 }}
                 className='flex flex-col items-center gap-10 md:flex-row'>
                 <Link href={"/work"} className='group relative w-[151px] h-[151px] flex justify-center items-center bg-circleStar bg-cover bg-center bg-no-repeat mt-7 back3 rounded-full '>
