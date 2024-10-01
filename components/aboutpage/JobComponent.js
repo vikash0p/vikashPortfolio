@@ -17,7 +17,7 @@ const jobData = [
             { name: 'Tailwind CSS', icon: <SiTailwindcss className="text-blue-400" />, proficiency: 75 },
             { name: 'TypeScript', icon: <SiTypescript className="text-blue-500" />, proficiency: 65 },
             { name: 'React.js', icon: <FaReact className="text-cyan-500" />, proficiency: 85 },
-            { name: 'Next.js', icon: <SiNextdotjs className="text-black" />, proficiency: 80 },
+            { name: 'Next.js', icon: <SiNextdotjs className="text-white" />, proficiency: 80 },
             { name: 'Redux Toolkit', icon: <SiRedux className="text-purple-600" />, proficiency: 70 },
             ],
     },
@@ -40,25 +40,25 @@ const jobData = [
 
 const JobComponent = () => {
     return (
-        <div className="max-w-7xl mx-auto px-4 mt-10 py-8">
+        <div className="py-8 mx-auto mt-10 max-w-7xl">
             <motion.h1
                 initial={{ opacity: 0, y: 50 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.5 }}
-             className="text-3xl font-bold text-center mb-8">Job Experience</motion.h1>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+             className="mb-8 text-3xl font-bold text-center">Job Experience</motion.h1>
+            <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
                 {jobData.map((job, index) => (
                     <motion.div
                         key={job.id}
                         initial={{ opacity: 0, y: 50 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.5, delay: index * 0.2 }}
-                        className="back2 rounded-lg  p-6 "
+                        className="flex flex-col p-5 rounded-lg back2 gap-y-1 "
                     >
-                        <h2 className="text-2xl font-semibold mb-2">{job.title}</h2>
-                        <p className="text-lg font-medium  mb-1">{job.company}</p>
-                        <p className="text-sm mb-4">{job.period}</p>
-                        <p className=" mb-4">{job.description}</p>
+                        <h2 className="text-xl font-semibold md:text-2xl">{job.title}</h2>
+                        <p className=" font-monoedium text-b md:text-lg">{job.company}</p>
+                        <p className="text-sm ">{job.period}</p>
+                        <p className="text-sm md:text-base">{job.description}</p>
                         <div className="flex space-x-3">
                             {job.technologies.map((value, index) => (
                                 <span className='text-2xl' key={index} >{value.icon} </span>
