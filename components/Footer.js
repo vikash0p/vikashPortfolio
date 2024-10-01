@@ -2,18 +2,35 @@
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import SocialMedia from './ReusableComponent/SocialMedia';
+import Link from 'next/link';
+import { project } from '@/data';
 
+
+const links = [
+  { Name: 'About', href: '/about' },
+  { Name: 'Portfolio', href: '/portfolio' },
+  { Name: 'Project', href: '/work' },
+  { Name: 'Blog', href: '/blog' },
+  { Name: 'Contact', href: '/contact' },
+];
+const Services = [
+  { Name: 'React Development', href: '/services/react' },
+  { Name: 'Next Development', href: '/services/next' },
+  { Name: 'Web Development', href: '/services/web' },
+  { Name: 'Html Developers', href: '/server/html' },
+];
 const Footer = () => {
+  const newProject = [...project.slice().reverse().slice(0, 5)];
   return (
     <motion.footer
-      className="my-20 lg:mt-20 py-10 px-5 md:px-10 shadow-lg"
+      className="px-5 py-10 my-20 shadow-lg lg:mt-20 md:px-10"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
     >
       {/* Footer container */}
-      <div className="max-w-screen-xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-        <div className='w-full flex flex-col items-center gap-10 md:gap-10 lg:5'>
+      <div className="grid max-w-screen-xl grid-cols-1 gap-8 mx-auto sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+        <div className='flex flex-col items-center w-full gap-10 md:gap-10 lg:5'>
           <div className="relative w-20 h-20 aspect-square back2">
             <Image
               src="/images/vikash.webp"
@@ -29,11 +46,11 @@ const Footer = () => {
 
         {/* Quick Links */}
         <div>
-          <h1 className="text-lg font-semibold mb-4">Quick Links</h1>
+          <h1 className="mb-4 text-lg font-semibold">Quick Links</h1>
           <ul className="space-y-2">
-            {['About', 'Portfolio', 'Services', 'Blog', 'Contact'].map((link) => (
-              <li key={link}>
-                <a href={`#${link.toLowerCase()}`} className="hover:underline focus:outline-none focus:underline">{link}</a>
+            {links.map((link) => (
+              <li key={link.href}>
+                <Link href={link.href} className="hover:underline focus:outline-none focus:underline">{link.Name}</Link>
               </li>
             ))}
           </ul>
@@ -41,23 +58,23 @@ const Footer = () => {
 
         {/* Resources */}
         <div>
-          <h1 className="text-lg font-semibold mb-4">Resources</h1>
+          <h1 className="mb-4 text-lg font-semibold">Projects</h1>
           <ul className="space-y-2">
-            {['Authentication', 'System Status', 'Terms of Service', 'Pricing', 'Developers'].map((link) => (
-              <li key={link}>
-                <a href={`#${link.toLowerCase().replace(/ /g, '-')}`} className="hover:underline focus:outline-none focus:underline">{link}</a>
+            {newProject.map((value) => (
+              <li key={value.link}>
+                <Link href={value.link}  className="hover:underline focus:outline-none focus:underline">{value.title}</Link>
               </li>
             ))}
           </ul>
         </div>
 
-        {/* Developers & Support */}
+        {/* Services */}
         <div>
-          <h1 className="text-lg font-semibold mb-4">Developers & Support</h1>
+          <h1 className="mb-4 text-lg font-semibold">Services</h1>
           <ul className="space-y-2">
-            {['Documentation', 'Authentication', 'API Reference', 'Support', 'Open Source'].map((link) => (
-              <li key={link}>
-                <a href={`#${link.toLowerCase().replace(/ /g, '-')}`} className="hover:underline focus:outline-none focus:underline">{link}</a>
+            {Services.map((link) => (
+              <li key={link.href}>
+                <Link href={link.href}  className="hover:underline focus:outline-none focus:underline">{link.Name}</Link>
               </li>
             ))}
           </ul>
@@ -65,7 +82,7 @@ const Footer = () => {
       </div>
 
       {/* Footer Bottom */}
-      <div className="max-w-screen-xl mx-auto mt-10 border-t border-gray-700 pt-5 flex flex-col md:flex-row items-center justify-between">
+      <div className="flex flex-col items-center justify-between max-w-screen-xl pt-5 mx-auto mt-10 text-center border-t border-gray-700">
 
         {/* Footer Text */}
         <motion.p
@@ -74,7 +91,7 @@ const Footer = () => {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5 }}
         >
-          © 2024. All rights reserved by <span className='text-red-600 font-semibold'>Vikash Pandat</span>
+          © {new Date().getFullYear()}. All rights reserved by <span className='font-semibold text-center text-red-600'>Vikash Pandat</span>
         </motion.p>
       </div>
     </motion.footer>
