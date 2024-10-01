@@ -2,43 +2,46 @@
 @tailwind components;
 @tailwind utilities;
 
-:root{
-    --swiper-theme-color :white !important
+:root {
+  --swiper-theme-color: white !important;
 }
-.swiper-pagination-bullet-active-prev,.swiper-pagination-bullet-active-prev:hover,.swiper-pagination-bullet-active-next,.swiper-pagination-bullet-active-next:hover{
-    color: white !important;
-    background-color: white !important;
+.swiper-pagination-bullet-active-prev,
+.swiper-pagination-bullet-active-prev:hover,
+.swiper-pagination-bullet-active-next,
+.swiper-pagination-bullet-active-next:hover {
+  color: white !important;
+  background-color: white !important;
 }
-.back{
-    background: #FF0000;
-background: linear-gradient(to left, #FF0000 0%, #FFFF00 50%, #FF0000 100%);
-background-clip: text;
--webkit-text-fill-color: transparent;
-
+.back {
+  background: #ff0000;
+  background: linear-gradient(to left, #ff0000 0%, #ffff00 50%, #ff0000 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-.back1{
-
-
-    background: linear-gradient(to left, #261e44, #3e336a, #6b619a);
-    box-shadow: inset 0 0 60px rgba(0, 0, 0, 0.3),
-                0 4px 20px rgba(0, 0, 0, 0.4);   /* Outer shadow for depth */
-
-
+.back1 {
+  background: linear-gradient(to left, #261e44, #3e336a, #6b619a);
+  box-shadow: inset 0 0 60px rgba(0, 0, 0, 0.3), 0 4px 20px rgba(0, 0, 0, 0.4); /* Outer shadow for depth */
 }
 
+.back3 {
+  background: linear-gradient(to left, #261e44, #3e336a, #6b619a);
+  box-shadow: inset 0 0 60px rgba(0, 0, 0, 0.3);
+  border: 2px solid white;
+}
 
 .back2 {
-    background: linear-gradient(to left, #261e44, #3e336a, #6b619a);
-    box-shadow: inset 0 0 60px rgba(0, 0, 0, 0.3);
-    border: 2px solid white; /* Add white border */
-    border-radius: 5px; /* Optional: add rounded corners */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+  background: linear-gradient(to left, #261e44, #3e336a, #6b619a);
+  box-shadow: inset 0 0 60px rgba(0, 0, 0, 0.3);
+  border: 2px solid white;
+  border-radius: 5px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .back2:hover {
-    transform: scale(1.05); /* Scale effect on hover */
-    box-shadow: inset 0 0 60px rgba(0, 0, 0, 0.2), 0 0 15px rgba(255, 255, 255, 0.5); /* Change shadow on hover */
-    border-color: rgba(255, 255, 255, 0.8); /* Lighten the border on hover */
+  transform: scale(1.05); /* Scale effect on hover */
+  box-shadow: inset 0 0 60px rgba(0, 0, 0, 0.2),
+    0 0 15px rgba(255, 255, 255, 0.5); /* Change shadow on hover */
+  border-color: rgba(255, 255, 255, 0.8); /* Lighten the border on hover */
 }
 
 .loader {
@@ -47,16 +50,22 @@ background-clip: text;
   font-family: monospace;
   font-size: 30px;
   color: #0000;
-  background: linear-gradient(90deg,#C02942 calc(50% + 0.5ch),#000 0) right/calc(200% + 1ch) 100%;
+  background: linear-gradient(90deg, #c02942 calc(50% + 0.5ch), #000 0)
+    right/calc(200% + 1ch) 100%;
   -webkit-background-clip: text;
-          background-clip: text;
+  background-clip: text;
   animation: l7 2s infinite steps(11);
 }
 .loader:before {
-  content:"Loading..."
+  content: "Loading...";
 }
-@keyframes l7 {to{background-position: left}}
+@keyframes l7 {
+  to {
+    background-position: left;
+  }
+}
 @layer base {
   :root {
-        --radius :0.5rem}}
-
+    --radius: 0.5rem;
+  }
+}
