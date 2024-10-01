@@ -32,12 +32,12 @@ const ProfileCardComponent = () => {
 
             </motion.div>
             <motion.div
-                className="px-5 pt-5 pb-10 text-lg back1 "
+                className="px-5 pt-5 pb-10 back1 "
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.5, duration: 0.6 }}
             >
-                <div className="space-y-1">
+                <div className="space-y-1 text-lg">
                     <p><strong className=''>Name:</strong> Vikash Pandat</p>
 
                     <p>
@@ -69,8 +69,11 @@ const ProfileCardComponent = () => {
                     </p>
 
                     <p><strong>Nationality:</strong> India</p>
-                    <div className='flex flex-col items-center w-full gap-y-6' >
-                        <SocialMedia />
+                    <div className='flex flex-col items-center w-full gap-y-10' >
+                        <div className='text-2xl'>
+                            <SocialMedia />
+
+                        </div>
                         <div className="">
                             <Link
                                 href="/VIKASH1.pdf"
