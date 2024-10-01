@@ -20,9 +20,9 @@ const FilterBlogData = ({ filteredBlogsData }) => {
                   className="grid grid-cols-1 gap-6"
               >
                   {filteredBlogsData.map((blog) => (
-                      <div key={blog.blogId} className="back2 rounded-lg shadow-md p-6">
+                      <div key={blog.blogId} className="p-6 rounded-lg shadow-md back2">
                           <Link href={`/blog/${blog.blogId}`} className="flex flex-col md:flex-row">
-                              <div className="relative w-full max-w-sm  h-72">
+                              <div className="relative w-full max-w-sm h-72">
                                   <Image
                                       src={blog.image}
                                       alt={blog.title}
@@ -30,13 +30,13 @@ const FilterBlogData = ({ filteredBlogsData }) => {
                                       sizes="(min-width: 1380px) 312px, (min-width: 1040px) calc(17.19vw + 78px), (min-width: 780px) 509px, (min-width: 420px) 381px, 92vw"
                                       loading='lazy'
                                       quality={75}
-                                      className="w-full h-full object-cover rounded-lg" />
-                                  <div className="absolute left-4  bottom-4 back2 px-3 py-2 flex gap-2 items-center">
+                                      className="object-cover w-full h-full rounded-lg" />
+                                  <div className="absolute flex items-center gap-2 px-3 py-2 left-4 bottom-4 back2">
                                       <FaCalendarAlt />  {blog.date}
                                   </div>
                               </div>
 
-                              <div className="md:ml-6 mt-4 md:mt-0">
+                              <div className="mt-4 md:ml-6 md:mt-0">
                                   <h2 className="text-3xl font-semibold">{blog.title}</h2>
                                   <h6 className="mt-4 text-2xl">{blog.category}</h6>
                                   <p className="mt-2">{blog.description1}</p>
