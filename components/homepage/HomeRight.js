@@ -13,15 +13,17 @@ const HomeRight = () => {
       viewport={{ once: false, amount: 0.6 }}
       whileHover={{ scale: 1.05 }}
       transition={{ type: "spring", stiffness: 300, damping: 20 }}
-      className="w-full max-w-xs md:max-w-sm  m-auto h-80  md:h-96    back2  relative"
+      className="back4  m-auto w-80 h-80 md:w-[450px] md:h-[450px] relative overflow-hidden"
     >
-      <Image
-        src={'/images/vikash.webp'}
-        alt='avatar'
-        fill
-        className='object-cover object-center '
-        priority={true}
-      />
+      <div className="relative w-full h-full">
+        <Image
+          src={'/images/vikash.webp'}
+          alt='avatar'
+          fill
+          className='object-cover object-center'
+          priority={true}
+        />
+      </div>
     </motion.div>
   );
 };

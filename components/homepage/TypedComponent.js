@@ -6,9 +6,9 @@ import { SiNextdotjs } from "react-icons/si";
 
 const TypedComponent = () => {
     return (
-        <div className="  ">
+        <div className="">
 
-            <h1 className="text-2xl md:text-5xl font-bold mb-2 md:mb-3 lg:mb-4">
+            <h1 className="mb-2 text-2xl font-bold md:text-4xl lg:text-5xl md:mb-3 lg:mb-4">
                 <span>I am a </span>
                 <ReactTyped
                     className="back"

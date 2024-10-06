@@ -26,7 +26,7 @@ const HomeLeft = () => {
                 }}
             >
                 <p className='md:text-lg xl:text-xl'>Welcome to my world </p>
-                <h1 className={`text-red-600 text-2xl md:text-4xl lg:text-5xl  font-semibold `}> <span className='text-white'> {`Hi, I'm`}</span> Vikash Pandat</h1>
+                <h1 className={`text-red-600 text-2xl md:text-4xl lg:text-5xl   font-semibold `}> <span className='text-white'> {`Hi, I'm`}</span> Vikash Pandat</h1>
                 <TypedComponent />
             </motion.div>
             <motion.div
