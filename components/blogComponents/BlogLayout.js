@@ -6,6 +6,7 @@ import TopTitle from '../ReusableComponent/TopTitle'
 
 const BlogDisplay = dynamic(() => import('./BlogDisplay'), {
   ssr: false,
+  loading: () => <p>Loading...</p>
 });
 
 const BlogLayout = () => {
