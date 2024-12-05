@@ -1,8 +1,6 @@
 'use client';
 import React from "react";
 import { ReactTyped } from "react-typed";
-import { FaReact } from "react-icons/fa";
-import { SiNextdotjs } from "react-icons/si";
 
 const TypedComponent = () => {
     return (

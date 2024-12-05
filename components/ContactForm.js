@@ -28,7 +28,7 @@ const formReducer = (state, action) => {
     }
 };
 
-const ContactPage = () => {
+const ContactForm = () => {
     const [state, dispatch] = useReducer(formReducer, initialState);
     const [isLoading, setIsLoading] = useState(false);
 
@@ -147,7 +147,7 @@ const ContactPage = () => {
 
                     <div className='w-full mt-5 space-y-3'>
                         <div className="relative flex items-start">
-                            <FaMessage className="absolute text-white left-3 top-3" />
+                            <FaMessage className="absolute text-white left-3 top-[18px]" />
                             <textarea
                                 name="message"
                                 value={state.message}
@@ -175,4 +175,4 @@ const ContactPage = () => {
     );
 };
 
-export default ContactPage;
+export default ContactForm;

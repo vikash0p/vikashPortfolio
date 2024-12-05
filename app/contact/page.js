@@ -1,8 +1,8 @@
 import React from 'react'
-import Contactpage from '../../components/Contactpage'
 import TopTitle from '@/components/ReusableComponent/TopTitle'
 import ContactAddress from '@/components/contactComponent/ContactAddress'
 import { ContactMetaData } from "@/meta/ContactMetaData"
+import ContactForm from "../../components/ContactForm"
 
 export const metadata = ContactMetaData;
 
@@ -13,7 +13,7 @@ const Contact = () => {
     <TopTitle title='Contact' />
       <div className='grid w-full grid-cols-1 mt-12 lg:grid-cols-2 '>
         <ContactAddress />
-        <Contactpage />
+        <ContactForm />
 
       </div>
       <div className='mt-12'>

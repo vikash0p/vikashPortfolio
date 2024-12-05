@@ -5,8 +5,8 @@ import TestimonialsSlides from "./TestimonialsSlides";
 import Transiton from "./Transiton";
 import AboutLeft from "./aboutPage/AboutLeft";
 import AboutRight from "./aboutPage/AboutRight";
-import HomeLeft from "./homepage/HomeLeft";
-import HomeRight from "./homepage/HomeRight";
+import HomeLeft from "./HomePage/HomeLeft";
+import HomeRight from "./HomePage/HomeRight";
 
 export {
     Header, Footer, Transiton, Navbar,

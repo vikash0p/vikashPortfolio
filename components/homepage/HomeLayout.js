@@ -1,9 +1,9 @@
 'use client';
 
 import dynamic from "next/dynamic";
-const ExperienceCard = dynamic(() => import('@/components/homepage/ExperienceCard'), { ssr: false });
-const HomeLeft = dynamic(() => import('@/components/homepage/HomeLeft'), { ssr: false });
-const HomeRight = dynamic(() => import('@/components/homepage/HomeRight'), { ssr: false });
+const ExperienceCard = dynamic(() => import('@/components/HomePage/ExperienceCard'), { ssr: false });
+const HomeLeft = dynamic(() => import('@/components/HomePage/HomeLeft'), { ssr: false });
+const HomeRight = dynamic(() => import('@/components/HomePage/HomeRight'), { ssr: false });
 const TestimonialsSlides = dynamic(() => import('@/components/TestimonialsSlides'), { ssr: false });
 /**
  * The HomeLayout component is the main component for the homepage.

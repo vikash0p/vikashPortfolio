@@ -1,4 +1,4 @@
-import HomeLayout from '@/components/homepage/HomeLayout'
+import HomeLayout from '@/components/HomePage/HomeLayout'
 import { HomeMetaData } from "@/meta/HomeMetaData"
 import React from 'react'
 
