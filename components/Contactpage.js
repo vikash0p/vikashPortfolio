@@ -1,5 +1,5 @@
 'use client';
-import React, { useReducer } from 'react';
+import React, { useReducer, useState } from 'react';
 import { motion } from 'framer-motion';
 import { FaUser, FaEnvelope, FaPhone, FaRegCommentDots } from 'react-icons/fa';
 import { FaMessage } from "react-icons/fa6";
@@ -30,6 +30,7 @@ const formReducer = (state, action) => {
 
 const ContactPage = () => {
     const [state, dispatch] = useReducer(formReducer, initialState);
+    const [isLoading, setIsLoading] = useState(false);
 
     const handleInputChange = (e) => {
         dispatch({
@@ -39,10 +40,10 @@ const ContactPage = () => {
         });
     };
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
+        setIsLoading(true); // Set loading state
 
-        // Prepare the email data
         const templateParams = {
             name: state.name,
             email: state.email,
@@ -51,17 +52,22 @@ const ContactPage = () => {
             message: state.message
         };
 
-        // Send email using EmailJS
-        emailjs.send('service_ei3n3ee', 'template_6n5hmuf', templateParams, 'dtDbGCmV48x09Ee5A')
-            .then((response) => {
-                // alert("Send message successfully!");
-                successToast("Send message successfully!");
-                console.log('Email successfully sent!', response.status, response.text);
-                dispatch({ type: 'RESET' }); // Reset form after successful submission
-            }, (error) => {
-                errorToast('Failed to send email. Please try again later.');
-                console.error('Failed to send email. Error:', error);
-            });
+        try {
+            const response = await emailjs.send(
+                'service_ei3n3ee',
+                'template_6n5hmuf',
+                templateParams,
+                'dtDbGCmV48x09Ee5A'
+            );
+            successToast("Message sent successfully!");
+            console.log('Email successfully sent!', response.status, response.text);
+            dispatch({ type: 'RESET' }); // Reset form
+        } catch (error) {
+            errorToast('Failed to send email. Please try again later.');
+            console.error('Failed to send email. Error:', error);
+        } finally {
+            setIsLoading(false); // Reset loading state
+        }
     };
 
     const formVariants = {
@@ -88,6 +94,7 @@ const ContactPage = () => {
                                 placeholder="Your Name"
                                 className="w-full p-3 pl-10 bg-transparent border border-gray-300 rounded placeholder:text-white focus:outline-none"
                                 required
+                                autoComplete="off"
                             />
                         </div>
 
@@ -101,6 +108,7 @@ const ContactPage = () => {
                                 placeholder="Your Email"
                                 className="w-full p-3 pl-10 bg-transparent border border-gray-300 rounded placeholder:text-white focus:outline-none"
                                 required
+                                autoComplete="off"
                             />
                         </div>
 
@@ -113,6 +121,8 @@ const ContactPage = () => {
                                 onChange={handleInputChange}
                                 placeholder="Your Phone"
                                 className="w-full p-3 pl-10 bg-transparent border border-gray-300 rounded placeholder:text-white focus:outline-none"
+                                required
+                                autoComplete="off"
                             />
                         </div>
 
@@ -124,12 +134,13 @@ const ContactPage = () => {
                                 onChange={handleInputChange}
                                 className="w-full p-3 pl-10 bg-transparent border border-gray-300 rounded placeholder:text-white focus:outline-none"
                                 required
+                                autoComplete="off"
                             >
-                                <option value="" disabled>Select Service</option>
-                                <option value="web">Website Development</option>
-                                <option value="react">React.js Developer</option>
-                                <option value="next">Next.js Developer</option>
-                                <option value="html">Html Developer</option>
+                                <option className="text-black" value="" disabled>Select Service</option>
+                                <option className="text-black" value="web">Website Development</option>
+                                <option className="text-black" value="react">React.js Developer</option>
+                                <option className="text-black" value="next">Next.js Developer</option>
+                                <option className="text-black" value="html">Html Developer</option>
                             </select>
                         </div>
                     </div>
@@ -149,12 +160,13 @@ const ContactPage = () => {
                         </div>
 
                         <motion.button
-                            whileHover={{ scale: 1.05 }}
-                            whileTap={{ scale: 0.95 }}
+                            whileHover={{ scale: isLoading ? 1 : 1.05 }}
+                            whileTap={{ scale: isLoading ? 1 : 0.95 }}
                             type="submit"
-                            className="px-8 py-2 text-white rounded back2"
+                            className={`px-8 py-2 text-white rounded back2 ${isLoading && 'opacity-50 cursor-not-allowed'}`}
+                            disabled={isLoading}
                         >
-                            Send Message
+                            {isLoading ? 'Sending...' : 'Send Message'}
                         </motion.button>
                     </div>
                 </form>

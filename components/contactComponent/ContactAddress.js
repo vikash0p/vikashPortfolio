@@ -11,7 +11,7 @@ const ContactAddress = () => {
     };
 
     return (
-        <div className="max-w-lg mx-auto p-6 rounded-lg shadow-md">
+        <div className="max-w-lg p-6 mx-auto rounded-lg shadow-md">
             <motion.div
                 className="mb-6"
                 variants={containerVariants}
@@ -19,8 +19,8 @@ const ContactAddress = () => {
                 animate="visible"
                 transition={{ duration: 0.5 }}
             >
-                <h2 className="text-2xl font-bold mb-2">Get in Touch</h2>
-                <p className=" mb-4">{`I am available for full-time work. Connect with me via and call in to my account.`} </p>
+                <h2 className="mb-2 text-2xl font-bold">Get in Touch</h2>
+                <p className="mb-4 ">{`I am available for full-time work. Connect with me via and call in to my account.`} </p>
 
                 <div className="flex items-center mb-3">
                     <FaEnvelope className="" />
@@ -28,11 +28,11 @@ const ContactAddress = () => {
                 </div>
                 <div className="flex items-center mb-3">
                     <FaPhone className="" />
-                    <span className="ml-2 ">+(91)-9990127407</span>
+                    <span className="ml-2 ">+(91)-8448925560</span>
                 </div>
                 <div className="flex items-center mb-3">
                     <FaMapMarkerAlt className="" />
-                    <span className="ml-2 ">House no 28, Gali no-1,Palla Village,Faridabad, HR</span>
+                    <span className="ml-2 ">House no 28, Gali no-1, Palla, Faridabad, HR</span>
                 </div>
                 <div className='mt-12'>
                     <SocialMedia />

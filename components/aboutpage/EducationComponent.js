@@ -6,28 +6,24 @@ import { fadeIn } from '@/variants';
 
 const educationData = [
     {
-        year: '2015-2016',
         degree: 'Secondary Education',
         university: 'Govt Model Sr Sec School',
         description:
             'Completed foundational secondary education with a focus on core subjects like Mathematics, Science, and English. Developed a strong academic base for future studies.',
     },
     {
-        year: '2017-2018',
         degree: 'Senior Secondary Education',
         university: 'Govt Model Sr Sec School',
         description:
             'Specialized in the science stream with an emphasis on Physics, Chemistry, and Mathematics. Gained practical knowledge and developed analytical skills essential for higher education in technical fields.',
     },
     {
-        year: '2019-2022',
         degree: 'Bachelor of Computer Applications (BCA)',
         university: 'Indira Gandhi National Open University',
         description:
             'Studied programming, data structures, algorithms, and web technologies. Developed skills in software development, database management, and computer networks, preparing for a career in IT.',
     },
     {
-        year: '2022-2023',
         degree: 'Front-end Developer',
         university: 'Coding Ninjas',
         description:
@@ -58,7 +54,6 @@ const EducationComponent = () => {
                             <FaGraduationCap className="mr-4 text-3xl text-white" />
                             <div>
                                 <h3 className="text-xl font-bold">{education.degree}</h3>
-                                <p className="inline-block px-3 py-1 text-sm text-red-600 bg-white rounded-md">{education.year}</p>
                             </div>
                         </div>
                         <p className="text-sm font-semibold">{education.university}</p>

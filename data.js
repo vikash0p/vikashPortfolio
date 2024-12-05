@@ -180,12 +180,7 @@ export const project = [
     link: 'https://lasvpn.vercel.app',
     title: 'laslas vpn',
   },
-  {
-    id: 9,
-    image: '/project/portfoioone.png',
-    link: 'https://portfolio-silk-rho-11.vercel.app',
-    title: 'personal portfolio',
-  },
+
   {
     id: 10,
     image: '/project/barshop.png',
