@@ -1,4 +1,4 @@
-import Layout from '@/components/Layout';
+import Layout from '@/components/GlobalComponents/Layout';
 import './globals.css'
 import { Chakra_Petch, } from 'next/font/google'
 import { LayoutMetaData } from "@/meta/LayoutMetaData";

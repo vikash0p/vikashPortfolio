@@ -1,7 +1,7 @@
 'use client'
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-import SocialMedia from './ReusableComponent/SocialMedia';
+import SocialMedia from '../ReusableComponent/SocialMedia';
 import Link from 'next/link';
 import { project } from '@/utils/data';
 

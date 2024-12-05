@@ -1,9 +1,9 @@
 'use client'
 import Image from 'next/image';
 import React from 'react';
-import SocialMedia from './ReusableComponent/SocialMedia';
+import SocialMedia from '../ReusableComponent/SocialMedia';
 import Link from 'next/link';
-import { successToast } from '../utils/React-Toastify';
+import { successToast } from '../../utils/React-Toastify';
 
 
 const Navbar = () => {
