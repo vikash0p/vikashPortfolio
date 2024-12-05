@@ -1,12 +1,12 @@
 "use client"
-import { fadeIn } from '@/variants'
+import { fadeIn } from '@/utils/variants'
 import { motion } from 'framer-motion'
 import React from 'react'
 
 
 /*
 
-	
+
 */
 const AboutLeft = () => {
     return (

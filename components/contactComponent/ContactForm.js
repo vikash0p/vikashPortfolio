@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import { FaUser, FaEnvelope, FaPhone, FaRegCommentDots } from 'react-icons/fa';
 import { FaMessage } from "react-icons/fa6";
 import emailjs from '@emailjs/browser';
-import { errorToast, successToast } from './Transiton';
+import { errorToast, successToast } from "@/utils/React-Toastify";
 
 const initialState = {
     name: '',

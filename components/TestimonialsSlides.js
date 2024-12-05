@@ -5,11 +5,11 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper/modules";
-import { testimonialData } from "@/data";
+import { testimonialData } from "@/utils/data";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { fadeIn } from "@/variants";
-import { FaQuoteLeft,FaQuoteRight } from "react-icons/fa";
+import { fadeIn } from "@/utils/variants";
+import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
 
 const TestimonialsSlides = () => {
     return (

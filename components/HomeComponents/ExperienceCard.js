@@ -3,7 +3,7 @@ import React from "react";
 import CountUp from "react-countup";
 import { motion } from "framer-motion";
 import { FaUserTie, FaProjectDiagram, FaSmile } from "react-icons/fa";
-import { fadeIn } from "@/variants";
+import { fadeIn } from "@/utils/variants";
 
 const ExperienceCard = () => {
     return (

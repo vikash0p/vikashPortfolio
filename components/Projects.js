@@ -1,6 +1,6 @@
 "use client"
-import { project } from '@/data'
-import { fadeIn } from '@/variants'
+import { project } from '@/utils/data'
+import { fadeIn } from '@/utils/variants'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -40,7 +40,7 @@ const Projects = () => {
                                         sizes="(min-width: 1280px) 305px, (min-width: 1040px) calc(23.18vw + 92px), (min-width: 420px) 384px, calc(92vw + 16px)"
                                         quality={75}
                                         loading='eager'
-                                        // loader={imageLoader}
+                                    // loader={imageLoader}
 
                                     />
 

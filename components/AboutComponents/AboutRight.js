@@ -1,13 +1,13 @@
 "use client"
-import { aboutData } from '@/data'
-import { fadeIn } from '@/variants'
+import { aboutData } from '@/utils/data'
+import { fadeIn } from '@/utils/variants'
 import { motion } from 'framer-motion'
 import React, { useState } from 'react'
 
 // console.log(aboutData)
 
 const AboutRight = () => {
-  const[index,setIndex]=useState([0])
+  const [index, setIndex] = useState([0])
 
   return (
     <motion.div
@@ -18,12 +18,12 @@ const AboutRight = () => {
         once: false,
         amount: 0.6
       }}
-     className='flex flex-col'>
+      className='flex flex-col'>
       <div className='mb-24 mt-10 '>
         {
-          aboutData.map((value,ind)=>{
-            return(
-              <button type="button" key={ind} className={`py-2 rounded-lg transition-colors duration-300 ease-in  px-4 mx-2 hover:bg-red-600 ${index === ind ? "bg-red-600 ":"bg-black" }`} onClick={()=>setIndex(ind)}>{value.title} </button>
+          aboutData.map((value, ind) => {
+            return (
+              <button type="button" key={ind} className={`py-2 rounded-lg transition-colors duration-300 ease-in  px-4 mx-2 hover:bg-red-600 ${index === ind ? "bg-red-600 " : "bg-black"}`} onClick={() => setIndex(ind)}>{value.title} </button>
             )
           })
         }
@@ -38,10 +38,10 @@ const AboutRight = () => {
         }}
       >
         {
-          aboutData[index].info.map((value,index)=>{
-            return(
+          aboutData[index].info.map((value, index) => {
+            return (
               <div key={index} >
-                  <h1>{value.title} </h1>
+                <h1>{value.title} </h1>
               </div>
             )
           })

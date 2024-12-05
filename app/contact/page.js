@@ -2,7 +2,7 @@ import React from 'react'
 import TopTitle from '@/components/ReusableComponent/TopTitle'
 import ContactAddress from '@/components/contactComponent/ContactAddress'
 import { ContactMetaData } from "@/meta/ContactMetaData"
-import ContactForm from "../../components/ContactForm"
+import ContactForm from "@/components/contactComponent/ContactForm"
 
 export const metadata = ContactMetaData;
 

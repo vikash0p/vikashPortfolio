@@ -1,5 +1,5 @@
 "use client"
-import { navData } from '@/data'
+import { navData } from '@/utils/data'
 import Link from 'next/link'
 import React from 'react'
 import { usePathname } from 'next/navigation'

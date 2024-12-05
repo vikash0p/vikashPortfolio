@@ -5,7 +5,7 @@ import CountUp from 'react-countup';
 import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaBootstrap } from 'react-icons/fa';
 import { SiTailwindcss, SiTypescript, SiNextdotjs, SiFramer, SiRedux } from 'react-icons/si';
 import { FaNodeJs } from "react-icons/fa6";
-import { fadeIn } from '@/variants';
+import { fadeIn } from '@/utils/variants';
 
 
 const skillsData = [
@@ -26,12 +26,12 @@ const skillsData = [
 const MyExpertiseSkills = () => {
     return (
         <section className="w-full py-10 "
->
+        >
             <motion.h2
                 initial={{ opacity: 0, y: 50 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.5 }}
-             className="mb-8 text-xl font-bold text-center md:text-3xl">My Expertise Skills</motion.h2>
+                className="mb-8 text-xl font-bold text-center md:text-3xl">My Expertise Skills</motion.h2>
             <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
                 {skillsData.map((skill, index) => (
                     <motion.div

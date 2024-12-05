@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import React from 'react';
 import SocialMedia from './SocialMedia';
 import Link from 'next/link';
-import { successToast } from '../Transiton';
+import { successToast } from '../../utils/React-Toastify';
 
 const ProfileCardComponent = () => {
     return (
@@ -27,7 +27,7 @@ const ProfileCardComponent = () => {
                         layout="fill"
                         objectFit="cover"
                         className='object-cover w-full h-full'
-                        sizes="(min-width: 1380px) 312px, (min-width: 1040px) calc(17.19vw + 78px), (min-width: 780px) 509px, (min-width: 420px) 381px, 92vw"                    />
+                        sizes="(min-width: 1380px) 312px, (min-width: 1040px) calc(17.19vw + 78px), (min-width: 780px) 509px, (min-width: 420px) 381px, 92vw" />
                 </motion.div>
 
             </motion.div>

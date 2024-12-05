@@ -1,7 +1,7 @@
 "use client";
 import React from 'react';
 import Image from 'next/image';
-import { fadeIn } from '@/variants';
+import { fadeIn } from '@/utils/variants';
 import { motion } from 'framer-motion';
 
 const HomeRight = () => {

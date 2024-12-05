@@ -1,5 +1,5 @@
 'use client';
-import { fadeIn } from '@/variants';
+import { fadeIn } from '@/utils/variants';
 import { motion } from 'framer-motion';
 import { FaReact, FaHtml5, FaCss3Alt, FaJs, FaNode } from 'react-icons/fa';
 import { SiNextdotjs } from 'react-icons/si';

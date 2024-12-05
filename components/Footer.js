@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 import SocialMedia from './ReusableComponent/SocialMedia';
 import Link from 'next/link';
-import { project } from '@/data';
+import { project } from '@/utils/data';
 
 
 const links = [
@@ -62,7 +62,7 @@ const Footer = () => {
           <ul className="space-y-2">
             {newProject.map((value) => (
               <li key={value.link}>
-                <Link href={value.link}  className="hover:underline focus:outline-none focus:underline">{value.title}</Link>
+                <Link href={value.link} className="hover:underline focus:outline-none focus:underline">{value.title}</Link>
               </li>
             ))}
           </ul>
@@ -74,7 +74,7 @@ const Footer = () => {
           <ul className="space-y-2">
             {Services.map((link) => (
               <li key={link.href}>
-                <Link href={link.href}  className="hover:underline focus:outline-none focus:underline">{link.Name}</Link>
+                <Link href={link.href} className="hover:underline focus:outline-none focus:underline">{link.Name}</Link>
               </li>
             ))}
           </ul>

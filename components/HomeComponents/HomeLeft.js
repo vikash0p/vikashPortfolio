@@ -1,6 +1,6 @@
 
 "use client"
-import { fadeIn } from '@/variants'
+import { fadeIn } from '@/utils/variants'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -10,7 +10,7 @@ import { FaReact } from "react-icons/fa";
 import { SiNextdotjs, SiNextui } from "react-icons/si";
 import TypedComponent from './TypedComponent'
 import TechStackDisplay from '../ReusableComponent/TechStackDisplay'
-import { heading, text } from '../FontContainer'
+import { heading, text } from '../../utils/FontContainer'
 
 
 const HomeLeft = () => {
