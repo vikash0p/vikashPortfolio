@@ -2,10 +2,10 @@
 import dynamic from 'next/dynamic';
 import React from 'react';
 
-const EducationComponent = dynamic(() => import('@/components/aboutpage/EducationComponent'), { ssr: false });
-const Introdction = dynamic(() => import('@/components/aboutpage/Introduction'), { ssr: false });
-const JobComponent = dynamic(() => import('@/components/aboutpage/JobComponent'), { ssr: false });
-const MyExpertiseSkills = dynamic(() => import('@/components/aboutpage/MyExpertiseSkills'), { ssr: false });
+const EducationComponent = dynamic(() => import('@/components/aboutPage/EducationComponent'), { ssr: false });
+const Introdction = dynamic(() => import('@/components/aboutPage/Introduction'), { ssr: false });
+const JobComponent = dynamic(() => import('@/components/aboutPage/JobComponent'), { ssr: false });
+const MyExpertiseSkills = dynamic(() => import('@/components/aboutPage/MyExpertiseSkills'), { ssr: false });
 const ProfileCardComponent = dynamic(() => import('@/components/ReusableComponent/ProfileCardComponent'), { ssr: false });
 const TopTitle = dynamic(() => import('@/components/ReusableComponent/TopTitle'), { ssr: false });
 
