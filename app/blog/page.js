@@ -5,9 +5,7 @@ export const metadata = BlogMetaData;
 
 const Blog = () => {
   return (
-    <div>
     <BlogLayout />
-    </div>
   )
 }
 

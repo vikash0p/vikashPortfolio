@@ -4,9 +4,7 @@ import { generateMetaDataById } from "@/meta/blog/generateMetaDataById";
 import React from 'react'
 
 export async  function generateStaticParams() {
-    return BlogData.map((item) => ({
-        id: item.blogId,
-    }));
+    return BlogData.map((item) => ({id: item.blogId,   }));
 }
 export async function generateMetadata({ params }) {
     const { id } = params;
@@ -19,9 +17,7 @@ const BlogId = ({ params }) => {
     const { id } = params;
 
     return (
-        <>
         <BlogSingleLayout  id={id} />
-        </>
     )
 }
 

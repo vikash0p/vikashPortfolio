@@ -23,9 +23,7 @@ const BlogSingleCategory = ({ params }) => {
   const { category } = params;
 
   return (
-    <div>
       <BlogCategoryLayout category={category} />
-    </div>
   );
 };
 
