@@ -13,7 +13,7 @@ export const metadata = LayoutMetaData;
 export default function RootLayout({ children }) {
   return (
     <html lang="en" >
-      <body className={`${Chakra.className}  bg-site bg-cover bg-center bg-no-repeat  text-white`} >
+      <body className={`${Chakra.className}  bg-[#1a1333]  text-white`} >
         <Layout>
           {children}
         </Layout>
