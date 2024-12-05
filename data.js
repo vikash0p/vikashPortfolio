@@ -86,42 +86,42 @@ export const social = [
 
 export const testimonialData = [
   {
-    image: '/images/t-avt-1.png',
+    image: 'https://res.cloudinary.com/dhttnehwp/image/upload/v1733393462/vikashProtfolio/s7yq7vxivvwtbelk5du5.jpg',
     name: 'Anne Smith',
     position: 'Data Analyst',
     message:
       'Their solutions streamlined processes, simplifying complex datasets. Highly recommend their services for data-driven companies seeking actionable insights.',
   },
   {
-    image: '/images/t-avt-2.png',
+    image: 'https://res.cloudinary.com/dhttnehwp/image/upload/v1733393462/vikashProtfolio/ablsicmkn75fmzbtqxxr.jpg',
     name: 'Jane Doe',
     position: 'Graphic Designer',
     message:
       'Attention to detail exceeded expectations. The creativity and professionalism shown were outstanding. Thrilled to collaborate again soon.',
   },
   {
-    image: '/images/t-avt-3.png',
+    image: 'https://res.cloudinary.com/dhttnehwp/image/upload/v1733393462/vikashProtfolio/g4s2h8sltvg9cd4hrfab.jpg',
     name: 'John Doe',
     position: 'Software Developer',
     message:
       'Technical expertise and problem-solving skills built a scalable solution on time. An absolute pleasure working with this talented team.',
   },
   {
-    image: '/test1.jpg',
+    image: 'https://res.cloudinary.com/dhttnehwp/image/upload/v1733393462/vikashProtfolio/pvfz5pspezd6smgycwp0.jpg',
     name: 'Emily Davis',
     position: 'Marketing Specialist',
     message:
       'Comprehensive marketing strategy increased engagement and conversions significantly. Their digital landscape understanding is truly exceptional and unmatched.',
   },
   {
-    image: '/profile.jpg',
+    image: 'https://res.cloudinary.com/dhttnehwp/image/upload/v1733393462/vikashProtfolio/y0uwdpedzwlopbj5lvgs.jpg',
     name: 'Michael Johnson',
     position: 'Project Manager',
     message:
       'Large-scale project management was seamless. Their team’s clear communication ensured on-time delivery under budget with excellent results.',
   },
   {
-    image: '/profile_user.jpg',
+    image: 'https://res.cloudinary.com/dhttnehwp/image/upload/v1733393462/vikashProtfolio/rayjq0u5cl2otcunfkhn.jpg',
     name: 'Samantha Lee',
     position: 'Product Manager',
     message:

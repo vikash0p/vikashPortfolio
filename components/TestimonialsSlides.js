@@ -55,7 +55,7 @@ const TestimonialsSlides = () => {
                                     height={100}
                                     sizes="100px"
                                     loading="lazy"
-                                    className="object-cover border-4 border-white rounded-full shadow-lg"
+                                    className="object-cover w-32 h-32 border-4 border-white rounded-full shadow-lg"
                                 />
                             </div>
                             <div>

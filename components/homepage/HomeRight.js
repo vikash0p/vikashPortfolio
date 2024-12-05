@@ -17,7 +17,7 @@ const HomeRight = () => {
     >
       <div className="relative w-full h-full">
         <Image
-          src={'/images/vikash.webp'}
+          src={'https://res.cloudinary.com/dhttnehwp/image/upload/v1733392712/vikashProtfolio/vueogxjajke3lcwmkn8i.webp'}
           alt='avatar'
           fill
           className='object-cover object-center'

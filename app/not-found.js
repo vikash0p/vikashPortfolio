@@ -3,20 +3,20 @@ import Link from 'next/link'
 
 export default function NotFound() {
     return (
-        <div className='w-full mt-10 flex flex-col justify-center items-center  gap-3'>
+        <div className='flex flex-col items-center justify-center w-full gap-3 mt-10'>
             <div className="relative w-full max-w-sm md:max-w-md h-96">
                 <Image
-                    src="/error1-removebg-preview.png"
+                    src="https://res.cloudinary.com/dhttnehwp/image/upload/v1733393867/vikashProtfolio/z9k6tw2vdartbuubovsd.png"
                     alt="errorImage"
                     fill
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                    className="w-full h-full object-cover object-center rounded-lg "
+                    className="object-cover object-center w-full h-full rounded-lg "
                 />
 
             </div>
             <h2>Not Found</h2>
             <p>Could not find requested resource</p>
-            <Link href="/" className='back2  px-6 py-2 rounded-sm'>Return Home</Link>
+            <Link href="/" className='px-6 py-2 rounded-sm back2'>Return Home</Link>
         </div>
     )
 }

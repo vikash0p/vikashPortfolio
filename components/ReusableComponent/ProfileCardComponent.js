@@ -22,7 +22,7 @@ const ProfileCardComponent = () => {
                     transition={{ duration: 0.6 }}
                 >
                     <Image
-                        src="/images/vikash.webp"
+                        src="https://res.cloudinary.com/dhttnehwp/image/upload/v1733392712/vikashProtfolio/vueogxjajke3lcwmkn8i.webp"
                         alt="Profile Picture"
                         layout="fill"
                         objectFit="cover"

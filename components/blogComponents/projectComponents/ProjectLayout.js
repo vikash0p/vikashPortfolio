@@ -6,8 +6,7 @@ import TopTitle from '@/components/ReusableComponent/TopTitle'
 
 
 const Projects = dynamic(() => import('@/components/Projects'), {
-  ssr: false,
-  loading: () => <p>Loading...</p>,
+  // ssr: false,
 });
 
 const ProjectLayout = () => {
