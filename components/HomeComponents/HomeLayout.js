@@ -1,9 +1,9 @@
 'use client';
 
-import TestimonialsSlides from "../TestimonialsSlides";
 import ExperienceCard from "./ExperienceCard";
 import HomeLeft from "./HomeLeft";
 import HomeRight from "./HomeRight";
+import TestimonialsSlides from "./TestimonialsSlides";
 
 
 

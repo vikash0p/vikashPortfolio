@@ -5,7 +5,7 @@ import React from 'react'
 import TopTitle from '@/components/ReusableComponent/TopTitle'
 
 
-const Projects = dynamic(() => import('@/components/Projects'), {
+const Projects = dynamic(() => import('@/components/projectComponents/Projects'), {
   // ssr: false,
 });
 
