@@ -20,7 +20,7 @@ export const metadata = {
         alt: "Vikash Projects openGraph",
       },
     ],
-    url: "https://myportfolio-navy-three.vercel.app/work",
+    url: `${process.env.NEXT_PUBLIC_APP_URL}`,
     siteName: "Vikash Projects",
     locale: "en_US",
     type: "website",

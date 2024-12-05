@@ -21,10 +21,10 @@ export async function generateMetadata({ params }) {
             openGraph: {
                 title: `${blogPost.title} | Blog`,
                 description: `${blogPost.description1}`,
-                url: `https://myportfolio-navy-three.vercel.app/blog/${id}`,
+                url: `${process.env.NEXT_PUBLIC_APP_URL}/blog/${id}`,
                 images: [
                     {
-                        url: `https://myportfolio-navy-three.vercel.app${blogPost.image}`,
+                        url: `${process.env.NEXT_PUBLIC_APP_URL}/${blogPost.image}`,
                         width: 1200,
                         height: 630,
                         alt: `${blogPost.title} - Blog Post`,
@@ -41,7 +41,7 @@ export async function generateMetadata({ params }) {
                 card: 'summary_large_image',
                 title: `${blogPost.title} | Blog`,
                 description: `${blogPost.description1}`,
-                images: `https://myportfolio-navy-three.vercel.app${blogPost.image}`,
+                images: `${process.env.NEXT_PUBLIC_APP_URL}/${blogPost.image}`,
             },
         };
     } else {

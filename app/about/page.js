@@ -13,13 +13,13 @@ export const metadata = {
       "Discover Vikash's background, skills, and professional experience in frontend web development. Specializing in creating modern web applications with React and Node.js, Vikash brings a passion for solving technical challenges and delivering innovative solutions.",
     images: [
       {
-        url: "https://myportfolio-navy-three.vercel.app/about/opengraph-image.png",
+        url: `${process.env.NEXT_PUBLIC_APP_URL}/about/opengraph-image.png`,
         width: 1200,
         height: 630,
         alt: "Vikash About Page openGraph",
       },
     ],
-    url: "https://myportfolio-navy-three.vercel.app/about",
+    url: `${process.env.NEXT_PUBLIC_APP_URL}/about`,
     siteName: "Vikash Portfolio",
     locale: "en_US",
     type: "website",
@@ -29,7 +29,7 @@ export const metadata = {
     title: "About Vikash | Frontend Developer & Software Engineer",
     description:
       "Learn more about Vikash, a frontend web developer specializing in React and Node.js. Explore the journey, projects, and values that define Vikash's development career.",
-    images: ["https://myportfolio-navy-three.vercel.app/about/opengraph-image.png"],
+    images: [`${process.env.NEXT_PUBLIC_APP_URL}/about/opengraph-image.png`,],
     creator: "@VikashPortfolio",
   },
   applicationName: "Vikash Portfolio",

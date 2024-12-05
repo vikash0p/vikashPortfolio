@@ -26,10 +26,10 @@ export async function generateMetadata({ params }) {
     openGraph: {
       title: categoryTitle,
       description: categoryDescription,
-      url: `https://myportfolio-navy-three.vercel.app/blog/category/${category}`,
+      url: `${process.env.NEXT_PUBLIC_APP_URL}/blog/category/${category}`,
       images: categoryBlogs.length > 0 ?
         [{
-          url: `https://myportfolio-navy-three.vercel.app${categoryBlogs[0].image}`,
+          url: `${process.env.NEXT_PUBLIC_APP_URL}${categoryBlogs[0].image}`,
           width: 1200,
           height: 630,
           alt: `${categoryTitle} OpenGraph Image`,
@@ -43,7 +43,7 @@ export async function generateMetadata({ params }) {
       title: categoryTitle,
       description: categoryDescription,
       images: categoryBlogs.length > 0 ?
-        [`https://myportfolio-navy-three.vercel.app${categoryBlogs[0].image}`]
+        [`${process.env.NEXT_PUBLIC_APP_URL}${categoryBlogs[0].image}`]
         : [],
     },
   };

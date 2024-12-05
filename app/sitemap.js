@@ -3,37 +3,37 @@ export default function sitemap() {
 
     return [
         {
-            url: 'https://myportfolio-navy-three.vercel.app/',
+            url: `${process.env.NEXT_PUBLIC_APP_URL}/`,
             lastModified: currentDate,
             changeFrequency: 'yearly', // Assuming yearly changes
             priority: 0.4,
         },
         {
-            url: 'https://myportfolio-navy-three.vercel.app/about',
+            url: `${process.env.NEXT_PUBLIC_APP_URL}/about`,
             lastModified: currentDate,
             changeFrequency: 'monthly', // Assuming monthly updates
             priority: 1.0,
         },
         {
-            url: 'https://myportfolio-navy-three.vercel.app/services',
+            url: `${process.env.NEXT_PUBLIC_APP_URL}/services`,
             lastModified: currentDate,
             changeFrequency: 'monthly', // Assuming monthly updates
             priority: 1.0,
         },
         {
-            url: 'https://myportfolio-navy-three.vercel.app/work',
+            url: `${process.env.NEXT_PUBLIC_APP_URL}/work`,
             lastModified: currentDate,
             changeFrequency: 'monthly', // Assuming monthly updates
             priority: 1.0,
         },
         {
-            url: 'https://myportfolio-navy-three.vercel.app/blog',
+            url: `${process.env.NEXT_PUBLIC_APP_URL}/blog`,
             lastModified: currentDate,
             changeFrequency: 'weekly', // Blogs might update more frequently
             priority: 1.0,
         },
         {
-            url: 'https://myportfolio-navy-three.vercel.app/contact',
+            url: `${process.env.NEXT_PUBLIC_APP_URL}/contact`,
             lastModified: currentDate,
             changeFrequency: 'yearly', // Assuming minimal changes to contact page
             priority: 1.0,

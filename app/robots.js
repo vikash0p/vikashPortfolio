@@ -5,6 +5,6 @@ export default function robots() {
             allow: '/',
             disallow: '/private/',
         },
-        sitemap: 'https://myportfolio-navy-three.vercel.app/sitemap.xml',
+        sitemap: `${process.env.NEXT_PUBLIC_APP_URL}/sitemap.xml`,
     }
 }

@@ -15,8 +15,7 @@ export async function generateMetadata({ params }) {
 
   // Find the service item by id from the data
   const service = mysServiceData.find(item => item.value === id);
-  // console.log("🚀 ~ file: page.js:18 ~ service:", `https://myportfolio-navy-three.vercel.app${service.image}`);
-  // console.log("🚀 ~ file: page.js:18 ~ service:", `${service.image}`);
+
 
   if (service) {
     return {
@@ -25,10 +24,10 @@ export async function generateMetadata({ params }) {
       openGraph: {
         title: `${service.title} | Vikash Services`,
         description: service.description,
-        url: `https://myportfolio-navy-three.vercel.app/services/${id}`,
+        url: `${process.env.NEXT_PUBLIC_APP_URL}/services/${id}`,
         images: [
           {
-            url: `https://myportfolio-navy-three.vercel.app${service.image}`,
+            url: `${process.env.NEXT_PUBLIC_APP_URL}${service.image}`,
             width: 1200,
             height: 630,
             alt: `${service.title} - Service`,
@@ -40,7 +39,7 @@ export async function generateMetadata({ params }) {
         card: 'summary_large_image',
         title: `${service.title} | Vikash Services`,
         description: service.description,
-        images: `https://myportfolio-navy-three.vercel.app${service.image}`, 
+        images: `${process.env.NEXT_PUBLIC_APP_URL}${service.image}`,
       },
     };
   } else {

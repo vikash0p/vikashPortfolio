@@ -5,7 +5,7 @@ import { Chakra_Petch, } from 'next/font/google'
 const inter = Chakra_Petch({ subsets: ['latin'],weight:['400','500','600'] })
 
 export const metadata = {
-  metadataBase: new URL("https://myportfolio-navy-three.vercel.app/"),
+  metadataBase: new URL(`${process.env.NEXT_PUBLIC_APP_URL}`),
   title: {
     default: "Vikash | Frontend Developer Portfolio & Software Engineer",
     template: "%s | Vikash",
@@ -27,7 +27,7 @@ export const metadata = {
         alt: "Vikash Portfolio openGraph",
       },
     ],
-    url: "https://myportfolio-navy-three.vercel.app/",
+    url: `${process.env.NEXT_PUBLIC_APP_URL}`,
     siteName: "Vikash Portfolio",
     locale: "en_US",
     type: "website",
@@ -54,10 +54,10 @@ export const metadata = {
   ],
   authors: [
     { name: "Vikash" },
-    { name: "Vikash Portfolio", url: "https://myportfolio-navy-three.vercel.app/" },
+    { name: "Vikash Portfolio", url: `${process.env.NEXT_PUBLIC_APP_URL}` },
   ],
   creator: "Vikash",
-  publisher: "https://myportfolio-navy-three.vercel.app/",
+  publisher: "Vikash Portfolio",
   alternates: {
     canonical: "/",
     languages: {
