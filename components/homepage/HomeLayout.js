@@ -1,17 +1,14 @@
 'use client';
 
-import dynamic from "next/dynamic";
-const ExperienceCard = dynamic(() => import('@/components/HomePage/ExperienceCard'), { ssr: false });
-const HomeLeft = dynamic(() => import('@/components/HomePage/HomeLeft'), { ssr: false });
-const HomeRight = dynamic(() => import('@/components/HomePage/HomeRight'), { ssr: false });
-const TestimonialsSlides = dynamic(() => import('@/components/TestimonialsSlides'), { ssr: false });
-/**
- * The HomeLayout component is the main component for the homepage.
- * It displays the hero section, the experience section, and the testimonials section.
- * The hero section is displayed in a flex box container and displays the HomeLeft and HomeRight components.
- * The experience section is displayed below the hero section and displays the ExperienceCard component.
- * The testimonials section is displayed below the experience section and displays the TestimonialsSlides component.
- */
+import TestimonialsSlides from "../TestimonialsSlides";
+import ExperienceCard from "./ExperienceCard";
+import HomeLeft from "./HomeLeft";
+import HomeRight from "./HomeRight";
+
+
+
+
+
 const HomeLayout = () => {
     return (
         <section>

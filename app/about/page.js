@@ -1,4 +1,4 @@
-import ClientSideAboutLayout from "@/components/aboutPage/ClientSideAboutLayout";
+import ClientSideAboutLayout from "@/components/AboutComponents/ClientSideAboutLayout";
 import { AboutMetaData } from "@/meta/blog/AboutMetaData";
 export const metadata = AboutMetaData;
 
