@@ -8,10 +8,12 @@ const jobData = [
     {
         id: 1,
         title: 'Frontend Developer',
-        company: 'Hobit Technologies Pvt Ltd',
-        period: '04/2023 - 01/2024',
-        description: 'Developed and enhanced user interfaces for web applications using React, Next.js, and Tailwind CSS.',
-        technologies: [{ name: 'HTML', icon: <FaHtml5 className="text-orange-600" />, proficiency: 90 },
+        company: 'MLAI Solution',
+        period: 'February 2024 – November 2024',
+        description:
+            'Developed scalable and reusable UI components using ReactJS and NextJS, focusing on responsive design, cross-browser compatibility, and performance optimization.',
+        technologies: [
+            { name: 'HTML', icon: <FaHtml5 className="text-orange-600" />, proficiency: 90 },
             { name: 'CSS', icon: <FaCss3Alt className="text-blue-600" />, proficiency: 85 },
             { name: 'JavaScript', icon: <FaJs className="text-yellow-500" />, proficiency: 80 },
             { name: 'Tailwind CSS', icon: <SiTailwindcss className="text-blue-400" />, proficiency: 75 },
@@ -19,24 +21,45 @@ const jobData = [
             { name: 'React.js', icon: <FaReact className="text-cyan-500" />, proficiency: 85 },
             { name: 'Next.js', icon: <SiNextdotjs className="text-white" />, proficiency: 80 },
             { name: 'Redux Toolkit', icon: <SiRedux className="text-purple-600" />, proficiency: 70 },
-            ],
+        ],
     },
     {
         id: 2,
+        title: 'Frontend Developer',
+        company: 'Hobit Technologies Pvt Ltd',
+        period: 'April 2023 – January 2024',
+        description:
+            'Collaborated with designers and back-end engineers to deliver responsive web applications using ReactJS, NextJS, and Tailwind CSS.',
+        technologies: [
+            { name: 'HTML', icon: <FaHtml5 className="text-orange-600" />, proficiency: 90 },
+            { name: 'CSS', icon: <FaCss3Alt className="text-blue-600" />, proficiency: 85 },
+            { name: 'JavaScript', icon: <FaJs className="text-yellow-500" />, proficiency: 80 },
+            { name: 'Tailwind CSS', icon: <SiTailwindcss className="text-blue-400" />, proficiency: 75 },
+            { name: 'TypeScript', icon: <SiTypescript className="text-blue-500" />, proficiency: 65 },
+            { name: 'React.js', icon: <FaReact className="text-cyan-500" />, proficiency: 85 },
+            { name: 'Next.js', icon: <SiNextdotjs className="text-white" />, proficiency: 80 },
+            { name: 'Redux Toolkit', icon: <SiRedux className="text-purple-600" />, proficiency: 70 },
+        ],
+    },
+    {
+        id: 3,
         title: 'Frontend Developer (Intern)',
         company: 'Imperial Auto Industries Ltd.',
-        period: '07/2022 - 03/2023',
-        description: 'Assisted in web application development, learning frontend technologies like React and Bootstrap.',
-        technologies: [{ name: 'HTML', icon: <FaHtml5 className="text-orange-600" />, proficiency: 90 },
+        period: 'July 2022 – March 2023',
+        description:
+            'Assisted in creating intuitive and interactive user interfaces using HTML, CSS, and Bootstrap. Integrated RESTful APIs for dynamic functionality.',
+        technologies: [
+            { name: 'HTML', icon: <FaHtml5 className="text-orange-600" />, proficiency: 90 },
             { name: 'CSS', icon: <FaCss3Alt className="text-blue-600" />, proficiency: 85 },
             { name: 'JavaScript', icon: <FaJs className="text-yellow-500" />, proficiency: 80 },
             { name: 'Bootstrap', icon: <FaBootstrap className="text-purple-600" />, proficiency: 70 },
             { name: 'React.js', icon: <FaReact className="text-cyan-500" />, proficiency: 85 },
             { name: 'Framer Motion', icon: <SiFramer className="text-pink-500" />, proficiency: 75 },
             { name: 'Redux Toolkit', icon: <SiRedux className="text-purple-600" />, proficiency: 70 },
-           ],
+        ],
     },
 ];
+
 
 const JobComponent = () => {
     return (
