@@ -45,7 +45,7 @@ const EducationComponent = () => {
                 {educationData.map((education, index) => (
                     <motion.div
                         key={index}
-                        className="p-6 text-white rounded-lg shadow-lg back2"
+                        className="p-6 rounded-lg shadow-lg back2"
                         initial={{ opacity: 0, y: 50 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.5, delay: index * 0.2 }}

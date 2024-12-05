@@ -14,8 +14,8 @@ const ClientSideAboutLayout = () => {
     return (
         <section>
             <TopTitle title="About Me" />
-            <div className='w-full mt-14 flex flex-col lg:flex-row gap-5'>
-                <div className=" lg:w-1/4 ">
+            <div className='flex flex-col w-full h-full gap-5 mt-14 lg:flex-row'>
+                <div className=" lg:w-1/4">
                     <ProfileCardComponent />
                 </div>
                 <div className="lg:w-3/4" >
