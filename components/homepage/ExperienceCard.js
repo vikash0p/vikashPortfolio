@@ -62,7 +62,7 @@ const ExperienceCard = () => {
                     <div className="flex flex-col items-center">
                         <FaSmile size={40} className="mb-2 text-yellow-300" />
                         <p className="text-4xl font-semibold">
-                            <CountUp start={0} end={1500} duration={5} suffix="+" />
+                            <CountUp start={0} end={200} duration={5} suffix="+" />
                         </p>
                         <p className="text-sm">Happy Clients</p>
                     </div>

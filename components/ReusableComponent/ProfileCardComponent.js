@@ -42,8 +42,8 @@ const ProfileCardComponent = () => {
 
                     <p>
                         <strong>Whatsapp: </strong>
-                        <a href="https://wa.me/919990127407" className=" hover:underline">
-                            +91-9990127407
+                        <a href="https://wa.me/918448925560" className=" hover:underline">
+                            +91-8448925560
                         </a>
                     </p>
 
@@ -76,7 +76,7 @@ const ProfileCardComponent = () => {
                         </div>
                         <div className="">
                             <Link
-                                href="/VIKASH1.pdf"
+                                href="/VIKASH.pdf"
                                 target='_blank'
                                 download="Vikash_Pandat_Resume.pdf"
                                 className="px-6 py-3 rounded-sm back2"

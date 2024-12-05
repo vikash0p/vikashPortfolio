@@ -31,7 +31,7 @@ const TestimonialsSlides = () => {
                 mousewheel={true}
                 keyboard={true}
                 modules={[Navigation, Pagination, Mousewheel, Keyboard]}
-                className="w-full"
+                className="w-full "
                 slidesPerView={1}
                 breakpoints={{
                     640: { slidesPerView: 1, spaceBetween: 20 },
@@ -39,6 +39,7 @@ const TestimonialsSlides = () => {
                     1024: { slidesPerView: 2, spaceBetween: 50 },
                 }}
                 loop={true}
+
             >
                 {testimonialData.map((value, index) => (
                     <SwiperSlide
