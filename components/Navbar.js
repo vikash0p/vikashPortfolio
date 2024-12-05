@@ -21,7 +21,7 @@ const Navbar = () => {
       </div>
       <div>
         <Link
-          href="/VIKASH1.pdf"
+          href="/VIKASH.pdf"
           target='_blank'
           download="Vikash_Pandat_Resume.pdf"
           className="px-4 py-1 text-xl text-white rounded-sm back2 md:text-2xl "
