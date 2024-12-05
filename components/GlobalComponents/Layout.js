@@ -7,16 +7,17 @@ import Navbar from './Navbar'
 import Header from './Header'
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+
 const Layout = ({ children }) => {
     return (
-        <div className='px-1 m-auto max-w-7xl md:px-3 lg:px-0 '>
+        <main className='px-1 m-auto max-w-7xl md:px-3 lg:px-0 '>
             <TopLeftImage />
             <Navbar />
             <Header />
             {children}
             <Footer />
             <ToastContainer />
-        </div>
+        </main>
     )
 }
 

@@ -1,8 +1,7 @@
 import Layout from '@/components/GlobalComponents/Layout';
 import './globals.css'
-import { Chakra_Petch, } from 'next/font/google'
 import { LayoutMetaData } from "@/meta/LayoutMetaData";
-const inter = Chakra_Petch({ subsets: ['latin'], weight: ['400', '500', '600'] })
+import { Chakra } from "@/utils/FontContainer";
 
 
 export const metadata = LayoutMetaData;
@@ -14,11 +13,9 @@ export const metadata = LayoutMetaData;
 export default function RootLayout({ children }) {
   return (
     <html lang="en" >
-      <body className={`${inter.className}  bg-site bg-cover bg-center bg-no-repeat  text-white`} >
+      <body className={`${Chakra.className}  bg-site bg-cover bg-center bg-no-repeat  text-white`} >
         <Layout>
-          <main className=''>
-            {children}
-          </main>
+          {children}
         </Layout>
       </body>
     </html>
