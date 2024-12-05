@@ -16,7 +16,7 @@ export const metadata = {
       "Contact Vikash to discuss web development projects, technical collaborations, or consulting opportunities. Specializing in building scalable web applications with modern technologies.",
     images: [
       {
-        url: "https://myportfolio-navy-three.vercel.app/opengraph-image.png",
+        url: `${process.env.NEXT_PUBLIC_APP_URL}/opengraph-image.png`,
         width: 1200,
         height: 630,
         alt: "Vikash Contact Page openGraph",
@@ -32,7 +32,7 @@ export const metadata = {
     title: "Contact Vikash | Full-Stack Developer & Software Engineer",
     description:
       "Reach out to Vikash for web development services or collaboration opportunities. Specializing in React, Node.js, and modern JavaScript frameworks.",
-    images: ["https://myportfolio-navy-three.vercel.app/opengraph-image.png"],
+    images: [`${process.env.NEXT_PUBLIC_APP_URL}/opengraph-image.png`],
     creator: "@VikashPortfolio",
   },
   applicationName: "Vikash Contact",

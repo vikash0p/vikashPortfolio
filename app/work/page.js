@@ -14,7 +14,7 @@ export const metadata = {
       "Dive into Vikash's project portfolio featuring cutting-edge web applications, creative solutions, and scalable systems built using React, Node.js, and modern web technologies. Explore case studies and in-depth details of each project.",
     images: [
       {
-        url: "https://myportfolio-navy-three.vercel.app/opengraph-image.png",
+        url: `${process.env.NEXT_PUBLIC_APP_URL}/opengraph-image.png`,
         width: 1200,
         height: 630,
         alt: "Vikash Projects openGraph",
@@ -30,7 +30,7 @@ export const metadata = {
     title: "Vikash Projects | Full-Stack Web Development Portfolio",
     description:
       "View Vikash's portfolio of web development projects, built using React, Node.js, and modern web technologies. Explore scalable solutions, creative designs, and complex applications.",
-    images: ["https://myportfolio-navy-three.vercel.app/opengraph-image.png"],
+    images: [`${process.env.NEXT_PUBLIC_APP_URL}/opengraph-image.png`],
     creator: "@VikashPortfolio",
   },
   applicationName: "Vikash Projects",

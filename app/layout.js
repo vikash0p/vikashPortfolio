@@ -21,7 +21,7 @@ export const metadata = {
       "Welcome to Vikash's portfolio! Specializing in modern web development, Vikash brings innovative solutions to complex technical challenges. Explore projects, coding expertise, and case studies to see how Vikash can bring value to your development team.",
     images: [
       {
-        url: "https://myportfolio-navy-three.vercel.app/opengraph-image.png",
+        url: `${process.env.NEXT_PUBLIC_APP_URL}/opengraph-image.png`,
         width: 1200,
         height: 630,
         alt: "Vikash Portfolio openGraph",
@@ -36,7 +36,7 @@ export const metadata = {
     card: "summary_large_image",
     title: 'Vikash Portfolio | Frontend Developer & Software Engineer',
     description: 'Explore the portfolio of Vikash, a Frontend web developer skilled in React, Node.js, and JavaScript technologies. Discover innovative projects and technical expertise.',
-    images: ["https://myportfolio-navy-three.vercel.app/opengraph-image.png"],
+    images: [`${process.env.NEXT_PUBLIC_APP_URL}/opengraph-image.png`],
     creator: "@VikashPortfolio",
   },
   applicationName: "Vikash Portfolio",
