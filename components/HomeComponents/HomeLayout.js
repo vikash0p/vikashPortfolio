@@ -1,10 +1,10 @@
 'use client';
 
-import ExperienceCard from "./ExperienceCard";
-import HomeLeft from "./HomeLeft";
-import HomeRight from "./HomeRight";
-import TestimonialsSlides from "./TestimonialsSlides";
-
+import dynamic from "next/dynamic";
+const ExperienceCard = dynamic(() => import("./ExperienceCard"), { ssr: false });
+const HomeLeft = dynamic(() => import("./HomeLeft"), { ssr: false });
+const HomeRight = dynamic(() => import("./HomeRight"), { ssr: false });
+const TestimonialsSlides = dynamic(() => import("./TestimonialsSlides"), { ssr: false });
 
 
 

@@ -22,6 +22,8 @@ const HomeRight = () => {
           fill
           className='object-cover object-center'
           priority={true}
+          sizes="(min-width: 780px) 448px, 318px"
+          quality={75}
         />
       </div>
     </motion.div>

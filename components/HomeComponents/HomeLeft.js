@@ -75,6 +75,7 @@ const HomeLeft = () => {
                             className='object-cover w-full h-full transition-transform animate-spin-slow '
                             sizes='112px'
                             priority={true}
+                            quality={75}
                         />
                     </div>
 

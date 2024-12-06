@@ -40,7 +40,6 @@ const Projects = () => {
                                         sizes="(min-width: 1280px) 305px, (min-width: 1040px) calc(23.18vw + 92px), (min-width: 420px) 384px, calc(92vw + 16px)"
                                         quality={75}
                                         loading='eager'
-                                    // loader={imageLoader}
 
                                     />
 

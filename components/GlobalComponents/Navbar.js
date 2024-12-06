@@ -17,6 +17,8 @@ const Navbar = () => {
           fill
           className="object-contain"
           priority={true}
+          quality={75}
+          sizes="(min-width: 780px) 160px, 112px"
         />
       </div>
       <div>

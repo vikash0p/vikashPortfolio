@@ -9,8 +9,10 @@ export default function NotFound() {
                     src="https://res.cloudinary.com/dhttnehwp/image/upload/v1733393867/vikashProtfolio/z9k6tw2vdartbuubovsd.png"
                     alt="errorImage"
                     fill
+                    priority
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     className="object-cover object-center w-full h-full rounded-lg "
+                    quality={75}
                 />
 
             </div>

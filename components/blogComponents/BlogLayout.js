@@ -4,10 +4,7 @@ import React from 'react'
 import TopTitle from '../ReusableComponent/TopTitle'
 
 
-const BlogDisplay = dynamic(() => import('./BlogDisplay'), {
-  ssr: false,
-  loading: () => <p>Loading...</p>
-});
+const BlogDisplay = dynamic(() => import('./BlogDisplay'), { ssr: false,});
 
 const BlogLayout = () => {
   return (

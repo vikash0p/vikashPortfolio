@@ -4,11 +4,11 @@ import { mysServiceData } from '@/components/serviceComponent/myServiceData';
 import ServiceSingleLayout from '@/components/serviceComponent/ServiceSingleLayout';
 import { generateServiceMetaData } from "@/meta/service/generateServiceMetaData";
 export const revalidate = 60;
-// export async function generateStaticParams() {
-//   return mysServiceData.map((item) => ({
-//     id: item.value,
-//   }));
-// }
+export async function generateStaticParams() {
+  return mysServiceData.map((item) => ({
+    id: item.value,
+  }));
+}
 
 export async function generateMetadata({ params }) {
   const { id } = params;
