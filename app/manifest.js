@@ -1,12 +1,12 @@
 export default function manifest() {
     return {
-        name: 'Vikash Portfolio ',
-        short_name: 'VikashPortfolio',
+        name: 'Vikash  ',
+        short_name: 'Vikash',
         description: 'A portfolio showcasing projects, skills, and expertise in Frontend web development, specializing in React, Node.js, and modern JavaScript frameworks.',
         start_url: '/',
         display: 'standalone',
         background_color: '#ffffff',
-        theme_color: '#0d6efd',
+        theme_color: '#100b1f',
         orientation: 'portrait',
         scope: '/',
         lang: 'en',
