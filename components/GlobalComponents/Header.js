@@ -18,7 +18,7 @@ const Header = () => {
                         // legacyBehavior
                         // scroll={false}
                         aria-label={value.name}
-                        className={`relative group text-xl py-3 px-3 m-auto xl:text-2xl cursor-pointer hover:text-red-500 transition-colors duration-300 ${pathname === value.path ? "text-red-500" : "text-white"}`}
+                        className={`relative group text-2xl py-4 px-3 m-auto xl:text-2xl cursor-pointer hover:text-red-500 transition-colors duration-300 ${pathname === value.path ? "text-red-500" : "text-white"}`}
                     >
                         {/* Icon */}
                         <h1>{value.icon} <span className="sr-only">{value.name}</span></h1>
