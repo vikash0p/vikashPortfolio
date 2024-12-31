@@ -5,7 +5,7 @@ export default function manifest() {
         description: 'A portfolio showcasing projects, skills, and expertise in Frontend web development, specializing in React, Node.js, and modern JavaScript frameworks.',
         start_url: '/',
         display: 'standalone',
-        background_color: '#1a1333',
+        background_color: '#220055',
         theme_color: '#1a1333',
         orientation: 'portrait',
         scope: '/',
